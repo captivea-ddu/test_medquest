@@ -31,7 +31,7 @@ class ServiceRequest(models.Model):
 
     case_issues = fields.Text(string='Case Issues and Focus')
 
-    documents = fields.One2many('ir.attachment', 'service_request_id', string="Attachments")
+    # documents = fields.One2many('ir.attachment', 'service_request_id', string="Attachments")
 
     # contact_name = fields.Char(string="Contact Name")
 
