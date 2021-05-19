@@ -64,15 +64,16 @@ class WebsiteSaleCustom(http.Controller):
 				'case_issues' : case_issues,
 			})
 			i = 1
-			for d in documents:
-				request.env['ir.attachment'].sudo().create({
-					'name': str(document_name) + "_" + str(i),
-					'type': 'binary',
-					'datas': d,
-					'res_model': 'service.request',
-					'res_id': existing_details.id,
-				})
-				i += 1
+			if documents:
+				for d in documents:
+					request.env['ir.attachment'].sudo().create({
+						'name': str(document_name) + "_" + str(i),
+						'type': 'binary',
+						'datas': d,
+						'res_model': 'service.request',
+						'res_id': existing_details.id,
+					})
+					i += 1
 
 		else:
 			# Create
@@ -84,15 +85,16 @@ class WebsiteSaleCustom(http.Controller):
 			})
 			request.env.cr.commit()
 			i = 1
-			for d in documents:
-				request.env['ir.attachment'].sudo().create({
-					'name': str(document_name) + "_" + str(i),
-					'type': 'binary',
-					'datas': d,
-					'res_model': 'service.request',
-					'res_id': service_request.id,
-				})
-				i += 1
+			if documents:
+				for d in documents:
+					request.env['ir.attachment'].sudo().create({
+						'name': str(document_name) + "_" + str(i),
+						'type': 'binary',
+						'datas': d,
+						'res_model': 'service.request',
+						'res_id': service_request.id,
+					})
+					i += 1
 
 		# print("$$$$$$$$$$$$$$$$ form submitted $$$$$$$$$$$$$$$$$",kw)
 		# _logger.warning("$$$$$$$$$$$$$$$$ form submitted $$$$$$$$$$$$$$$$$\n" + str(kw))
