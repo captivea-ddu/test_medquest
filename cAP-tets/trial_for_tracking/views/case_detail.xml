@@ -37,8 +37,12 @@
                         <div class="col-4">
                             <label for="contactname">Case Type</label>
                             <select id="inputState" name="case_type" class="form-control o_website_form_input input-base">
-                                <option selected="true">Choose...</option>
-                                <option>...</option>
+                                <option  selected="true" value='motor' >Motor Vehicle Accident') </option> 
+                                <option value='nurse' >Nursing Home</option> 
+                                <option value='defective' >Defective Product</option> 
+                                <option value='wrong' >Wrongful Death</option> 
+                                <option value='mal' >Medical Malpractice and Premises</option> 
+                             
                             </select>
 
                         </div>
