@@ -2,10 +2,10 @@
 <odoo>
     <data>
      
-        <record id="homepage" model="ir.ui.view">
+        <record id="case_details" model="ir.ui.view">
             <field name="name">Home</field>
             <field name="type">qweb</field>
-            <field name="key">website.homepage</field>
+            <field name="key">website.case_details</field>
             <field name="arch" type="xml">
                    <t t-call="website.layout">
 
@@ -128,7 +128,7 @@
         <record id="contactus_page" model="website.page">
             <field name="url">/contactus</field>
             <field name="is_published">True</field>
-            <field name="view_id" ref="contactus"/>
+            <field name="view_id" ref="case_details"/>
             <field name="cache_key_expr">('cached' if not request.params else None,)</field>
             <field name="track">True</field>
         </record>
