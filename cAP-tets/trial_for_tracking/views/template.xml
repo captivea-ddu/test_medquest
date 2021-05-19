@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="custom_header_style_1" inherit_id="website.layout" name="Custom Header Style 1" active="False">
+
+        <xpath expr="//header//nav" position="replace">
+            <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light flex-lg-column o_colored_level o_cc shadow-sm py-0">
+                <div id="top_menu_container" style="width: 90%;" class="container align-items-center flex-row flex-wrap">
+
+                    <!-- Navbar Toggler -->
+                    <t t-call="website.navbar_toggler">
+                        <t t-set="_toggler_class" t-value="'my-3'"/>
+                    </t>
+                    <!-- Language Selector -->
+                    <t t-call="website.placeholder_header_language_selector">
+                        <t t-set="_div_classes" t-value="'ml-2'"/>
+                    </t>
+                    <!-- Navbar Collapse -->
+                    <div id="top_menu_collapse" class="collapse navbar-collapse flex-wrap">
+                        <div class="oe_structure oe_structure_solo w-100"/>
+                        <div class="row" style="height:min-content;">
+                            <div class="col-8" style="background-color: aliceblue;">
+                                <ul id="top_menu" class="nav navbar-nav mx-auto"> 
+                                    <div class="col-3 pt-3" style="text-align: -webkit-center;" t-foreach="request.env['website.menu'].sudo().search([])" t-as="menu_ids">
+                                        <li class="nav-item mt-5">
+                                            <a role="menuitem" t-attf-href="#{menu_ids.url}" class="nav-link">
+                                                <img class="card-img-top" t-attf-src="/web/image/website.menu/#{menu_ids.id}/image" t-att-alt="menu_ids.name" style="height:65px;width:65%"/>
+                                                    <br/>
+                                                <span style="font-weight:600" class="o_editable o_is_inline_editable">
+                                                    <t t-esc="menu_ids.name"/>
+                                                </span>
+                                            </a>
+                                        </li>      
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-4 pt-3" style="background-color:#dfe0e2;text-align: center;">
+                                <!-- <img src="/wt_medquest_website/static/src/img/cancel.png" style="float:right;"/> -->
+                                <!-- <i class="fa fa-times"></i> -->
+                                <h4 class="mt-5" style="color:#77787b;">
+                                    Tell us about your case
+                                </h4>
+                                <button data-toggle="modal" data-target=".medquest_main_cl" class="btn mt-4" style="width:60%;background-color:#9d061f;font-weight:600;color:#fff;font-size: 20px;">
+                                    Get Started
+                                </button>
+                                <!-- <t t-call="wt_medquest_website.modal_overlay_template"/> -->
+                                <p class="mt-4">[Phone Number]</p>
+                                <p>[<a>Email Contact</a>]</p>
+                            </div>
+                        </div>
+                            
+                    </div>
+                </div>
+            </nav>
+        </xpath>
+
+        <!-- <xpath expr="//header//nav//ul[@id='top_menu']//li[hasclass('o_extra_menu_items')]" position="replace">
+        </xpath> -->
+    </template>
+</odoo>

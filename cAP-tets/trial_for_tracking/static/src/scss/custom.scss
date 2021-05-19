@@ -1,0 +1,537 @@
+.medquest_main_cl, .medquest_main_cl_2{
+	color: gray;
+	font-size: 17px;
+
+	a {
+		color: #4393fe;
+		text-decoration: none;
+	}
+	.modal-content{
+		padding: 40px 0px 0px 40px;
+		display: inline-table;
+		margin-top: 86px;
+		height: min-content;
+		text-align: start;
+		// background-color: #f5fafc;
+	}
+	.all_div_res_cl{
+		width: 100%;
+		float: left;
+	}
+	.form_main_cl{
+		label{
+			padding-top: 15px;
+			margin-bottom: 0rem !important;
+		}
+		input, select{
+			border-bottom: 2px solid #a1daef;
+		    border-top: none;
+		    border-left: none;
+		    border-right: none;
+		    background: none;
+		    outline: none !important;
+		    border-radius: 0px !important;
+		}
+
+		input:-internal-autofill-selected {
+			background: #fff !important;
+		}
+		.form-check{
+			padding-top: 0.4rem;
+			label{
+				padding-top: 0px !important;
+				padding-left: 15px;
+				margin-bottom: 0rem !important;
+			}
+		}
+		.submit_button{
+			background: #0093ff;
+		    color: white;
+		    width: 30%;
+		    padding-top: 5px; 
+		    border: none;
+		    border-radius: 0px;
+		    font-weight:700;
+		    padding-bottom: 5px;
+		    outline: none;
+		}
+	}
+
+
+	.login_box_cl{
+		width: 263px;
+	    height: 165px;
+	    border: 2px solid #ad0016;
+	    font-weight: 700;
+	    margin-left: 2rem !important;
+	    font-size: 22px;
+
+	    a {
+	    	background: #ad0016;
+		    color: #fff !important;
+		    font-weight: 700;
+		    width: 57%;
+		    height: 40px;
+		    }
+		}
+
+	@media (min-width: 992px){
+	  .modal-lg, .modal-xl {
+	    max-width: 90%;
+	  }
+	}
+	@media (max-width: 500px){
+		.login_box_cl{
+			margin-left: 0rem !important;
+		}
+	}
+}
+
+	.scroll_form_main_cl{
+		color: gray;
+		font-size: 17px;
+
+		@media (min-width: 576px){
+			.modal-dialog {
+			    max-width: 90%;
+				}
+
+			.modal {
+				padding-right: 10px !important;
+				padding-left: 10px !important;
+			}
+		}
+
+		.login_box_cl{
+			width: 263px;
+		    height: 165px;
+		    border: 2px solid #ad0016;
+		    font-weight: 700;
+		    margin-left: 3rem !important;
+		    font-size: 22px;
+
+		    a {
+		    	background: #ad0016;
+			    color: #fff !important;
+			    font-weight: 700;
+			    width: 57%;
+			    height: 40px;
+			    }
+			}
+
+		.form_main_cl{
+			label{
+				padding-top: 15px;
+				margin-bottom: 0rem !important;
+			}
+			input, select{
+				border-bottom: 2px solid #a1daef;
+			    border-top: none;
+			    border-left: none;
+			    border-right: none;
+			    background: none;
+			    outline: none !important;
+			    border-radius: 0px !important;
+			}
+			.form-check{
+				padding-top: 0.4rem;
+				label{
+					padding-top: 0px !important;
+					padding-left: 15px;
+					margin-bottom: 0rem !important;
+				}
+			}
+			.submit_button{
+				background: #0093ff;
+			    color: white;
+			    width: 30%;
+			    padding-top: 7px; 
+			    border: none;
+			    border-radius: 0px;
+			    font-weight:700;
+			    outline: none;
+			    padding-bottom: 5px;
+			}
+			.all_div_res_cl{
+			width: 100%;
+			float: left;
+			}
+
+		}
+		.modal-body{
+			padding: 40px 0px 0px 40px;
+			// background: #f5fafc;
+			overflow-x: hidden;
+		}
+		@media (max-width: 500px){
+		.login_box_cl{
+			margin-left: 0rem !important;
+		}
+		.modal {
+			padding-right: 10px !important;
+			padding-left: 10px !important;
+		}
+	}
+}
+
+/*------------------------------------------------------------------
+							home page
+------------------------------------------------------------------*/
+
+.home_page_main_cl{
+
+	color: gray;
+
+	.home_page_first_cl{
+		// background-image: url('/wt_medquest_website/static/src/img/images.jpeg');
+		height: 240px;
+		background-size: cover;
+
+		a {
+			color: #ad0016 !important;
+			text-decoration: underline !important;
+		}
+
+		.header_div_cl{
+			h1 {
+				font-weight: 700;
+				color: #fff;
+			}
+		}
+		.header_div_step_cl{
+			h3{
+				font-weight: 700;
+				color: #fff;
+			}
+		}
+		
+	}
+
+	.main_div_1_cl{
+		width: 100%;
+		float: left;
+		overflow:hidden;
+
+		h5, h3 {
+			font-weight: 700;
+		}
+
+		@media (min-width: 1200px){
+			.sub_div_1_cl{
+				width: 70%;
+				float: left;
+			}
+
+			.sub_div_2_cl{
+				width: 30%;
+				float: left;
+			}
+
+			a {
+				color: #ad0016;
+				text-decoration: underline;
+			}
+
+		}
+
+		@media (min-width: 769px){
+			a {
+				color: #ad0016;
+				text-decoration: underline;
+			}
+		}
+
+
+
+		@media (min-width: 576px) and (max-width: 768px){
+			.sub_div_1_cl {
+				width: 100%;
+				float: left;
+
+				a {
+					color: #ad0016;
+					text-decoration: underline;
+				}
+			}
+
+			.sub_div_2_cl{
+				width: 100%;
+				float: left;
+				padding-left: 3rem !important;
+				// text-align: end;
+
+				img {
+					width: 80%;
+					height: 250px;
+				}
+
+			}
+		}
+
+		@media (max-width: 576px){
+			.sub_div_1_cl {
+				width: 100%;
+				float: left;
+				font-size: 15px;
+
+				a {
+					color: #ad0016;
+					text-decoration: underline;
+				}
+
+				p, h3, h5{
+					padding-right: 10px;
+					padding-left: 10px;
+				}
+			}
+
+			.sub_div_2_cl{
+				width: 100%;
+				float: left;
+				padding-left: 1.5rem !important;
+
+				img {
+					width: 90%;
+					height: 250px;
+				}
+			}
+		}
+
+		
+
+	}
+
+	.main_div_2_cl{
+
+		width: 100%;
+		float: left;
+		overflow:hidden;
+		// font-size: 20px;
+
+		h5, h3 {
+			font-weight: 700;
+		}
+
+		.partner_div_cl {
+			height: 230px;
+		    width: 100%;
+		    border: 1px solid #9dcddc;
+		    box-shadow: -18px -18px 0px #9dcddc;
+			margin: 30px auto 0;
+
+
+		    p {
+		    	font-size: 18px;
+		    }
+		    .login_btn_home_cl{
+		    	text-align: center;
+			    height: 200px;
+			    width: 100%;
+
+
+			    a {
+			    	font-size: 25px;
+				    width: 80%;
+				    background-color: #9dcddc;
+				    font-weight: 700;
+				    color: white;
+				    text-decoration: none;
+			    }
+		    }
+		}
+
+		@media (min-width: 1200px){
+			.sub_div_1_cl{
+				width: 70%;
+				float: left;
+			}
+
+			.sub_div_2_cl{
+				width: 30%;
+				float: left;
+			}
+
+		}
+
+		@media (min-width: 769px){
+			a {
+				color: #ad0016;
+				text-decoration: underline;
+			}
+		}
+
+
+
+
+		@media (min-width: 576px) and (max-width: 768px){
+			.sub_div_1_cl {
+				width: 100%;
+				float: left;
+
+				a {
+					color: #ad0016;
+					text-decoration: underline;
+				}
+			}
+
+			.sub_div_2_cl{
+				width: 65%;
+				float: left;
+				padding-left: 3rem !important;
+				text-align: start;
+				margin-bottom: 10px;
+
+				// p{
+				// 	margin-right: 55px;
+				// }
+			}
+		}
+
+		@media (max-width: 576px){
+			.sub_div_1_cl {
+				width: 100%;
+				float: left;
+				font-size: 15px;
+
+				a {
+					color: #ad0016;
+					text-decoration: underline;
+				}
+
+				p, h3, h5{
+					padding-right: 10px;
+					padding-left: 10px;
+				}
+			}
+
+			.sub_div_2_cl{
+				width: 95%;
+				float: left;
+				padding-left: 2rem !important;
+				text-align: start;
+
+				p{
+					margin-right: 55px;
+				}
+			}
+		}
+	}
+
+	#myModal{
+		padding-top: 7%;
+		padding-bottom: 5%;
+
+		.modal-content {
+		    height: fit-content !important;
+		    text-align: start;
+		}
+
+		@media (min-width: 576px) and (max-width: 991px){
+			.home_page_overlay_modal{
+				padding-left: 5%;
+			}
+			.get_start_div_block{
+				height: 200px;
+			}
+
+		}
+
+		@media (min-width: 576px){
+			.modal-content {
+			    max-height: fit-content;
+			    text-align: start;
+			}
+
+			.get_start_div_block{
+				border: 2px solid #9dcddc;
+			    height: 110px;
+			    width: 90%;
+   	 			margin-left: 5%;
+   	 			padding-left: 2%;	
+   	 			border-radius: 5px;
+
+   	 			p{
+					font-size: 24px;
+				}
+			}
+		}
+
+		.btn_get_start_div{
+			button {
+				color: white;
+				background-color: #ad0016;
+				font-weight: 700;
+				font-size: 21px;
+				margin-top: 1.9rem;
+			}
+		}
+
+		.heading_cl{
+			color: #000;
+			font-weight: 700;
+		}
+
+		.close{
+			span{
+				float: right;
+				margin-right: 10px;
+			}
+		}
+
+		@media (min-width: 992px){
+			.modal-lg, .modal-xl {
+			    max-width: 90%;
+			}
+			.home_page_overlay_modal{
+				padding-left: 5%;
+			}
+		}
+
+		.home_page_overlay_modal{
+			h1{
+				font-weight: 700;
+			}
+
+			p{
+				font-size: 24px;
+			}
+		}
+
+		@media (max-width: 576px){
+
+			padding-left: 0px !important;
+
+			h1 {
+				font-size: 18px;
+			}
+
+			h3 {
+				font-size: 17px;
+			}
+
+			.home_page_overlay_modal{
+
+				p{
+					font-size: 15px;
+				}
+
+				span {
+					font-size: 15px;
+				}
+			}
+
+			.modal-content{
+				padding-left: 10px;
+				text-align: start;
+			}
+
+			.get_start_div_block{
+				p {
+					font-size: 15px;
+				}
+			}
+
+		}
+	}
+}
+

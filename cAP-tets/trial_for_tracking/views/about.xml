@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="about_medquest">
+		<t t-call="website.layout">
+			<xpath expr="//div[@id='wrap']" position="replace">
+				<div id="wrap" class="home_page_main_cl"> 
+					<div class="container">
+
+						<div class="row">
+							<div class="col-12 home_page_first_cl mt-5 mb-5">
+								<div class="header_div_cl pt-5 pb-5">
+									<h1>Build Your Bes Case</h1>
+								</div>
+								<div class="header_div_step_cl pb-5">
+									<h3>
+										RECORDS
+										<i class="fa fa-chevron-right"></i>
+										REVIEWS
+										<i class="fa fa-chevron-right"></i>
+										REPORTS
+										<i class="fa fa-chevron-right"></i>
+										SETTLEMENT
+									</h3>
+								</div> 
+							</div>
+							<div class="main_div_1_cl">
+								<div class="sub_div_1_cl">
+									<p>MedQuest has the expertise to help you through each pahese of case development, helping you obtain the maximum possible personal injury or medical malpractice.</p>
+
+									<p>if you know what service you need,<a href="#">tell us about case of get started.	</a></p>
+
+									<h3 class="mb-0">1.RECORDS SERVICES</h3>
+									<p><a href="#">Learn More about Record Services</a></p>
+
+									<h5 class="mb-0">Retrieve client Medical Services</h5>
+									<p>One line description regarding subheader goes hear.</p>
+
+									<h5 class="mb-0">Organize Medical Records</h5>
+									<p>One line description regarding subheader goes hear.</p>
+								</div>
+								<div  class="sub_div_2_cl">
+									<!-- <img src="/wt_medquest_website/static/src/img/images.jpeg"/> -->
+									<p class="mt-2">See how MedQuest helps you build your case, end to end.</p> 
+								</div>
+							</div>
+
+							<div class="main_div_2_cl">
+								<div class="sub_div_1_cl">
+
+									<h3 class="mb-0">2.REVIEW</h3>
+									<p><a href="#">Learn More about Review Services</a></p>
+
+									<h5 class="mb-0">Curbside Assessments client Medical Services</h5>
+									<p>One line description goes hear..<a href="#">Form link hear</a></p>
+
+									<h5 class="mb-0">Extert Medical Review for medical malpractice cases</h5>
+									<p>One line description regarding subheader goes hear.</p>
+
+									<h5 class="mb-0">I.M.E and UCR for personal injury cases</h5>
+									<p>One line description regarding subheader goes hear.</p>
+								</div>
+
+								<div  class="sub_div_2_cl">
+									<div class="partner_div_cl">
+										<p class="mt-4 ml-2">Already a partner?<br/>
+										Log in to Upload documents or access our service.</p>
+										<div class="login_btn_home_cl">
+											<a class="btn" t-attf-href="/web/login">
+												Log In
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="main_div_2_cl">
+								<div class="sub_div_1_cl">
+
+									<h3 class="mb-0">3.REPORTS</h3>
+									<p><a href="#">Learn More about Future  Medical Cost Reports</a></p>
+
+									<h5 class="mb-0">Future Medical Cost Reports and care Plans that fit your case</h5>
+									<p>One line description regarding subheader goes hear.</p>
+
+									<h5 class="mb-0">SETTLEMENT</h5>
+									<p><a href="#">Learn more about deffering payment with SettlementPay</a></p>
+									<h5 class="mb-0">Defer payment until settlement with SettlementPay</h5>
+									<p>One line description regarding subheader goes hear.</p>
+								</div>
+							</div>
+
+							<div class="modal fade bd-example-modal-lg modal_home_main_cl" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content pb-5">
+
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span style="font-size:40px;">
+												&amp;times;
+											</span>
+										</button>
+
+										<div class="row home_page_overlay_modal">
+											<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+												<h1 class="heading_cl">
+													MedQuest Record Services
+												</h1>
+												<p>
+													Netzwerk von Wormloches wartet bestandigkeit der sterne tesserect etwas unglaubliches warter darauf, bekannt zu.
+												</p>
+											</div>
+											<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-4">
+												<p>  [Phone Number] </p>
+												<p> 
+													[<a href="#">Email Contact</a>]
+												</p>
+											</div>
+
+											<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+												<h3 class="heading_cl">Retrive Medical Records</h3>
+												<span>
+													Netzwerk von Wurmlochern bestandigkeit der sterne tesseract etwas unglaubliche wartet darauf, bekannt zu. Der an schweren atomen reiche weite werg besiegt die unmiglichen ausergewohnlichen ansprche und ersorderrt auergewuhnliche veweise dafr, wie weit er entfern ist. Gasringen von arnu twei gespenstisch weise figuren in Overalls und belmen tanzen leise; Teile bewegter flusenkolonien dunguska.
+												</span>
+											</div>
+
+											<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 mt-4">
+												<h3 class="heading_cl">Organize Medical Records</h3>
+												<span>
+													Netzwerk von Wurmlochern bestandigkeit der sterne tesseract etwas unglaubliche wartet darauf, bekannt zu. Der an schweren atomen reiche weite werg besiegt die unmiglichen ausergewohnlichen ansprche und ersorderrt auergewuhnliche veweise dafr, wie weit er entfern ist. Gasringen von arnu twei gespenstisch weise figuren in Overalls und belmen tanzen leise; Teile bewegter flusenkolonien dunguska.
+												</span>
+											</div>
+
+											<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 mt-4">
+												<h3 class="heading_cl">Mass Tort medical services</h3>
+												<span>
+													Netzwerk von Wurmlochern bestandigkeit der sterne tesseract etwas unglaubliche wartet darauf.
+												</span>
+											</div>
+										</div>
+
+										<div class="row mt-5 get_start_div_block">
+											<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 mt-3">                			<p class="mb-0 pb-0">  
+												Order MedQuest Service for your case.
+											</p>
+											<p>    
+												Tell us about your case to get started.
+											</p>
+										</div>
+
+										<div class="col-xl-4 col-lg-4 col-md-10 col-sm-10 btn_get_start_div">
+											<button data-toggle="modal" data-target=".medquest_main_cl" class="btn overlay_btn">
+												Get Started
+											</button>
+										</div>
+											<t t-call="website.layout"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</xpath>
+	</t>
+</template>
+</odoo>
