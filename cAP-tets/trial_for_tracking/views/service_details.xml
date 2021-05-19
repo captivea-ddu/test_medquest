@@ -10,9 +10,9 @@
                 <!-- <t t-call="website.layout" /> -->
 
 
+                <t t-call="website.layout" />
                 <div class="container">
 
-                    <t t-call="website.layout" />
 
 
 
