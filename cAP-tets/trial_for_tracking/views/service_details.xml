@@ -520,7 +520,7 @@
                 </div>
             </field>
         </record>
-        <record id="contactus_page" model="website.page">
+        <record id="service_details_page" model="website.page">
             <field name="url">/service-details</field>
             <field name="is_published">True</field>
             <field name="view_id" ref="service_details" />
