@@ -5,7 +5,6 @@
         <field name="website_published">True</field>
         <field name="url">/case-details</field>
         <field name="view_id" ref="case_details_page" />
-        <!-- Provide  template id that you want to render -->
     </record>
     <template id="case_details_page" name="Case Details Page">
         <t t-call="website.layout">
