@@ -1,127 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="case-details" model="website.page">
-        <field name="name">Case Details</field>
-        <field name="website_published">True</field>
-        <field name="url">/case-details</field>
-        <field name="view_id" ref="case_details_page" />
-    </record>
-    <template id="case_details_page" name="Case Details Page">
-        <t t-call="website.layout">
+    <data>
+        <record id="case-details" model="website.page">
+            <field name="name">Case Details</field>
+            <field name="website_published">True</field>
+            <field name="url">/case-details</field>
+            <field name="view_id" ref="case_details_page" />
+        </record>
+        <template id="case_details_page" name="Case Details Page">
+            <t t-call="website.layout">
 
-            <div class="container">
+                <div class="container">
 
 
-                <form method="post" action="/submit/case-details/">
-                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                    <div class="row row-adj">
-                        <div class="col-12">
+                    <form method="post" action="/submit/case-details/">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                        <div class="row row-adj">
+                            <div class="col-12">
 
-                            <img src="/web/image/212835-4e9218bd/background.PNG?height=256" style="width:100%" />
+                                <img src="/web/image/212835-4e9218bd/background.PNG?height=256" style="width:100%" />
+
+                            </div>
 
                         </div>
-
-                    </div>
-                    <div class="row row-adj">
-                        <div class="col-12">
-                            <div class="nav-path">
+                        <div class="row row-adj">
+                            <div class="col-12">
+                                <div class="nav-path">
                         Case Overview > Case Details > Select Services > Additional Details
                     </div>
-                            <div class="sub-text">
+                                <div class="sub-text">
                         All fields required unless otherwise noted
                     </div>
+                            </div>
                         </div>
-                    </div>
 
 
-                    <div class="col-4">
-                        <label for="contactname">Case Type</label>
-                        <select id="inputState" name="case_type" class="form-control o_website_form_input input-base">
-                            <option selected="true">Choose...</option>
-                            <option>...</option>
-                        </select>
-
-                    </div>
-
-
-                    <div class="row row-adj">
-                        <div class="col-10">
-                            <label for="contactname">Case Contact Name</label>
-                            <input type="text" name="contact_name" class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
-                        </div>
-                    </div>
-
-
-                    <div class="row row-adj">
-                        <div class="col-10">
-                            <label for="contactname" name="case_overview">Case Overview</label>
-                            <input type="text" name="case_overview" class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
-                        </div>
-                    </div>
-
-
-                    <div class="row row-adj">
                         <div class="col-4">
-                            <div class="break-header">
+                            <label for="contactname">Case Type</label>
+                            <select id="inputState" name="case_type" class="form-control o_website_form_input input-base">
+                                <option selected="true">Choose...</option>
+                                <option>...</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="row row-adj">
+                            <div class="col-10">
+                                <label for="contactname">Case Contact Name</label>
+                                <input type="text" name="contact_name" class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
+                            </div>
+                        </div>
+
+
+                        <div class="row row-adj">
+                            <div class="col-10">
+                                <label for="contactname" name="case_overview">Case Overview</label>
+                                <input type="text" name="case_overview" class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
+                            </div>
+                        </div>
+
+
+                        <div class="row row-adj">
+                            <div class="col-4">
+                                <div class="break-header">
                         Upload Documents
                     </div>
-                            <div class="sub-text">
+                                <div class="sub-text">
                         Include any case documents we will need, give your files meaningful names that will identify
                         them later
                     </div>
+                            </div>
                         </div>
-                    </div>
 
 
-                    <div class="row row-adj">
-                        <div class="col-2">
-                            <div class="file-input-header">
+                        <div class="row row-adj">
+                            <div class="col-2">
+                                <div class="file-input-header">
                         File Name
                     </div>
-                            <input name="file_selector" style="border-style: none;" />
-                        </div>
+                                <input name="file_selector" style="border-style: none;" />
+                            </div>
 
-                        <div class="col-5">
-                            <div class="file-input-header">
+                            <div class="col-5">
+                                <div class="file-input-header">
                         *Document Name
                     </div>
-                            <input name="file_name" />
-                            <div class="remove-doc">
+                                <input name="file_name" />
+                                <div class="remove-doc">
                         Remove
                     </div>
+                            </div>
+
+
                         </div>
 
 
-                    </div>
+                        <div class="row row-adj">
+                            <div class="col-10">
 
-
-                    <div class="row row-adj">
-                        <div class="col-10">
-
-                            <div class="file-drop-target"></div>
-                            <div class="sub-text">
+                                <div class="file-drop-target"></div>
+                                <div class="sub-text">
                         This site can acept PDF, DICOM,GIF,PNG,JPG,DOC/DOCX, XLSX. If your document is in another format please call us a xxx-xxx-xxxx
                     </div>
 
-                        </div>
-
-                    </div>
-
-
-                    <div class="row row-adj">
-                        <div class="col-12" style="padding-left:0">
-                            <button type="submit" class="submit-button" >Case Issues &amp; Focus</button>
-
-                            <div type="button" class="back-button">Back</div>
-                            <div type="button" class="cancel-button">Cancel</div>
+                            </div>
 
                         </div>
-                    </div>
-                </form>
-
-            </div>
 
 
-        </t>
-    </template>
+                        <div class="row row-adj">
+                            <div class="col-12" style="padding-left:0">
+                                <button type="submit" class="submit-button">Case Issues &amp; Focus</button>
+
+                                <div type="button" class="back-button">Back</div>
+                                <div type="button" class="cancel-button">Cancel</div>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+
+            </t>
+        </template>
+    </data>
 </odoo>
