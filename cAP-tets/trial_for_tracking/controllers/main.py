@@ -53,7 +53,7 @@ class WebsiteSaleCustom(http.Controller):
 				case_issues = value
 			elif key == "document_name":
 				document_name = value
-			elif key == "documents"
+			elif key == "documents":
 				documents = value
 		
 		if existing_details:
