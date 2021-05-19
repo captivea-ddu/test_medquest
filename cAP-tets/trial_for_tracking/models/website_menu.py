@@ -1,9 +1,9 @@
 from odoo import api, models, fields, _
 
-class Attachments(models.Model):
-    _inherit = 'ir.attachment'
+# class Attachments(models.Model):
+#     _inherit = 'ir.attachment'
 
-    service_request_id = fields.Many2one('service.request', string='Service Request Form')
+#     service_request_id = fields.Many2one('service.request', string='Service Request Form')
 
 class SaleOrder(models.Model):
     _inherit = "website.menu"
