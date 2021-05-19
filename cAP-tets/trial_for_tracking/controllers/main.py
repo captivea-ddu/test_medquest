@@ -101,7 +101,8 @@ class WebsiteSaleCustom(http.Controller):
 		# for key, value in kw.items():
 		# 	print(key,value)
 		# 	_logger.warning(str(key) + " - " + str(value) + "\n")
-		return  request.redirect('/service-details')
+		return  request.render('trial_for_tracking.service_details')
+		# return  request.redirect('/service-details')
 
 	@http.route('/', type='http', auth='public', website=True, method='GET')
 	def formsubmit(self, **kw):
