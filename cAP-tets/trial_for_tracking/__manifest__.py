@@ -24,7 +24,7 @@
         # "views/medquest_home.xml",
         # "views/service_details.xml",
         # "views/service_general.xml",
-        'views/test.xml',
+        # 'views/test.xml',
         ],
     "images": [],
     "application": True,
