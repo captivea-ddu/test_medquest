@@ -14,10 +14,12 @@
                 <div class="container">
 
 
+                    <h>
+                        TEEEEEEST
+                    </h>
 
 
-
-                    <form action="/submit/service-details/">
+                    <form method="post" action="/submit/service-details/">
                         <div class="row row-adj">
                             <div class="col-12">
 
