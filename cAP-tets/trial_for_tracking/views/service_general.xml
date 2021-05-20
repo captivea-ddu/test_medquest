@@ -253,7 +253,7 @@
                             <div class="row row-adj">
                                 <div class="col-12" style="padding-left:0">
                                     <button type="submit" class="submit-button">SAVE &amp; CONTINUE</button>
-                                    <div type="button" class="cancel-button">Cancel</div>
+                                    <div type="button" class="cancel-button" formaction='/service-details/cancel'>Cancel</div>
 
                                 </div>
                             </div>

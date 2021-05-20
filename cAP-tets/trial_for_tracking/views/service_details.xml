@@ -517,6 +517,8 @@
 
                         </div>
                         <button type="submit">Submit</button>
+                        <div type="button" class="cancel-button" formaction='/service-details/cancel'>Cancel</div>
+
                     </form>
                 </div>
             </t>
