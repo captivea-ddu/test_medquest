@@ -134,7 +134,7 @@ class WebsiteSaleCustom(http.Controller):
 		return request.redirect('/case-details')
 
 
-	@http.route('/submit/service-details/', type='http', auth='public', website=True, method='POST' )
+	@http.route('/submit/service-details/', type='http', auth='public', website=False, method='POST' )
 	def another_form(self, **kw):
 		nar = None
 		binder = None
@@ -326,7 +326,7 @@ class WebsiteSaleCustom(http.Controller):
 		return  request.redirect('/service-details')
 
 
-	@http.route('/service-details/cancel', type='http', auth='public', website=True, method='POST')
+	@http.route('/service-details/cancel', type='http', auth='public', website=False, method='POST')
 	def other_form(self, **kw):
 		user_id = request.env.context.get('uid')
 		existing_details = request.env['service.request'].sudo().search([('user_id', '=', user_id)], limit=1)
@@ -389,22 +389,9 @@ class WebsiteSaleCustom(http.Controller):
 					})
 					i += 1
 
-		# print("$$$$$$$$$$$$$$$$ form submitted $$$$$$$$$$$$$$$$$",kw)
-		# _logger.warning("$$$$$$$$$$$$$$$$ form submitted $$$$$$$$$$$$$$$$$\n" + str(kw))
-		# for key, value in kw.items():
-		# 	print(key,value)
-		# 	_logger.warning(str(key) + " - " + str(value) + "\n")
-		# return  request.redirect('/service-details', {'var': 'this is a context test'})
-		# values = 
-		# return request.route('/service-details/3', {'var': 'this is a context test'})
 		return request.render('website.home_page',{'var': True})
 
-	# @http.route('/service-details/cancel/', type='http', auth='public', website=True, method='GET')
-	# def formsubmit(self, **kw):
-	# 	print("########### Form Submitted ###########")
-	# 	for key, value in kw.items():
-	# 		print(key,value)
-	# 	return  request.render('website.service_details',{'var': True})
+
 
 
 	@http.route('/', type='http', auth='public', website=True, method='GET')
