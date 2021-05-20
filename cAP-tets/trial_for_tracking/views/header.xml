@@ -2,7 +2,7 @@
 <odoo>
     <data>
 
-        <record id="custom_header" model="ir.ui.view">
+        <record id="my_custom_header" model="ir.ui.view">
             <field name="inherit_id" ref="website.homepage" />
             <field name="priority" eval="16" />
             <field name="arch" type="xml">
