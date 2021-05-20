@@ -6,7 +6,7 @@
         <record id="service_general" model="ir.ui.view">
             <field name="name">Service General</field>
             <field name="type">qweb</field>
-            <field name="key">website.service_details</field>
+            <field name="key">website.service_general</field>
             <field name="arch" type="xml">
 
 
@@ -259,10 +259,11 @@
                         </div>
                     </form>
                 </div>
+
             </field>
             <!-- Provide  template id that you want to render -->
         </record>
-        <record id="service_general" model="website.page">
+        <record id="service_general_page" model="website.page">
             <field name="url">/service-general</field>
             <field name="is_published">True</field>
             <field name="view_id" ref="service_general" />
