@@ -13,7 +13,9 @@
                 <div class="container">
 
 
-                    <t t-esc="var" /> 
+                    <t t-if="var">
+                            TEST
+                    </t>
 
 
                     <form method="post" action="/submit/service-details/">
