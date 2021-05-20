@@ -392,11 +392,9 @@ class WebsiteSaleCustom(http.Controller):
 
 
 	@http.route('/', type='http', auth='public', website=True, method='GET')
-	def formsubmit(self, **kw):
-		print("########### Form Submitted ###########")
-		for key, value in kw.items():
-			print(key,value)
-		return  request.render('/')
+	def homepage(self, **kw):
+
+		return  request.render('website.home_page')
 
 
 
