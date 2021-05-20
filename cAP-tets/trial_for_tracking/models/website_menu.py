@@ -36,3 +36,113 @@ class ServiceRequest(models.Model):
     # contact_name = fields.Char(string="Contact Name")
 
     # document_name = fields.Text()
+
+
+class ServiceDetails(models.Model):
+     _name =  = "service.details"
+
+    nar = fields.Boolean()
+
+    binder = fields.Boolean()
+
+    maxtrix = fields.Boolean()
+
+    depo = fields.Boolean()
+
+    hotlink = fields.Boolean()
+
+    legterm = fields.Boolean()
+
+    medop = fields.Boolean()
+
+    found = fields.Boolean()
+
+    bill = fields.Boolean()
+
+    book = fields.Boolean()
+
+    lifecare = fields.Boolean()
+
+    demand = fields.Boolean()
+
+    scr = fields.Boolean()
+
+    pain = fields.Boolean()
+
+    suf = fields.Boolean()
+
+    synop = fields.Boolean()
+
+    fact = fields.Boolean()
+
+    res = fields.Boolean()
+
+    jury = fields.Boolean()
+
+    custom = fields.Boolean()
+
+    rev = fields.Boolean()
+
+    time = fields.Boolean()
+
+    cen = fields.Boolean()
+
+    ulc = fields.Boolean()
+
+    other = fields.Boolean()
+
+    customRadioInline1 = fields.Boolean()
+
+    customRadioInline2 = fields.Boolean()
+
+    cost = fields.Boolean()
+class ServiceGeneral(models.Model):
+     _name = "service.general"
+
+    contactname = fields.Char(size=70)
+
+    contactemail = fields.Char(size=70)
+
+    casename = fields.Char(size=70)
+
+    attorname = fields.Char(size=70)
+
+    attoremail = fields.Char(size=70)
+
+    attorphone = fields.Char(size=70)
+
+    cocounsname = fields.Char(size=70)
+
+    injsname = fields.Char(size=70)
+
+    plaintname = fields.Char(size=70)
+
+    plainrel = fields.Char(size=70)
+
+    plaintbday = fields.Char(size=70)
+
+    plaintcor = fields.Char(size=70)
+
+    addt1 = fields.Char(size=70)
+
+    adder2 = fields.Char(size=70)
+
+    city = fields.Char(size=70)
+
+    state = fields.Char(size=70)
+
+    zip = fields.Char(size=70)
+
+    contnumber = fields.Char(size=70)
+
+    extension = fields.Char(size=70)
+
+    plantifemail = fields.Char(size=70)
+
+    plantifgen = fields.Char(size=70)
+
+    plantifgen = fields.Char(size=70)
+
+    customRadioInline = fields.Boolean()
+
+

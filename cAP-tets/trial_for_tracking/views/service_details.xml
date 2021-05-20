@@ -54,7 +54,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value="true" name="nar" />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -71,7 +71,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox"  value="true" name="binder" />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -82,7 +82,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='matrix' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -99,7 +99,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='depo' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -110,7 +110,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='hotlink' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -127,7 +127,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='legterm' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -138,7 +138,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='medop' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -155,7 +155,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='found' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -166,7 +166,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='bill'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -183,7 +183,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='book' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -194,7 +194,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='lifecare'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -211,7 +211,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='demand' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -246,7 +246,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='scr'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -257,7 +257,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='pain'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -274,7 +274,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='suf' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -285,7 +285,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='synop' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -302,7 +302,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='fact'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -313,7 +313,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='res' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -330,7 +330,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='jury'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -341,7 +341,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='custom'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -358,7 +358,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='rev'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -369,7 +369,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox"  value='true' name='time' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -386,7 +386,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='cen' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -397,7 +397,7 @@
                             <div class="col-6" stye="">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='ulc' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -414,7 +414,7 @@
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='other'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -446,7 +446,7 @@
                         <div class="row row-adj">
                             <div>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1"
                                         class="custom-control-input" />
                                     <label class="custom-control-label" for="customRadioInline2">Yes, Expidite</label>
                                 </div>
@@ -454,7 +454,7 @@
 
                             <div>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline2"
                                         class="custom-control-input" />
                                     <label class="custom-control-label" for="customRadioInline2">Yes, Expidite</label>
                                 </div>
@@ -504,7 +504,7 @@
                             <div class="col-12">
 
                                 <label class="ran">
-                                    <input type="checkbox" />
+                                    <input type="checkbox" value='true' name='cost' />
                                     <span class="checkmark"></span>
 
                                     <div class="">

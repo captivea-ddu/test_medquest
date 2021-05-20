@@ -18,7 +18,6 @@ class WebsiteSaleCustom(http.Controller):
 
 	@http.route('/submit/service-request/', type='http', auth='public', website=True, method='POST')
 	def other_form(self, **kw):
-
 		for key, value in kw.items():
 			if key == "contactname":
 				contactname = value
@@ -81,10 +80,93 @@ class WebsiteSaleCustom(http.Controller):
 		return request.render('website.layout')
 
 
-	@http.route('/submit/service-select/', type='http', auth='public', website=True, method='POST' )
+	@http.route('/submit/service-details/', type='http', auth='public', website=True, method='POST' )
 	def another_form(self, **kw):
+		nar = None
+		binder = None
+		maxtrix = None
+		depo = None
+		hotlink = None
+		legterm = None
+		medop = None
+		found = None
+		bill = None
+		book = None
+		lifecare = None
+		demand = None
+		scr = None
+		pain = None
+		suf = None
+		synop = None
+		fact = None
+		res = None
+		jury = None
+		custom = None
+		rev = None
+		time = None
+		cen = None
+		ulc = None
+		other = None
+		customRadioInline = None
+		cost = None
 		for key, value in kw.items():
-			print(key,value)
+			if key == 'nar' 
+				nar = value
+			elif key == 'binder' 
+				binder = value
+			elif key == 'maxtrix' 
+				maxtrix = value
+			elif key == 'depo' 
+				depo = value
+			elif key == 'hotlink' 
+				hotlink = value
+			elif key == 'legterm' 
+				legterm = value
+			elif key == 'medop' 
+				medop = value
+			elif key == 'found' 
+				found = value
+			elif key == 'bill' 
+				bill = value
+			elif key == 'book' 
+				book = value
+			elif key == 'lifecare' 
+				lifecare = value
+			elif key == 'demand' 
+				demand = value
+			elif key == 'scr' 
+				scr = value
+			elif key == 'pain' 
+				pain = value
+			elif key == 'suf' 
+				suf = value
+			elif key == 'synop' 
+				synop = value
+			elif key == 'fact' 
+				fact = value
+			elif key == 'res' 
+				res = value
+			elif key == 'jury' 
+				jury = value
+			elif key == 'custom' 
+				custom = value
+			elif key == 'rev' 
+				rev = value
+			elif key == 'time' 
+				time = value
+			elif key == 'cen' 
+				cen = value
+			elif key == 'ulc' 
+				ulc = value
+			elif key == 'other' 
+				other = value
+
+			elif key == 'customRadioInline1' 
+				customRadioInline = True
+			elif key == 'customRadioInline2' 
+				customRadioInline = False
+			elif key == 'cost' 
+				cost = value
 		return  request.render('website.layout')
 
 	@http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
