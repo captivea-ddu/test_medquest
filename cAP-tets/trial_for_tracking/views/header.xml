@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
         <record id="my_custom_header" model="ir.ui.view">
             <field name="inherit_id" ref="website.homepage" />
             <field name="priority" eval="16" />
             <field name="arch" type="xml">
-                <xpath expr="//header//nav" position="replace">
+                <!-- <xpath expr="//header//nav" position="replace">
                     <nav class="fluid-container" style="position:relative;top:30px">
                         <img src="/web/image/212836-38d2d024/medquest.PNG" class="logo" />
                         <div>
@@ -57,8 +56,10 @@
                             </div>
                         </div>
                     </nav>
-                </xpath>
-
+                </xpath> -->
+                    <div>
+                        hello
+                    </div>
             </field>
         </record>
 
