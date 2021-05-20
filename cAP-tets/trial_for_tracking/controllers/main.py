@@ -118,7 +118,6 @@ class WebsiteSaleCustom(http.Controller):
 		documents = None
 
 		for key, value in kw.items():
-			# contact_name
 
 			if key == "case_type":
 				case_type = value
