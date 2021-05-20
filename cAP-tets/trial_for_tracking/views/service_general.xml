@@ -8,258 +8,258 @@
             <field name="type">qweb</field>
             <field name="key">website.service_general</field>
             <field name="arch" type="xml">
+                <t t-call="website.layout">
 
+                    <div class="container">
 
-                <div class="container">
+                        <form action="/submit/service-request/" method="post">
+                            <div class="row row-adj">
+                                <div class="col-12">
 
-                    <form action="/submit/service-request/" method="post">
-                        <div class="row row-adj">
-                            <div class="col-12">
+                                    <img src=".\src\background.PNG" style="width:100%" />
 
-                                <img src=".\src\background.PNG" style="width:100%" />
+                                </div>
 
                             </div>
-
-                        </div>
-                        <div class="row row-adj">
-                            <div class="col-12">
-                                <div class="nav-path">
+                            <div class="row row-adj">
+                                <div class="col-12">
+                                    <div class="nav-path">
                             Case Overview > Case Details Select Services > Additional Details
                         </div>
-                                <div class="sub-text">
+                                    <div class="sub-text">
                             All fields required unless otherwise noted
                         </div>
+                                </div>
+
+
                             </div>
-
-
-                        </div>
-                        <div class="row row-adj">
-                            <div class="col-12">
+                            <div class="row row-adj">
+                                <div class="col-12">
     
                         GENERAL INFO
                     </div>
-                        </div>
-                        <div class="row row-adj">
-                            <div class="col-4">
-                                <label for="contactname">Case Contact Name</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="contactname" name="contactname" />
                             </div>
-                            <div class="col-4">
-                                <label for="contactemail">Case Email Address</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="contactemail" name="contactemail" />
+                            <div class="row row-adj">
+                                <div class="col-4">
+                                    <label for="contactname">Case Contact Name</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="contactname" name="contactname" />
+                                </div>
+                                <div class="col-4">
+                                    <label for="contactemail">Case Email Address</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="contactemail" name="contactemail" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="row row-adj">
+                            <div class="row row-adj">
 
-                            <div class="col-4">
-                                <label for="contactphone">Case Email Address</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="contactphone" name="casename" />
-                            </div>
-
-
-                        </div>
+                                <div class="col-4">
+                                    <label for="contactphone">Case Email Address</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="contactphone" name="casename" />
+                                </div>
 
 
-                        <div class="row row-adj">
-                            <div class="col-4">
-                                <label for="attorname">Attorney Name</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="attorname" name="attorname" />
-                            </div>
-                            <div class="col-4">
-                                <label for="contactemail">Attorney Email Address</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="attremail" name="attoremail" />
-                            </div>
-                        </div>
-                        <div class="row row-adj">
-
-                            <div class="col-4">
-                                <label for="contactphone">Attorney Phone Number (mobile) </label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="contactphone" name="attorphone" />
                             </div>
 
 
-                        </div>
-                        <div class="row row-adj">
-                            <div class="col-4">
-                                <div class="break-header">
+                            <div class="row row-adj">
+                                <div class="col-4">
+                                    <label for="attorname">Attorney Name</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="attorname" name="attorname" />
+                                </div>
+                                <div class="col-4">
+                                    <label for="contactemail">Attorney Email Address</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="attremail" name="attoremail" />
+                                </div>
+                            </div>
+                            <div class="row row-adj">
+
+                                <div class="col-4">
+                                    <label for="contactphone">Attorney Phone Number (mobile) </label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="contactphone" name="attorphone" />
+                                </div>
+
+
+                            </div>
+                            <div class="row row-adj">
+                                <div class="col-4">
+                                    <div class="break-header">
                             CO-COUNSEL
                         </div>
-                                <div class="sub-text">
+                                    <div class="sub-text">
                             Are you working on the case with anouther attorney? (Optional)
                         </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row row-adj">
-
-                            <div class="col-4">
-                                <label for="cocounsname">C0-COUNSEL'S NAME (IF APPLICABLE)</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="cocounsname" name="cocounsname" />
+                                </div>
                             </div>
 
 
-                        </div>
+                            <div class="row row-adj">
 
-                        <div class="row row-adj">
-                            <div class="col">
+                                <div class="col-4">
+                                    <label for="cocounsname">C0-COUNSEL'S NAME (IF APPLICABLE)</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="cocounsname" name="cocounsname" />
+                                </div>
+
+
+                            </div>
+
+                            <div class="row row-adj">
+                                <div class="col">
                         PLAINTIFF INFORMATION
                     </div>
 
-                        </div>
-
-                        <div class="row row-adj">
-
-                            <div class="col-4">
-                                <label for="injsname">Injured or Decedent Part's Name</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="injsname" name="injsname" />
                             </div>
 
-                        </div>
+                            <div class="row row-adj">
 
+                                <div class="col-4">
+                                    <label for="injsname">Injured or Decedent Part's Name</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="injsname" name="injsname" />
+                                </div>
 
-                        <div class="row row-adj">
-                            <div class="col-4">
-                                <label for="plaintname">Plaintiff Name</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="plaintname" name="plaintname" />
-                            </div>
-                            <div class="col-4">
-                                <label for="plainrel">Plaintiff replationship to injured party</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="plainrel" name="plainrel" />
-                            </div>
-                        </div>
-
-
-                        <div class="row row-adj">
-                            <div class="col-2">
-                                <label for="plaintbday">Plaintiff Date of Birth</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="plaintbday" name="plaintbday" />
-                            </div>
-
-                        </div>
-                        <div class="row row-adj">
-                            <div class="col-4">
-                                <label for="plaintcor">Plaintiff Date of Birth</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="plaintcor" name="plaintcor" />
-                            </div>
-
-                        </div>
-
-
-                        <div class="row row-adj">
-                            <div class="col-7">
-                                <label for="addt1">Street Address 1</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="addt1" name="addt1" />
-                            </div>
-
-                        </div>
-                        <div class="row row-adj">
-                            <div class="col-7">
-                                <label for="adder2">Street Address 2</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="adder2" name="adder2" />
-                            </div>
-
-                        </div>
-
-                        <div class="row row-adj">
-                            <div class="col-4">
-                                <label for="city">City</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="city" name="city" />
-                            </div>
-                            <div class="col-1">
-                                <label for="state">State</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="state" name="state" />
-                            </div>
-                            <div class="col-2">
-                                <label for="zip">ZIP Code</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="zip" name="zip" />
-                            </div>
-
-                        </div>
-                        <div class="row row-adj">
-                            <div class="col-4">
-                                <label for="contnumber">Contact Phone Number</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="contnumber" name="contnumber" />
-                            </div>
-                            <div class="col-2">
-                                <label for="extension">Extension (optional)</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="extension" name="extension" />
                             </div>
 
 
-                        </div>
-
-                        <div class="row row-adj">
-                            <div class="col-4">
-                                <label for="plantifemail">Plaintiff Email Address</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="plantifemail" name="plantifemail" />
+                            <div class="row row-adj">
+                                <div class="col-4">
+                                    <label for="plaintname">Plaintiff Name</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="plaintname" name="plaintname" />
+                                </div>
+                                <div class="col-4">
+                                    <label for="plainrel">Plaintiff replationship to injured party</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="plainrel" name="plainrel" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="row row-adj">
-                            <div class="col-4">
-                                <label for="plantifgen">Plaintiff Gender</label>
-                                <input type="text" class="form-control o_website_form_input input-base" id="plantifgen" name="plantifgen" />
+
+
+                            <div class="row row-adj">
+                                <div class="col-2">
+                                    <label for="plaintbday">Plaintiff Date of Birth</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="plaintbday" name="plaintbday" />
+                                </div>
+
                             </div>
-                        </div>
+                            <div class="row row-adj">
+                                <div class="col-4">
+                                    <label for="plaintcor">Plaintiff Date of Birth</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="plaintcor" name="plaintcor" />
+                                </div>
+
+                            </div>
 
 
-                        <div class="row row-adj">
-                            <div class="col-6">
-                                <div class="break-header">
+                            <div class="row row-adj">
+                                <div class="col-7">
+                                    <label for="addt1">Street Address 1</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="addt1" name="addt1" />
+                                </div>
+
+                            </div>
+                            <div class="row row-adj">
+                                <div class="col-7">
+                                    <label for="adder2">Street Address 2</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="adder2" name="adder2" />
+                                </div>
+
+                            </div>
+
+                            <div class="row row-adj">
+                                <div class="col-4">
+                                    <label for="city">City</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="city" name="city" />
+                                </div>
+                                <div class="col-1">
+                                    <label for="state">State</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="state" name="state" />
+                                </div>
+                                <div class="col-2">
+                                    <label for="zip">ZIP Code</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="zip" name="zip" />
+                                </div>
+
+                            </div>
+                            <div class="row row-adj">
+                                <div class="col-4">
+                                    <label for="contnumber">Contact Phone Number</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="contnumber" name="contnumber" />
+                                </div>
+                                <div class="col-2">
+                                    <label for="extension">Extension (optional)</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="extension" name="extension" />
+                                </div>
+
+
+                            </div>
+
+                            <div class="row row-adj">
+                                <div class="col-4">
+                                    <label for="plantifemail">Plaintiff Email Address</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="plantifemail" name="plantifemail" />
+                                </div>
+                            </div>
+                            <div class="row row-adj">
+                                <div class="col-4">
+                                    <label for="plantifgen">Plaintiff Gender</label>
+                                    <input type="text" class="form-control o_website_form_input input-base" id="plantifgen" name="plantifgen" />
+                                </div>
+                            </div>
+
+
+                            <div class="row row-adj">
+                                <div class="col-6">
+                                    <div class="break-header">
                             EXPECTED DELIVERY DATE?
                         </div>
-                                <div class="sub-text">
+                                    <div class="sub-text">
                             When is your deadline for receiving services you are interested in? (Turnarounds of under 2
                             weeks will require expedited handeling and incur an additional charge)
                         </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row row-adj">
-                            <div class="col-2">
-                                <input type="date" class="form-control o_website_form_input input-base" id="plantifgen" name="plantifgen" />
+                            <div class="row row-adj">
+                                <div class="col-2">
+                                    <input type="date" class="form-control o_website_form_input input-base" id="plantifgen" name="plantifgen" />
 
+                                </div>
                             </div>
-                        </div>
 
 
-                        <div class="row row-adj">
-                            <div class="col-6">
-                                <div class="break-header">
+                            <div class="row row-adj">
+                                <div class="col-6">
+                                    <div class="break-header">
                             EXPECTED DELIVERY DATE?
                         </div>
-                                <div class="sub-text">
+                                    <div class="sub-text">
                             Required for case turnarounds of less than 2 weeks. Additional charge of $[X] will apply for
                             there orders
                         </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row row-adj">
-                            <div class="col-2">
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" />
-                                    <label class="custom-control-label" for="customRadioInline1">Don't Expedite</label>
                                 </div>
                             </div>
-                            <div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" />
-                                    <label class="custom-control-label" for="customRadioInline2">Yes, Expidite</label>
+
+
+                            <div class="row row-adj">
+                                <div class="col-2">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" />
+                                        <label class="custom-control-label" for="customRadioInline1">Don't Expedite</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline2" class="custom-control-input" />
+                                        <label class="custom-control-label" for="customRadioInline2">Yes, Expidite</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row row-adj">
-                            <div class="col-12" style="padding-left:0">
-                                <button type="submit" class="submit-button">SAVE &amp; CONTINUE</button>
-                                <div type="button" class="cancel-button">Cancel</div>
+                            <div class="row row-adj">
+                                <div class="col-12" style="padding-left:0">
+                                    <button type="submit" class="submit-button">SAVE &amp; CONTINUE</button>
+                                    <div type="button" class="cancel-button">Cancel</div>
 
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
-
+                        </form>
+                    </div>
+                </t>
             </field>
             <!-- Provide  template id that you want to render -->
         </record>

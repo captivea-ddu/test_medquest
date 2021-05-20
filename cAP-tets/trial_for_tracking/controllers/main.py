@@ -18,12 +18,67 @@ class WebsiteSaleCustom(http.Controller):
 
 	@http.route('/submit/service-request/', type='http', auth='public', website=True, method='POST')
 	def other_form(self, **kw):
-		print("$$$$$$$$$$$$$$$$ form submitted $$$$$$$$$$$$$$$$$",kw)
-		_logger.warning("$$$$$$$$$$$$$$$$ form submitted $$$$$$$$$$$$$$$$$\n" + str(kw))
+
 		for key, value in kw.items():
-			print(key,value)
-			_logger.warning(str(key) + " - " + str(value) + "\n")
-		return  request.render('website.layout')
+			if key == "contactname":
+				contactname = value
+			elif key == "contactemail":
+				contactemail = value
+			elif key == "casename":
+				casename = value
+			elif key == "attorname":
+				attorname = value
+			elif key == "attoremail":
+				attoremail = value
+		
+		
+			elif key == "attorphone":
+				attorphone = value
+			elif key == "cocounsname":
+				cocounsname = value
+			elif key == "injsname":
+				injsname = value
+			elif key == "plaintname":
+				plaintname = value
+
+
+			elif key == "plainrel":
+				plainrel = value
+			elif key == "plaintbday":
+				plaintbday = value
+			elif key == "plaintcor":
+				plaintcor = value
+			elif key == "addt1":
+				addt1 = value
+		
+		
+			elif key == "adder2":
+				adder2 = value
+			elif key == "city":
+				city = value
+			elif key == "state":
+				state = value
+			elif key == "zip":
+				zip_ = value
+
+
+			elif key == "contnumber":
+				contnumber = value
+			elif key == "extension":
+				extension = value
+			elif key == "plantifemail":
+				plantifemail = value
+			elif key == "plantifgen":
+				plantifgen = value
+				
+			elif key == "customRadioInline1":
+				should_expidite = True
+			elif key == "customRadioInline2":
+				should_expidite = False
+
+
+
+		return request.render('website.layout')
 
 
 	@http.route('/submit/service-select/', type='http', auth='public', website=True, method='POST' )
