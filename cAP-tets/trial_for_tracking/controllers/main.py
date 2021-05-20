@@ -59,7 +59,6 @@ class WebsiteSaleCustom(http.Controller):
 				attorname = value
 			elif key == "attoremail":
 				attoremail = value
-
 			elif key == "attorphone":
 				attorphone = value
 			elif key == "cocounsname":
@@ -68,7 +67,6 @@ class WebsiteSaleCustom(http.Controller):
 				injsname = value
 			elif key == "plaintname":
 				plaintname = value
-
 			elif key == "plainrel":
 				plainrel = value
 			elif key == "plaintbday":
@@ -214,7 +212,6 @@ class WebsiteSaleCustom(http.Controller):
 				ulc = value
 			elif key == 'other': 
 				other = value
-
 			elif key == 'customRadioInline1': 
 				should_expidite = True
 			elif key == 'customRadioInline2': 
@@ -258,7 +255,7 @@ class WebsiteSaleCustom(http.Controller):
 		return request.render('website.layout')
 
 
-	@http.route('/case-details/', type='http', auth='public', website=True, method='POST')
+	@http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
 	def other_form(self, **kw):
 		user_id = request.env.context.get('uid')
 		existing_details = request.env['service.request'].sudo().search([('user_id', '=', user_id)], limit=1)
@@ -323,7 +320,7 @@ class WebsiteSaleCustom(http.Controller):
 					i += 1
 
 
-		return  request.redirect('/service-details')
+		return request.redirect('/service-details')
 
 
 	@http.route('/service-details/cancel', type='http', auth='public', website=False, method='POST')
@@ -399,7 +396,7 @@ class WebsiteSaleCustom(http.Controller):
 		print("########### Form Submitted ###########")
 		for key, value in kw.items():
 			print(key,value)
-		return  request.redirect('/medquest_home')
+		return  request.redirect('/')
 
 
 

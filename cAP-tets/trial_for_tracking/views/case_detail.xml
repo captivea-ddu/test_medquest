@@ -9,7 +9,7 @@
             <field name="arch" type="xml">
                 <t t-call="website.layout">
                     <div class="container">
-                        <form method="post" action="/case-details/">
+                        <form method="post" action="/submit/case-details">
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                             <div class="row row-adj">
                                 <div class="col-12">
@@ -125,7 +125,7 @@
             </field>
         </record>
         <record id="contactus_page" model="website.page">
-            <field name="url">/case-details/</field>
+            <field name="url">/case-details</field>
             <field name="is_published">True</field>
             <field name="view_id" ref="case_details" />
             <field name="cache_key_expr">('cached' if not request.params else None,)</field>
