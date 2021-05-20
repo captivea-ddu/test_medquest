@@ -119,7 +119,7 @@
                                 <button type="submit" class="submit-button">Case Issues &amp; Focus</button>
 
                                 <button type="submit" class="back-button" formaction="/deals/">Back</button>
-                                <button type="submit" class="cancel-button" formaction="/">Cancled</button>
+                                <button type="submit" class="cancel-button" formaction="/">Canceled</button>
                             </div>
                         </div>
                     </form>
