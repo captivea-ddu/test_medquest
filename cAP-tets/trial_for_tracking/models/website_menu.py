@@ -39,7 +39,7 @@ class ServiceRequest(models.Model):
 
 
 class ServiceDetails(models.Model):
-     _name = "service.details"
+    _name = "service.details"
 
     nar = fields.Boolean()
 
