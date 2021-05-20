@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id='custom_header' inherit_id='website.homepage' priority='16'>
+    <template id='custom_header' inherit_id='website.homepage' priority='16' >
 
 
         <xpath expr="//header//nav" position="replace">
