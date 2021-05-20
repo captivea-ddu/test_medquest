@@ -101,7 +101,8 @@ class WebsiteSaleCustom(http.Controller):
 		# for key, value in kw.items():
 		# 	print(key,value)
 		# 	_logger.warning(str(key) + " - " + str(value) + "\n")
-		return  request.redirect('/service-details', {'var': 'this is a context test'})
+		# return  request.redirect('/service-details', {'var': 'this is a context test'})
+		return request.env['ir.http'].reroute('/service-details', {'var': 'this is a context test'})
 		# return  request.redirect('/service-details')
 
 	@http.route('/', type='http', auth='public', website=True, method='GET')
@@ -110,6 +111,8 @@ class WebsiteSaleCustom(http.Controller):
 		for key, value in kw.items():
 			print(key,value)
 		return  request.redirect('/medquest_home')
+
+
 
 
 
