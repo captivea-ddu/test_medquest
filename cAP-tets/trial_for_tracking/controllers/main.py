@@ -29,8 +29,7 @@ class WebsiteSaleCustom(http.Controller):
 				attorname = value
 			elif key == "attoremail":
 				attoremail = value
-		
-		
+
 			elif key == "attorphone":
 				attorphone = value
 			elif key == "cocounsname":
@@ -110,62 +109,62 @@ class WebsiteSaleCustom(http.Controller):
 		customRadioInline = None
 		cost = None
 		for key, value in kw.items():
-			if key == 'nar' 
+			if key == 'nar':
 				nar = value
-			elif key == 'binder' 
+			elif key == 'binder'
 				binder = value
-			elif key == 'maxtrix' 
+			elif key == 'maxtrix': 
 				maxtrix = value
-			elif key == 'depo' 
+			elif key == 'depo':
 				depo = value
-			elif key == 'hotlink' 
+			elif key == 'hotlink':
 				hotlink = value
-			elif key == 'legterm' 
+			elif key == 'legterm': 
 				legterm = value
-			elif key == 'medop' 
+			elif key == 'medop':
 				medop = value
-			elif key == 'found' 
+			elif key == 'found':
 				found = value
-			elif key == 'bill' 
+			elif key == 'bill':
 				bill = value
-			elif key == 'book' 
+			elif key == 'book':
 				book = value
-			elif key == 'lifecare' 
+			elif key == 'lifecare': 
 				lifecare = value
-			elif key == 'demand' 
+			elif key == 'demand':
 				demand = value
-			elif key == 'scr' 
+			elif key == 'scr':
 				scr = value
-			elif key == 'pain' 
+			elif key == 'pain': 
 				pain = value
-			elif key == 'suf' 
+			elif key == 'suf':
 				suf = value
-			elif key == 'synop' 
+			elif key == 'synop': 
 				synop = value
-			elif key == 'fact' 
+			elif key == 'fact':
 				fact = value
-			elif key == 'res' 
+			elif key == 'res':
 				res = value
-			elif key == 'jury' 
+			elif key == 'jury': 
 				jury = value
-			elif key == 'custom' 
+			elif key == 'custom': 
 				custom = value
-			elif key == 'rev' 
+			elif key == 'rev':
 				rev = value
-			elif key == 'time' 
+			elif key == 'time': 
 				time = value
-			elif key == 'cen' 
+			elif key == 'cen':
 				cen = value
-			elif key == 'ulc' 
+			elif key == 'ulc':
 				ulc = value
-			elif key == 'other' 
+			elif key == 'other': 
 				other = value
 
-			elif key == 'customRadioInline1' 
+			elif key == 'customRadioInline1': 
 				customRadioInline = True
-			elif key == 'customRadioInline2' 
+			elif key == 'customRadioInline2': 
 				customRadioInline = False
-			elif key == 'cost' 
+			elif key == 'cost':
 				cost = value
 		return  request.render('website.layout')
 
