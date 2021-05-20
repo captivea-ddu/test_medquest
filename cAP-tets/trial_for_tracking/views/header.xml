@@ -3,7 +3,7 @@
     <data>
 
         <template id='custom_header' inherit_id='website.homepage' priority='16'>
-            <xpath expr="//header//nav" position="replace">
+            <!-- <xpath expr="//header//nav" position="replace">
                 <nav class="fluid-container" style="position:relative;top:30px">
                     <img src="/web/image/212836-38d2d024/medquest.PNG" class="logo" />
                     <div>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </nav>
-            </xpath>
+            </xpath> -->
         </template>
     </data>
 </odoo>
