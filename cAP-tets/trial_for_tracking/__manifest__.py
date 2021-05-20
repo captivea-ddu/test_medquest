@@ -26,7 +26,7 @@
         "views/service_general.xml",
         # 'views/test.xml',
         ],
-    "images": [],
+    "images": ["static/src/img/service_form.PNG"],
     "application": True,
     "installable": True,
     "auto_install": False,
