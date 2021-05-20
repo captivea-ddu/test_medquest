@@ -397,7 +397,7 @@ class WebsiteSaleCustom(http.Controller):
 		# return  request.redirect('/service-details', {'var': 'this is a context test'})
 		# values = 
 		# return request.route('/service-details/3', {'var': 'this is a context test'})
-		return request.render('website.service_details',{'var': True})
+		return request.render('website.home_page',{'var': True})
 
 	# @http.route('/service-details/cancel/', type='http', auth='public', website=True, method='GET')
 	# def formsubmit(self, **kw):

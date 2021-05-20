@@ -126,7 +126,7 @@
                             </xpath> -->
 
 
-                    <script>
+                    <script  type="text/javascript" >
                             function change_icon(e) {
                               alert(e.target);
                             }
