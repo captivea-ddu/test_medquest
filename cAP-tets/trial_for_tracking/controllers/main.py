@@ -131,7 +131,7 @@ class WebsiteSaleCustom(http.Controller):
 		else:
 			service_request = request.env['service.request'].sudo().create(value_dict)
 			request.env.cr.commit()
-		return request.render('website.layout')
+		return request.redirect('/case-details')
 
 
 	@http.route('/submit/service-details/', type='http', auth='public', website=True, method='POST' )
