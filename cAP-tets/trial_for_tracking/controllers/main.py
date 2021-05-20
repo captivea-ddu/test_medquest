@@ -18,7 +18,37 @@ class WebsiteSaleCustom(http.Controller):
 
 	@http.route('/submit/service-request/', type='http', auth='public', website=True, method='POST')
 	def other_form(self, **kw):
+
+		user_id = request.env.context.get('uid')
+		existing_details = request.env['service.request'].sudo().search([('user_id', '=', user_id)], limit=1)
+
+		contactname = None
+		contactemail = None
+		casename = None
+		attorname = None
+		attoremail = None
+		attorphone = None
+		cocounsname = None
+		injsname = None
+		plaintname = None
+		plainrel = None
+		plaintbday = None
+		plaintcor = None
+		addt1 = None
+		adder2 = None
+		city = None
+		state = None
+		zip_ = None
+		contnumber = None
+		extension = None
+		plantifemail = None
+		plantifgen = None
+		plantifgen = None
+		customRadioInline1 = None
+		customRadioInline2 = None
+
 		for key, value in kw.items():
+
 			if key == "contactname":
 				contactname = value
 			elif key == "contactemail":
@@ -39,7 +69,6 @@ class WebsiteSaleCustom(http.Controller):
 			elif key == "plaintname":
 				plaintname = value
 
-
 			elif key == "plainrel":
 				plainrel = value
 			elif key == "plaintbday":
@@ -48,7 +77,6 @@ class WebsiteSaleCustom(http.Controller):
 				plaintcor = value
 			elif key == "addt1":
 				addt1 = value
-		
 		
 			elif key == "adder2":
 				adder2 = value
@@ -73,8 +101,35 @@ class WebsiteSaleCustom(http.Controller):
 				should_expidite = True
 			elif key == "customRadioInline2":
 				should_expidite = False
-
-
+		
+		value_dict = {'contactname' : contactname, 
+					'contactemail' : contactemail, 
+					'casename' : casename, 
+					'attorname' : attorname, 
+					'attoremail' : attoremail, 
+					'attorphone' : attorphone, 
+					'cocounsname' : cocounsname, 
+					'injsname' : injsname, 
+					'plaintname' : plaintname, 
+					'plainrel' : plainrel, 
+					'plaintbday' : plaintbday, 
+					'plaintcor' : plaintcor, 
+					'addt1' : addt1, 
+					'adder2' : adder2, 
+					'city' : city, 
+					'state' : state, 
+					'zip_' : zip_, 
+					'contnumber' : contnumber, 
+					'extension' : extension, 
+					'plantifemail' : plantifemail, 
+					'plantifgen' : plantifgen, 
+					'plantifgen' : plantifgen, 
+					"should_expidite" : should_expidite
+					}
+		if existing_details:
+			existing_details.sudo().write(value_dict)
+		else:
+			service_request = request.env['service.request'].sudo().create(value_dict)
 
 		return request.render('website.layout')
 
@@ -106,7 +161,7 @@ class WebsiteSaleCustom(http.Controller):
 		cen = None
 		ulc = None
 		other = None
-		customRadioInline = None
+		should_expidite = None
 		cost = None
 		for key, value in kw.items():
 			if key == 'nar':
@@ -161,12 +216,47 @@ class WebsiteSaleCustom(http.Controller):
 				other = value
 
 			elif key == 'customRadioInline1': 
-				customRadioInline = True
+				should_expidite = True
 			elif key == 'customRadioInline2': 
-				customRadioInline = False
+				should_expidite = False
 			elif key == 'cost':
 				cost = value
-		return  request.render('website.layout')
+
+
+		value_dict = {'nar' : nar, 
+						'binder' : binder, 
+						'maxtrix' : maxtrix, 
+						'depo' : depo, 
+						'hotlink' : hotlink, 
+						'legterm' : legterm, 
+						'medop' : medop, 
+						'found' : found, 
+						'bill' : bill, 
+						'book' : book, 
+						'lifecare' : lifecare, 
+						'demand' : demand, 
+						'scr' : scr, 
+						'pain' : pain, 
+						'suf' : suf, 
+						'synop' : synop, 
+						'fact' : fact, 
+						'res' : res, 
+						'jury' : jury, 
+						'custom' : custom, 
+						'rev' : rev, 
+						'time' : time, 
+						'cen' : cen, 
+						'ulc' : ulc, 
+						'other' : other, 
+						'cost' : cost, 
+					}
+		if existing_details:
+			existing_details.sudo().write(value_dict)
+		else:
+			service_request = request.env['service.request'].sudo().create(value_dict)
+
+		return request.render('website.layout')
+
 
 	@http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
 	def other_form(self, **kw):
@@ -232,14 +322,7 @@ class WebsiteSaleCustom(http.Controller):
 					})
 					i += 1
 
-		# print("$$$$$$$$$$$$$$$$ form submitted $$$$$$$$$$$$$$$$$",kw)
-		# _logger.warning("$$$$$$$$$$$$$$$$ form submitted $$$$$$$$$$$$$$$$$\n" + str(kw))
-		# for key, value in kw.items():
-		# 	print(key,value)
-		# 	_logger.warning(str(key) + " - " + str(value) + "\n")
-		# return  request.redirect('/service-details', {'var': 'this is a context test'})
-		# values = 
-		# return request.route('/service-details/3', {'var': 'this is a context test'})
+
 		return  request.redirect('/service-details')
 
 

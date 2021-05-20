@@ -31,16 +31,6 @@ class ServiceRequest(models.Model):
 
     case_issues = fields.Text(string='Case Issues and Focus')
 
-    # documents = fields.One2many('ir.attachment', 'service_request_id', string="Attachments")
-
-    # contact_name = fields.Char(string="Contact Name")
-
-    # document_name = fields.Text()
-
-
-class ServiceDetails(models.Model):
-    _name = "service.details"
-
     nar = fields.Boolean()
 
     binder = fields.Boolean()
@@ -91,13 +81,9 @@ class ServiceDetails(models.Model):
 
     other = fields.Boolean()
 
-    customRadioInline1 = fields.Boolean()
-
-    customRadioInline2 = fields.Boolean()
+    should_expidite = fields.Boolean()
 
     cost = fields.Boolean()
-class ServiceGeneral(models.Model):
-    _name = "service.general"
 
     contactname = fields.Char(size=70)
 
@@ -131,7 +117,7 @@ class ServiceGeneral(models.Model):
 
     state = fields.Char(size=70)
 
-    zip = fields.Char(size=70)
+    zip_ = fields.Char(size=70)
 
     contnumber = fields.Char(size=70)
 
@@ -143,6 +129,12 @@ class ServiceGeneral(models.Model):
 
     plantifgen = fields.Char(size=70)
 
-    customRadioInline = fields.Boolean()
+
+
+    # documents = fields.One2many('ir.attachment', 'service_request_id', string="Attachments")
+
+    # contact_name = fields.Char(string="Contact Name")
+
+    # document_name = fields.Text()
 
 
