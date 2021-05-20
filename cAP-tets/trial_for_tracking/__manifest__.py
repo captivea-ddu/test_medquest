@@ -23,7 +23,7 @@
         'views/case_detail.xml',
         # "views/medquest_home.xml",
         "views/service_details.xml",
-        # "views/service_general.xml",
+        "views/service_general.xml",
         # 'views/test.xml',
         ],
     "images": [],
