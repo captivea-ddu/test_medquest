@@ -396,7 +396,7 @@ class WebsiteSaleCustom(http.Controller):
 		print("########### Form Submitted ###########")
 		for key, value in kw.items():
 			print(key,value)
-		return  request.redirect('/')
+		return  request.render('/')
 
 
 
