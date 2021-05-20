@@ -391,7 +391,7 @@ class WebsiteSaleCustom(http.Controller):
 
 
 
-	@http.route('/', type='http', auth='public', website=True, method='GET')
+	@http.route('/', type='http', auth='public' ,method='GET')
 	def homepage(self, **kw):
 
 		return  request.render('website.home_page')
