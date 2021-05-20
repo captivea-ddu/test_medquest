@@ -12,7 +12,7 @@
                 <div class="container">
 
 
-                    <form method="post" action="/submit/case-details/">
+                    <form method="post" action="/submit/case-details/3">
                         <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                         <div class="row row-adj">
                             <div class="col-12">
@@ -118,9 +118,8 @@
                             <div class="col-12" style="padding-left:0">
                                 <button type="submit" class="submit-button">Case Issues &amp; Focus</button>
 
-                                <div type="button" class="back-button">Back</div>
-                                <div type="button" class="cancel-button">Cancel</div>
-
+                                <button type="submit" class="back-button" formaction="/deals/">Back</button>
+                                <button type="submit" class="cancel-button" formaction="/">Cancled</button>
                             </div>
                         </div>
                     </form>
