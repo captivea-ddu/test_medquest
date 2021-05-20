@@ -97,7 +97,7 @@ class ServiceDetails(models.Model):
 
     cost = fields.Boolean()
 class ServiceGeneral(models.Model):
-     _name = "service.general"
+    _name = "service.general"
 
     contactname = fields.Char(size=70)
 
