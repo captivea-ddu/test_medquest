@@ -7,8 +7,7 @@
             <field name="type">qweb</field>
             <field name="key">website.service_details</field>
             <field name="arch" type="xml">
-                <!-- <t t-call="website.layout" /> -->
-
+                <t t-call="website.layout">
 
                 <!-- <t t-call="website.layout" /> -->
                 <div class="container">
@@ -520,6 +519,7 @@
                         <button type="submit">Submit</button>
                     </form>
                 </div>
+            </t>
             </field>
         </record>
         <record id="service_details_page" model="website.page">
