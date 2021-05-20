@@ -111,7 +111,7 @@ class WebsiteSaleCustom(http.Controller):
 		for key, value in kw.items():
 			if key == 'nar':
 				nar = value
-			elif key == 'binder'
+			elif key == 'binder':
 				binder = value
 			elif key == 'maxtrix': 
 				maxtrix = value
