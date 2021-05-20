@@ -124,13 +124,13 @@ class WebsiteSaleCustom(http.Controller):
 					'plantifemail' : plantifemail, 
 					'plantifgen' : plantifgen, 
 					'plantifgen' : plantifgen, 
-					"should_expidite" : should_expidite
+					'should_expidite' : should_expidite
 					}
 		if existing_details:
 			existing_details.sudo().write(value_dict)
 		else:
 			service_request = request.env['service.request'].sudo().create(value_dict)
-
+			request.env.cr.commit()
 		return request.render('website.layout')
 
 
@@ -254,7 +254,7 @@ class WebsiteSaleCustom(http.Controller):
 			existing_details.sudo().write(value_dict)
 		else:
 			service_request = request.env['service.request'].sudo().create(value_dict)
-
+			request.env.cr.commit()
 		return request.render('website.layout')
 
 
