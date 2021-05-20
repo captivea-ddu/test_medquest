@@ -12,7 +12,7 @@
 
                     <div class="container">
 
-                        <form action="/submit/service-request/" method="post">
+                        <form action="/submit/service-request" method="post">
                             <div class="row row-adj">
                                 <div class="col-12">
 

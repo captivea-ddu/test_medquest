@@ -16,7 +16,7 @@ class WebsiteSaleCustom(http.Controller):
 			print(key,value)
 		return  request.render('website.layout')
 
-	@http.route('/submit/service-request/', type='http', auth='public', website=True, method='POST')
+	@http.route('/submit/service-request', type='http', auth='public', website=True, method='POST')
 	def other_form(self, **kw):
 
 		user_id = request.env.context.get('uid')
