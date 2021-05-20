@@ -320,7 +320,7 @@ class WebsiteSaleCustom(http.Controller):
 					i += 1
 
 
-		return request.redirect('/service-details')
+		return request.render("website.service_details")
 
 
 	@http.route('/service-details/cancel', type='http', auth='public', website=False, method='POST')
