@@ -256,7 +256,7 @@ class WebsiteSaleCustom(http.Controller):
 		return request.render('website.layout')
 
 	@http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
-	def fuckyou(self, **kw):
+	def other_form(self, **kw):
 		_logger.warning("BIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIITCH")
 		return request.render("website.service_details")
 
