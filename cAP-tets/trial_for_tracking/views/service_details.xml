@@ -18,7 +18,7 @@
                     </t>
 
 
-                    <form method="post" action="/submit/service-details/">
+                    <form method="post" action="/submit/case-details/">
                          <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                         <div class="row row-adj">
                             <div class="col-12">
