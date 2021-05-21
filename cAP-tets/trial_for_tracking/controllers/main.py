@@ -18,7 +18,7 @@ class WebsiteSaleCustom(http.Controller):
 
 	@http.route('/submit/service-request', type='http', auth='public', website=True, method='POST')
 	def other_form(self, **kw):
-
+		_logger.warning('fuck this')
 		user_id = request.env.context.get('uid')
 		existing_details = request.env['service.request'].sudo().search([('user_id', '=', user_id)], limit=1)
 
