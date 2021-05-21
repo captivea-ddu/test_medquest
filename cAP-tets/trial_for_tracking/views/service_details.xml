@@ -20,7 +20,7 @@
 
                     <form method="post" action="/submit/service-details/">
                          <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
-                       <!--   <div class="row row-adj">
+                        <div class="row row-adj">
                             <div class="col-12">
 
                                 <img src="trial_for_tracking/static/src/img/service_form.PNG" style="width:100%;height:256px" />
@@ -517,7 +517,7 @@
 
                             </div>
 
-                        </div> -->
+                        </div>
                         <button type="submit">Submit</button>
                         <div type="button" class="cancel-button" formaction='/service-details/cancel'>Cancel</div>
 
