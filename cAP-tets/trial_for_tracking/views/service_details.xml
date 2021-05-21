@@ -5,7 +5,7 @@
         <record id="service_details" model="ir.ui.view">
             <field name="name">Service Details</field>
             <field name="type">qweb</field>
-            <field name="key">website.service_details</field>
+            <field name="key">service_details</field>
             <field name="arch" type="xml">
                 <t t-call="website.layout">
 
