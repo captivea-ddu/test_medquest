@@ -257,7 +257,7 @@ class WebsiteSaleCustom(http.Controller):
 	@http.route('/case-details/', type='http', auth='private', website=True, method='GET')
 	def case_details_form_controller(self, **kw):
 		user_id = request.env.context.get('uid')
-		return resuqest.render('website.case_details')
+		return request.render('website.case_details')
 
 	@http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
 	def case_details_form_submit_controller(self, **kw):
