@@ -131,7 +131,7 @@ class WebsiteSaleCustom(http.Controller):
 		return request.redirect('/case-details')
 
 
-	@http.route('/submit/service-details/', type='http', auth='public', website=True, method='POST' )
+	@http.route('/submit/service-details/', type='http', auth='public', website=True, method='POST')
 	def another_form(self, **kw):
 		user_id = request.env.context.get('uid')
 		existing_details = request.env['service.request'].sudo().search([('user_id', '=', user_id)], limit=1)
@@ -256,7 +256,7 @@ class WebsiteSaleCustom(http.Controller):
 		return request.render('website.layout')
 
 
-	@http.route('/submit/case-details', type='http', auth='public', website=True, method='POST')
+	@http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
 	def other_form(self, **kw):
 		_logger.warning("FUUUUUUUUUUCK YOUUUUUU ODOOOOOOO YOU MOTHERFUCKING PIECE OF SHIT SOFTWARE")
 		user_id = request.env.context.get('uid')
