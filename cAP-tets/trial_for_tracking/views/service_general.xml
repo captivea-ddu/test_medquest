@@ -15,8 +15,8 @@
                         <form action="/submit/service-request" method="post">
                             <div class="row row-adj">
                                 <div class="col-12">
+                                    <img src="trial_for_tracking/static/src/img/service_form.PNG" style="width:100%;height:256px" />
 
-                                    <img src=".\src\background.PNG" style="width:100%" />
 
                                 </div>
 
