@@ -11,9 +11,8 @@ class WebsiteSaleCustom(http.Controller):
 	
 	@http.route('/service/', type='http', auth='public', website=True, method='GET')
 	def formsubmit(self, **kw):
-		print("########### Form Submitted ###########")
-		for key, value in kw.items():
-			print(key,value)
+		# for key, value in kw.items():
+		# 	print(key,value)   
 		return  request.render('website.layout')
 
 	@http.route('/submit/service-request', type='http', auth='public', website=True, method='POST')
@@ -255,14 +254,13 @@ class WebsiteSaleCustom(http.Controller):
 			request.env.cr.commit()
 		return request.render('website.layout')
 
-	# @http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
-	# def other_form(self, **kw):
-	# 	_logger.warning("BIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIITCH")
-	# 	return request.render("website.service_details")
+	@http.route('/case-details/', type='http', auth='private', website=True, method='GET')
+	def case_details_form_controller(self, **kw):
+		user_id = request.env.context.get('uid')
+		return resuqest.render('website.case_details')
 
 	@http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
-	def case_details_form_controller(self, **kw):
-		_logger.warning("FUUUUUUUUUUCK YOUUUUUU ODOOOOOOO YOU MOTHERFUCKING PIECE OF SHIT SOFTWARE")
+	def case_details_form_submit_controller(self, **kw):
 		user_id = request.env.context.get('uid')
 		existing_details = request.env['service.request'].sudo().search([('user_id', '=', user_id)], limit=1)
 		case_type = None
