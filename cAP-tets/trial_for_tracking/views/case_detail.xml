@@ -9,7 +9,7 @@
             <field name="arch" type="xml">
                 <t t-call="website.layout">
                     <div class="container">
-                        <form method="post" action='/submit/fuckyou/'>
+                        <form method="post" action='/submit/case-details'>
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                             <div class="row row-adj">
                                 <div class="col-12">
