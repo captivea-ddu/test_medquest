@@ -258,6 +258,7 @@ class WebsiteSaleCustom(http.Controller):
 
 	@http.route('/submit/case-details', type='http', auth='public',  method='POST')
 	def other_form(self, **kw):
+		_logger.warning("FUUUUUUUUUUCK YOUUUUUU ODOOOOOOO YOU MOTHERFUCKING PIECE OF SHIT SOFTWARE")
 		user_id = request.env.context.get('uid')
 		existing_details = request.env['service.request'].sudo().search([('user_id', '=', user_id)], limit=1)
 		case_type = None
