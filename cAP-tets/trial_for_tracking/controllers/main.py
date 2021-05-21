@@ -132,7 +132,7 @@ class WebsiteSaleCustom(http.Controller):
 		return request.redirect('/case-details')
 
 
-	@http.route('/submit/service-details/', type='http', auth='public', website=False, method='POST' )
+	@http.route('/submit/service-details/', type='http', auth='public', website=True, method='POST' )
 	def another_form(self, **kw):
 		nar = None
 		binder = None
