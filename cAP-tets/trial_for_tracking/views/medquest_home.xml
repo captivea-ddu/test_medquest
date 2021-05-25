@@ -695,7 +695,7 @@
                             </div>
                         </div>
                     </div>
-                    <t t-call="trial_for_tracking.modal_overlay_template"/>  
+                     
 
                 </t>
             </field>
