@@ -432,7 +432,7 @@ class WebsiteSaleCustom(http.Controller):
         is_success ="<p>this did not work<p>"
         for key, value in kw.items():
             if key == 'is_success':
-                is_success = self.succes_modal
+                is_success =True
         return request.render('website.home_page', qcontext={"is_success": is_success})
 
     @http.route('/intake', type='http', auth='public', website=True, method='POST')

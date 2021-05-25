@@ -10,7 +10,7 @@
                 <t t-call="website.layout">
                 <t t-call="trial_for_tracking.modal_overlay_template"/>  
                 <!-- <t t-call="trial_for_tracking.intake_success_modal"/>   -->
-                <div t-if="is_success ">
+                <div t-if="is_success">
                     <t t-call="trial_for_tracking.intake_success_modal"/>  
                 </div>        
 
