@@ -6,11 +6,13 @@
             data-name="header_style_1_opt"
             data-customize-website-views="wt_medquest_website.custom_header_style_1" data-customize-website-variable="'header_style_1_opt'"
             data-img="/wt_medquest_website/static/src/img/header.jpg"/>
+
         </xpath>
-    </template>
-</odoo>
 
 <!-- <we-button title="Custom Header 1"
             data-name="header_style_1_opt"
             data-customize-website-views="wt_medquest_website.custom_header_style_1" data-customize-website-variable="'header_style_1_opt'"
             data-img="/wt_medquest_website/static/src/img/header.jpg"/> -->
+
+    </template>
+</odoo>
