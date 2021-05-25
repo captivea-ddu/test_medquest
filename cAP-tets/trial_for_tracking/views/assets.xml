@@ -11,20 +11,24 @@
 	    	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 			<script  type="text/javascript" >
 
-				$(document).on('load',function(){
-					var delayMs = 2500; // delay in milliseconds
-					
-					setTimeout(function(){
-						console.log("it worked at least")
-					}, delayMs);
-				});   
 				$( document ).ready(function() {
 					var delayMs = 2500; // delay in milliseconds
 					
 					setTimeout(function(){
-						console.log("ready docs encapsulated")
+						console.log("model should show")
+						$('#intakeSuccessModal').modal('show');
 					}, delayMs);
 				});
+
+
+
+
+
+
+
+
+
+
 
 
 				function change_icon(e) {
