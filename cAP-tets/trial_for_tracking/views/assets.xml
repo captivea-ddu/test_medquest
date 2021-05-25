@@ -15,10 +15,16 @@
 					var delayMs = 2500; // delay in milliseconds
 					
 					setTimeout(function(){
-						console.log("this should work now")
+						console.log("it worked at least")
 					}, delayMs);
 				});   
-
+				$( document ).ready(function() {
+					var delayMs = 2500; // delay in milliseconds
+					
+					setTimeout(function(){
+						console.log("ready docs encapsulated")
+					}, delayMs);
+				});
 
 
 				function change_icon(e) {
