@@ -2,7 +2,7 @@
 import json
 import logging
 from odoo import http
-from odoo.http import request
+from odoo.http import request , Response
 from odoo.addons.website_sale.controllers.main import WebsiteSale
 
 _logger = logging.getLogger(__name__)
@@ -402,11 +402,13 @@ class WebsiteSaleCustom(http.Controller):
     @http.route('/intake', type='http', auth='public', website=True, method='POST')
     def intake_from(self, **kw):
         vals_dic = {}
+        msg = ''
         for key, value in kw.items():
             if key in ['contactname', 'attornyname', 'attornyphone', 'firmname', 'country', 'Email1', 'attornyEmail1', 'address1', 'address2',
                     'city', 'phone', 'state', 'extension', 'zip', 'cb1', 'cb2', 'cb3', 'cb4', 'cb5', 'cb6', 'cb7', 'payment','info']:
                 vals_dic[key] = value
-
+                msg += str(key) + " : " + str(value) + ","
+        return Response(msg)
 #         public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
 # if request.uid == public_user.id:
 #      # The user is logged in
