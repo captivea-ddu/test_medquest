@@ -25,7 +25,6 @@
         "views/service_details.xml",
         "views/service_general.xml",
         'views/header.xml',
-        'views/overlaytemplate.xml',
         ],
     "images": ["static/src/img/service_form.PNG"],
     "application": True,
