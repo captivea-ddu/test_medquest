@@ -435,15 +435,6 @@
   </template>
 
 
-  <template id="layout_template" name="Intake Template" inherit_id="trial_for_tracking.home_page">
-    <!-- <xpath expr="//div[@id='intakeanchor']" position="replace">
-         <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target=".medquest_main_cl" style="width:100px;">Get Started</button>
-
-
-        <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target="#exampleModalScrollable" style="width:148px;">MEDQuEST Scroll</button>
-      </xpath> -->
-  </template>
-
 
   <template id="intake_success_modal" name="On Success Modal">
     <div class="modal fade show" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display:inline-block">
