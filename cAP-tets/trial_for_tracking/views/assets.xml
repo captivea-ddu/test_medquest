@@ -15,7 +15,7 @@
 					var delayMs = 2500; // delay in milliseconds
 					
 					setTimeout(function(){
-						$('#myModal').modal('show');
+						$('#intakeSuccessModal').modal('show');
 					}, delayMs);
 				});   
 
