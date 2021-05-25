@@ -528,7 +528,8 @@
 
                                         <div class="col" style="margin: 0px; padding-left: 0px">
                                             <div class="started-wrapper">
-                                                <div class="btn get-started">Get Started</div>
+                                                <div class="btn get-started" data-toggle="modal" data-target="#exampleModal">Get Started</div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -617,7 +618,7 @@
                                                 justify-content: center;
                                                 margin-top: 30px;
                                               ">
-                                                        <button class="btn btn-danger">Get Started</button>
+                                                        <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Get Started</button>
                                                     </div>
                                                     <div class="row" style="
                                                 display: flexbox;
