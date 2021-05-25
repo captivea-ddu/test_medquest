@@ -8,7 +8,7 @@
             <field name="key">website.home_page</field>
             <field name="arch" type="xml">
                 <t t-call="website.layout">
-            <div id='intakeAnchor' ></div>
+            <div id='intakeanchor' ></div>
 
 
 
