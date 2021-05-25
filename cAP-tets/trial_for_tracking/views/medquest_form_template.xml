@@ -65,7 +65,7 @@
                 </div>
               </div>
 
-              <form action="/submit/form" method="post" class="form_main_cl s_website_form" enctype="multipart/form-data" data-editable-form="false">
+              <form action="/intake" method="post" class="form_main_cl s_website_form" enctype="multipart/form-data" data-editable-form="false">
 
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
 
@@ -269,7 +269,7 @@
                   </div>
                 </div>
 
-                <form action="/submit/form2" method="post" class="form_main_cl s_website_form" enctype="multipart/form-data" data-editable-form="false">
+                <!-- <form action="/submit/form2" method="post" class="form_main_cl s_website_form" enctype="multipart/form-data" data-editable-form="false">
                   <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
 
                   <div class="row">
@@ -299,10 +299,10 @@
 
                     <div class="col-10 col-sm-4">
                       <label for="Email1_2">Contact Email address</label>
-                      <input type="email" class="form-control o_website_form_input" name="Email1_2" id="Email1_2" aria-describedby="emailHelp"/>
+                      <input type="email" class="form-control o_website_form_input" name="Email1_2" id="Email2" aria-describedby="emailHelp"/>
 
                       <label for="attorny_Email2"> Attorny Email address</label>
-                      <input type="email" name="attorny_Email2" class="form-control o_website_form_input" id="attorny_Email2" aria-describedby="emailHelp"/>
+                      <input type="email" name="attorny_Email2" class="form-control o_website_form_input" id="attornyEmail2" aria-describedby="emailHelp"/>
                     </div>
 
                     <div class="col-10 col-sm-8">
@@ -409,7 +409,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
   </template>
 
 

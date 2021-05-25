@@ -329,7 +329,7 @@ class WebsiteSaleCustom(http.Controller):
 
 
 	@http.route('/service-details/cancel', type='http', auth='public', website=True, method='POST')
-	def other_form(self, **kw):
+	def service_details(self, **kw):
 		user_id = request.env.context.get('uid')
 		existing_details = request.env['service.request'].sudo().search([('user_id', '=', user_id)], limit=1)
 		case_type = None
@@ -404,5 +404,6 @@ class WebsiteSaleCustom(http.Controller):
 
 
 
-
+	@http.route('/intake', type='http', auth='public', website=True, method='POST')
+	def intake_from(self, **kw):
 		
