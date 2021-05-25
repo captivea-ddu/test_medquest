@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <template id="frontend_layout" name="Header extended" inherit_id="portal.frontend_layout">
-    <xpath expr="//div[@id='oe_structure_header_default_1']" position="after">
-      <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target=".medquest_main_cl" style="width:100px;">Get Started</button>
-
-
-      <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target="#exampleModalScrollable" style="width:148px;">MEDQuEST Scroll</button>
-      
-      <t t-call="modal_overlay_template"/>  
-    </xpath>
-  </template>
-
+  <data>
   <template id="modal_overlay_template" name="Overlay Form">
 
       
@@ -421,4 +411,17 @@
         </div>
       </div>
   </template>
+
+
+  <template id="frontend_layout" name="Header extended" inherit_id="portal.frontend_layout">
+    <xpath expr="//div[@id='oe_structure_header_default_1']" position="after">
+      <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target=".medquest_main_cl" style="width:100px;">Get Started</button>
+
+
+      <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target="#exampleModalScrollable" style="width:148px;">MEDQuEST Scroll</button>
+      
+      <t t-call="modal_overlay_template"/>  
+    </xpath>
+  </template>
+</data>
 </odoo>
