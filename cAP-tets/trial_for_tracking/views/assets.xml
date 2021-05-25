@@ -77,8 +77,6 @@
 					return false;
 				});
 
-
-
 			  </script>
 	    </xpath>
 	</template>

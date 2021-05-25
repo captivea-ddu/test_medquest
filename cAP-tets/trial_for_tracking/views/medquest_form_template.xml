@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <data>
-  <template id="trial_for_tracking.modal_overlay_template" name="Overlay Form">
+  <template id="wipeout_header" name="Overide Header" inherite_id='website.layout' >
+  <xpath expr='//header' position='replace' >
 
-      
+  </xpath>
+
+
+  </template>
+    <template id="trial_for_tracking.modal_overlay_template" name="Overlay Form">
+
+         
       <div class="modal fade bd-example-modal-lg medquest_main_cl" tabindex="-1" id="intakeModal" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content pt-5 pb-5">
