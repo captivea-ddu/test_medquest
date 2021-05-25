@@ -18,7 +18,7 @@
                     <div class="fluid-container main">
                         <nav class="fluid-container" style="position:relative;top:30px">
                             <img src="trial_for_tracking/static/src/img/medquest.PNG" class="logo" />
-                            <div>
+                            <!-- <div>
                               <img
                                 alt="Menu"
                                 style="height: 60px; width: 120px"
@@ -29,7 +29,7 @@
                                 "
                                 class="sc-pBlUC sc-pZcYF fymeGl"
                               />
-                            </div>
+                            </div> -->
                             <div
                               class="login-btn"
                               data-toggle="modal"
