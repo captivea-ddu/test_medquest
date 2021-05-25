@@ -8,7 +8,7 @@
             <field name="key">website.home_page</field>
             <field name="arch" type="xml">
                 <t t-call="website.layout">
-            <div id='intakeanchor' ></div>
+                <t t-call="trial_for_tracking.modal_overlay_template"/>  
 
 
 
