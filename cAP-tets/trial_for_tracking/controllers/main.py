@@ -406,7 +406,6 @@ class WebsiteSaleCustom(http.Controller):
             if key in ['contactname', 'attornyname', 'attornyphone', 'firmname', 'country', 'Email1', 'attornyEmail1', 'address1', 'address2',
                     'city', 'phone', 'state', 'extension', 'zip', 'cb1', 'cb2', 'cb3', 'cb4', 'cb5', 'cb6', 'cb7', 'payment', 'info']:
                 vals_dic[key] = value
-		return "<div>will this work  </div>"
 
 #         public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
 # if request.uid == public_user.id:
