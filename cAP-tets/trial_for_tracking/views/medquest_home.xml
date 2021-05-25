@@ -15,7 +15,7 @@
 
                     <div class="fluid-container main">
                         <nav class="fluid-container" style="position:relative;top:30px">
-                            <img src="/web/image/212836-38d2d024/medquest.PNG" class="logo" />
+                            <img src="trial_for_tracking/static/src/img/medquest.PNG" class="logo" />
                             <div>
                               <img
                                 alt="Menu"
