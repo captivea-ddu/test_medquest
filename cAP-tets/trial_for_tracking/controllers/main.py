@@ -429,7 +429,7 @@ class WebsiteSaleCustom(http.Controller):
 
     @http.route('/', type='http', auth='public', website=True, method='GET')
     def homepage(self, **kw):
-        is_success ="<p>this did not work<p>"
+        is_success = False
         for key, value in kw.items():
             if key == 'is_success':
                 is_success =True
