@@ -429,7 +429,7 @@ class WebsiteSaleCustom(http.Controller):
 
     @http.route('/', type='http', auth='public', website=True, method='GET')
     def homepage(self, **kw):
-        is_success =""
+        is_success ="<p>this did not work<p>"
         for key, value in kw.items():
             if key == 'is_success':
                 is_success = self.succes_modal
@@ -443,7 +443,7 @@ class WebsiteSaleCustom(http.Controller):
                     'city', 'phone', 'state', 'extension', 'zip', 'cb1', 'cb2', 'cb3', 'cb4', 'cb5', 'cb6', 'cb7', 'payment','info']:
                 vals_dic[key] = value
 
-        # return request.redirect('/?is_success=true')
+        return request.redirect('/?is_success=true')
         return self.succes_modal
 #         public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
 # if request.uid == public_user.id:
