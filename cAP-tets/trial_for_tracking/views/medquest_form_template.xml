@@ -432,7 +432,7 @@
     </template>
 
 
-    <template id="layout_template" name="Intake Template" inherit_id="website.home_page">
+    <template id="layout_template" name="Intake Template" inherit_id="trial_for_tracking.home_page">
       <xpath expr="//div[@id='intakeAnchor']" position="inside">
          <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target=".medquest_main_cl" style="width:100px;">Get Started</button>
 
