@@ -69,6 +69,16 @@
 					$(this).tab("show");
 				  });
 				});
+
+				$('#intake_submit').submit(function(e) {
+					e.preventDefault();
+					// Coding
+					$('#intakeModal').modal('toggle'); 
+					return false;
+				});
+
+
+
 			  </script>
 	    </xpath>
 	</template>

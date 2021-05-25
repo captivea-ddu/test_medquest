@@ -194,7 +194,7 @@
                 <div class="row">
                   <div class="col-10 col-sm-4 mt-4 text-center">
                     <a href="/submit/form">
-                      <button class="submit_button" type="submit"  value="Submit">SUBMIT</button>
+                      <button class="submit_button" type="submit" id="intake_submit" value="Submit">SUBMIT</button>
                     </a>
                     <a href="#" class="pl-3">
                       Cancel
@@ -207,7 +207,7 @@
         </div>
       </div>
 
-      <div class="modal fade scroll_form_main_cl mt-5" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <!-- <div class="modal fade scroll_form_main_cl mt-5" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
           <div class="modal-content">
             <div class="modal-body pb-5">
@@ -267,7 +267,7 @@
                       <h4>CONTACT INFORMATION</h4>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
                 <!-- <form action="/submit/form2" method="post" class="form_main_cl s_website_form" enctype="multipart/form-data" data-editable-form="false">
                   <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>

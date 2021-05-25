@@ -25,6 +25,7 @@
         "views/service_details.xml",
         "views/service_general.xml",
         'views/header.xml',
+        'view/header_snippet.xml'
         ],
     "images": ["static/src/img/service_form.PNG"],
     "application": True,
