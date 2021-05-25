@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="my_custom_header" model="ir.ui.view">
+        <!-- <record id="my_custom_header" model="ir.ui.view">
             <field name="inherit_id" ref="website.homepage" />
             <field name="priority" eval="16" />
             <field name="arch" type="xml">
@@ -61,7 +61,7 @@
                         hello
                     </div>
             </field>
-        </record>
+        </record> -->
 
     </data>
 </odoo>
