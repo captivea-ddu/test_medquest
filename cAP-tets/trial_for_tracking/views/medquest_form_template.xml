@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <data>
-  <template id="wipeout_header" name="Overide Header" inherite_id='website.layout' >
+  <!-- <template id="wipeout_header" name="Overide Header" inherite_id='website.layout' >
   <xpath expr='//header' position='replace' >
 
   </xpath>
 
 
-  </template>
+  </template> -->
     <template id="trial_for_tracking.modal_overlay_template" name="Overlay Form">
 
          
@@ -427,7 +427,6 @@
 
       <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target="#exampleModalScrollable" style="width:148px;">MEDQuEST Scroll</button>
       
-      <t t-call="trial_for_tracking.modal_overlay_template"/>  
     </xpath>
   </template>
 </data>
