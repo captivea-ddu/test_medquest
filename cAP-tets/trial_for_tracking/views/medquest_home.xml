@@ -10,7 +10,9 @@
                 <t t-call="website.layout">
                 <t t-call="trial_for_tracking.modal_overlay_template"/>  
                 <!-- <t t-call="trial_for_tracking.intake_success_modal"/>   -->
-                <t t-call="trial_for_tracking.intake_success_modal"/>  
+                <div t-if="is_success">
+                    <t t-call="trial_for_tracking.intake_success_modal"/>  
+                </div>        
 
 
 
@@ -18,7 +20,7 @@
                     <div class="fluid-container main">
                         <nav class="fluid-container" style="position:relative;top:30px">
                             <img src="trial_for_tracking/static/src/img/medquest.PNG" class="logo" />
-                            <!-- <div>
+                            <div>
                               <img
                                 alt="Menu"
                                 style="height: 60px; width: 120px"
@@ -29,7 +31,7 @@
                                 "
                                 class="sc-pBlUC sc-pZcYF fymeGl"
                               />
-                            </div> -->
+                            </div>
                             <div
                               class="login-btn"
                               data-toggle="modal"
