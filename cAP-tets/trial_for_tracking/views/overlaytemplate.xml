@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <t name="Overlay Form" t-name="wt_medquest_website.modal_overlay_template">
+        <template name="Overlay Form" id="wt_medquest_website.modal_overlay_template">
 
             <div class="modal fade bd-example-modal-lg medquest_main_cl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
@@ -438,7 +438,7 @@
                     </div>
                 </div>
             </div>
-        </t>
+        </template>
 
     </data>
 </odoo>
