@@ -10,6 +10,38 @@ _logger = logging.getLogger(__name__)
 
 class WebsiteSaleCustom(http.Controller):
 
+    succes_modal = '''
+          <div class="modal fade show"  id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true" style="display:inline-block">
+      <div class="modal-dialog" role="document" style="max-width:80%;">
+        <div class="modal-content">
+          <div class="modal-header event-modal">
+              <div class="thank-you">
+
+                Thank You
+
+              </div>  
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="thumb-style">
+            <i class="fa fa-thumbs-up fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="modal-body">
+              <div class="modal-center-text">
+                  We're looking forward<br/> to helping you build your best case.
+              </div>
+
+          </div>
+          <div class="modal-footer" style="border-style:none;justify-content:center;">
+            <button type="button" class="btn my-btn" data-dismiss="modal"
+              style="font-size: 1.8em;width:250px;margin-bottom: 20px;">OK</button>
+          </div>
+        </div>
+      </div></div>
+    '''
+
     @http.route('/service/', type='http', auth='public', website=True, method='GET')
     def formsubmit(self, **kw):
         # for key, value in kw.items():
@@ -397,18 +429,20 @@ class WebsiteSaleCustom(http.Controller):
 
     @http.route('/', type='http', auth='public', website=True, method='GET')
     def homepage(self, **kw):
-        return request.render('website.home_page')
+        return request.render('website.home_page', qcontext={})
 
     @http.route('/intake', type='http', auth='public', website=True, method='POST')
     def intake_from(self, **kw):
+
+
         vals_dic = {}
         msg = ''
         for key, value in kw.items():
             if key in ['contactname', 'attornyname', 'attornyphone', 'firmname', 'country', 'Email1', 'attornyEmail1', 'address1', 'address2',
                     'city', 'phone', 'state', 'extension', 'zip', 'cb1', 'cb2', 'cb3', 'cb4', 'cb5', 'cb6', 'cb7', 'payment','info']:
                 vals_dic[key] = value
-                msg += str(key) + " : " + str(value) + ","
-        return Response(msg)
+
+        return request.render('website.home_page', {'success_modal':self.succes_modal})
 #         public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
 # if request.uid == public_user.id:
 #      # The user is logged in
