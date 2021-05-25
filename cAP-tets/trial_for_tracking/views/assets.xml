@@ -9,6 +9,67 @@
 	    <xpath expr="//script[last()]" position="after">
 	    	<!-- <script type="text/javascript" src="/wt_medquest_website/static/src/js/custom.js"></script> -->
 	    	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+			<script  type="text/javascript" >
+				function change_icon(e) {
+				  alert(e.target);
+				}
+		  
+				$(document).on("click", ".card-header", function (event) {
+				  var which = $(event.target).find("i");
+				  var class_name = which.attr("class");
+				  which.attr(
+					"class",
+					class_name === "fa fa-plus" ? "fa fa-minus" : "fa fa-plus"
+				  );
+				});
+		  
+				function nextfn(e, is_next) {
+				  var index_of_el = -1;
+				  var node_items = document.querySelectorAll(".nav-item a");
+				  var panes = document.querySelectorAll(".tab-pane");
+				  var indicators = document.querySelectorAll(".indicator");
+				  for (item of node_items) {
+					index_of_el += 1;
+					if (item.className.includes("active")) {
+					  break;
+					}
+				  }
+				  var add = -1;
+				  if (is_next) add += 2;
+				  try {
+					node_items[index_of_el + add].className += " active";
+					node_items[index_of_el].className = "nav-link";
+		  
+					panes[index_of_el + add].className += " active";
+					panes[index_of_el].className = "tab-pane";
+		  
+					indicators[index_of_el + add].className += " active";
+					indicators[index_of_el].className = "indicator";
+				  } catch {}
+				}
+				function correct_indic() {
+				  var index_of_el = -1;
+				  var counter = -1;
+				  var node_items = document.querySelectorAll(".nav-item a");
+				  var indicators = document.querySelectorAll(".indicator");
+				  for (item of node_items) {
+					counter += 1;
+					if (item.className.includes("active")) {
+					  index_of_el = counter;
+					}
+					indicators[counter].className = "indicator";
+				  }
+		  
+				  indicators[index_of_el].className += " active";
+				}
+		  
+				$(function () {
+				  $(".nav-tabs a").on("click", function (e) {
+					e.preventDefault();
+					$(this).tab("show");
+				  });
+				});
+			  </script>
 	    </xpath>
 	</template>
 </odoo>

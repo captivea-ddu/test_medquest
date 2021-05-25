@@ -246,6 +246,7 @@ class WebsiteSaleCustom(http.Controller):
 						'ulc' : ulc, 
 						'other' : other, 
 						'cost' : cost, 
+						'should_expidite' : should_expidite
 					}
 		if existing_details:
 			existing_details.sudo().write(value_dict)
