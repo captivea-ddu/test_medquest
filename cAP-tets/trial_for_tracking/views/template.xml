@@ -42,7 +42,7 @@
                                 <button data-toggle="modal" data-target=".medquest_main_cl" class="btn mt-4" style="width:60%;background-color:#9d061f;font-weight:600;color:#fff;font-size: 20px;">
                                     Get Started
                                 </button>
-                                <!-- <t t-call="wt_medquest_website.modal_overlay_template"/> -->
+                                <t t-call="modal_overlay_template"/>
                                 <p class="mt-4">[Phone Number]</p>
                                 <p>[<a>Email Contact</a>]</p>
                             </div>

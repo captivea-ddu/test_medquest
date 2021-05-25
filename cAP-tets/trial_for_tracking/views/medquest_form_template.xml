@@ -7,7 +7,7 @@
 
       <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target="#exampleModalScrollable" style="width:148px;">MEDQuEST Scroll</button>
       
-      <t t-call="wt_medquest_website.modal_overlay_template"/>  
+      <t t-call="modal_overlay_template"/>  
     </xpath>
   </template>
 
