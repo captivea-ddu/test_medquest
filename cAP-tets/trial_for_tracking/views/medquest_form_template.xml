@@ -439,7 +439,7 @@
   <template id="intake_success_modal" name="On Success Modal">
     <div class="modal-backdrop in"></div>
 
-    <div class="modal fade in" id="intakeSuccessModal" tabindex="-1" role="dialog" aria-labelledby="success_modalLabel" aria-hidden="true" >
+    <div class="modal fade in" id="intakeSuccessModal" tabindex="-1" role="dialog" aria-labelledby="success_modalLabel" aria-hidden="true"  style="display:block;" >
 
       <div class="modal-dialog" role="document" style="max-width:80%;">
         <div class="modal-content">
