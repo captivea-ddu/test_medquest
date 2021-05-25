@@ -437,12 +437,8 @@
 
 
   <template id="intake_success_modal" name="On Success Modal">
-    <div class="modal fade in" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-      <!-- <script type="text/javascript">
-        $(window).on('load', function() {
-            $('#exampleModal').modal('show');
-        });
-    </script> -->
+    <div class="modal fade show" id="intakeSuccessModal" tabindex="-1" role="dialog" aria-labelledby="success_modalLabel" aria-hidden="true" >
+
       <div class="modal-dialog" role="document" style="max-width:80%;">
         <div class="modal-content">
           <div class="modal-header event-modal">
