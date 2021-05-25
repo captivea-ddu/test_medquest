@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <t name="Overlay Form" t-name="wt_medquest_website.modal_overlay_template">
+
+            <div class="modal fade bd-example-modal-lg medquest_main_cl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content pt-5 pb-5">
+                        <div class="all_div_res_cl">
+                            <div style="float: right;" class="pr-5">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span style="font-size:40px;">&amp;times;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row content_first_cl">
+                            <div class="col-12 col-sm-8">
+                                <h3>
+                                    <b>TELL US ABOUT YOURSELF</b>
+                                </h3>
+                                <div class="all_div_res_cl" style="display:flex;">
+                                    <div class="col-10 col-sm-3 pl-0">
+                    [Phone Number]
+                  </div>
+                                    <div class="col-10 col-sm-3">
+                                        [
+                                        <a>Email Contact</a>
+                                        ]
+                                    </div>
+                                </div>
+
+                                <div class="all_div_res_cl">
+                                    <div class="pt-2 all_div_res_cl">
+                    Tell us about you and your firm We'll reply as quickly as possible with the information you need to order the MedQuest services that can help you build your best case.
+                  </div>
+                                    <div class="pt-2 all_div_res_cl">
+                    Most of the time you will receive a response within a 48 hours.
+                  </div>
+                                    <div class="pt-2 all_div_res_cl">
+                    All fields required unless otherwise noted.
+                  </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+
+                                <div class="text-center all_div_res_cl">
+                                    <div class="login_box_cl pt-4">
+                                        <div>
+                                            Already a MedQuest
+                                            <br />
+                                            Customer?
+                                        </div>
+                                        <div class="pt-3 login_btn">
+                                            <a class="btn" t-attf-href="/web/login">LOGIN</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container mt-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="all_div_res_cl">
+                                        <h4>CONTACT INFORMATION</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form action="/submit/form" method="post" class="form_main_cl s_website_form" enctype="multipart/form-data" data-editable-form="false">
+
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+
+                                <div class="form-group row form-field">
+                                    <div class="col-10 col-sm-4">
+                                        <label for="contactname">Contact Name</label>
+                                        <input type="text" class="form-control o_website_form_input" id="contactname" name="contactname" />
+
+                                        <label for="attornyname">Attorny Name</label>
+                                        <input type="text" class="form-control o_website_form_input" id="attornyname" name="attornyname" />
+
+                                        <label for="attornyphone">Attorny's Phone Number (Mobile)</label>
+
+                                        <input type="tel" class="form-control o_website_form_input" id="attornyphone" pattern="(?:\(\d{3}\))[- ]?[0-9]{3}-[0-9]{4}" placeholder="(123)456-1234" name="attornyphone" />
+
+                                        <h4 class="pt-4">FIRM INFORMATION</h4>
+                                        <label for="firmname">Firm Name</label>
+                                        <input type="text" class="form-control o_website_form_input" id="firmname" name="firmname" />
+
+                                        <label for="country">Country</label>
+                                        <select class="form-control o_website_form_input" id="country" name="country">
+                                            <option>UNITED STATE</option>
+                                            <option>CANADA</option>
+                                            <option>VIRIGIN</option>
+                                            <option>ISLAND</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-10 col-sm-4">
+                                        <label for="Email1"> Contact Email address</label>
+                                        <input type="email" class="form-control o_website_form_input" id="Email1" aria-describedby="emailHelp" name="Email1" />
+
+                                        <label for="exampleInputEmail1"> Attorny Email address</label>
+                                        <input type="email" class="form-control o_website_form_input" id="attornyEmail1" aria-describedby="emailHelp" name="attornyEmail1" />
+                                    </div>
+
+                                    <div class="col-10 col-sm-8">
+                                        <label for="address1">Street Address 1</label>
+                                        <input type="text" class="form-control o_website_form_input" id="address1" name="address1" />
+
+                                        <label for="address1">Street Address 2</label>
+                                        <input type="text" class="form-control o_website_form_input" id="address2" name="address2" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-10 col-sm-4">
+                                        <label for="city">City</label>
+                                        <input type="text" class="form-control o_website_form_input" id="city" name="city" />
+
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" pattern="(?:\(\d{3}\))[- ]?[0-9]{3}-[0-9]{4}" placeholder="(123)456-1234" class="form-control o_website_form_input" id="phone" name="phone" />
+                                    </div>
+
+                                    <div class="col-10 col-sm-2">
+                                        <label for="state">State</label>
+                                        <select class="form-control o_website_form_input" id="state" name="state">
+                                            <option>UNITED STATE</option>
+                                            <option>CANADA</option>
+                                            <option>VIRIGIN</option>
+                                            <option>ISLAND</option>
+                                        </select>
+
+                                        <label for="extension">Extension (Optional)</label>
+                                        <input type="text" class="form-control o_website_form_input" id="extension" name="extension" />
+                                    </div>
+
+                                    <div class="col-10 col-sm-2">
+                                        <label for="zip" style="font-size:16px;">Zip Code</label>
+                                        <input type="text" class="form-control o_website_form_input" id="zip" name="zip" />
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 mt-4">
+                                        <h4>
+                                            SERVICES
+                                            <br />
+                                            (optional)
+                                        </h4>
+                                        What service are you currently most intrested in? Once you've been granted site access you'll be directed to a form where you can provide a details we'll need to help you build your best case.
+                                    </div>
+
+                                    <div class="col-10 pt-4">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="cb1" name="cb1" />
+                                            <label class="form-check-label" for="cb1">Medical Record Retrieval</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="cb2" name="cb2" />
+                                            <label class="form-check-label" for="cb2">Unlimited "Curbside" of malpractice cases</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="cb3" name="cb3" />
+                                            <label class="form-check-label" for="cb3">Medical Records organization: Chronologies, Demands &amp; Narrative Summaries</label>
+                                        </div>
+                                        <div class="form-check">
+
+                                            <input type="checkbox" class="form-check-input" id="cb4" name="cb4" />
+                                            <label class="form-check-label" for="cb4">Medical Extert Reveiw by Testifying Expert</label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="cb5" name="cb5" />
+                                            <label class="form-check-label" for="cb5">Future Medical Cost Projections</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="cb6" name="cb6" />
+                                            <label class="form-check-label" for="cb6">Independent Medical Examinars (IMEs)</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="cb7" name="cb7" />
+                                            <label class="form-check-label" for="cb7">Usual, Customary and Reasonable (UCRs)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <h4>
+                                            <b>Are you intrested in delaying payment untill after settelment?</b>
+                                        </h4>
+                                        <input type="radio" id="yes" name="payment" value="yes" />
+                                        <label for="yes">
+                                            <b>Yes, tell me about SettelmentPay</b>
+                                        </label>
+                                        <input class="ml-4" type="radio" id="no" name="payment" value="no" />
+                                        <label for="no">
+                                            <b>No</b>
+                                        </label>
+                                    </div>
+                                    <div class="col-10 col-sm-4 mt-2">
+                                        <label for="info">How did you hear about us?</label>
+                                        <select class="form-control o_website_form_input" id="info" name="info">
+                                            <option>UNITED STATE</option>
+                                            <option>CANADA</option>
+                                            <option>VIRIGIN</option>
+                                            <option>ISLAND</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-10 col-sm-4 mt-4 text-center">
+                                        <a href="/submit/form">
+                                            <button class="submit_button" type="submit" value="Submit">SUBMIT</button>
+                                        </a>
+                                        <a href="#" class="pl-3">
+                      Cancel
+                    </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade scroll_form_main_cl mt-5" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body pb-5">
+                            <div class="all_div_res_cl"></div>
+                            <div class="row content_first_cl">
+                                <div style="width:100%;float:right;">
+                                    <button type="button" class="close mr-5" data-dismiss="modal" aria-label="Close">
+                                        <span style="font-size:40px;">&amp;times;</span>
+                                    </button>
+                                </div>
+                                <div class="col-12 col-sm-8">
+                                    <h3>
+                                        <b>TELL US ABOUT YOUR SELF</b>
+                                    </h3>
+                                    <div class="all_div_res_cl" style="display:flex;">
+                                        <div class="col-10 col-sm-3 pl-0">
+                      [Phone Number]
+                    </div>
+                                        <div class="col-10 col-sm-3 pl-0">
+                                            [
+                                            <a>Email Contact</a>
+                                            ]
+                                        </div>
+                                    </div>
+
+                                    <div class="all_div_res_cl">
+                                        <div class="pt-2 all_div_res_cl">
+                      Tell us about you and your firm We'll reply as quickly as possible with the information you need to order the MedQuest services that can help you build your best case.
+                    </div>
+                                        <div class="pt-2 all_div_res_cl">
+                      Most of the time you will receive a response within a 48 hours.
+                    </div>
+                                        <div class="pt-2 all_div_res_cl">
+                      All fields required unless otherwise noted.
+                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-10 col-sm-4">
+
+                                    <div class="text-center all_div_res_cl">
+                                        <div class="login_box_cl ml-5 pt-4">
+                                            <div>
+                                                <b>
+                                                    Already a MedQuest
+                                                    <br />
+                                                    Customer?
+                                                </b>
+                                            </div>
+                                            <div class="pt-3">
+                                                <a class="btn" t-attf-href="/web/login">
+                                                    <b>LOGIN</b>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container mt-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="all_div_res_cl">
+                                            <h4>CONTACT INFORMATION</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <form action="/submit/form2" method="post" class="form_main_cl s_website_form" enctype="multipart/form-data" data-editable-form="false">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+
+                                    <div class="row">
+                                        <div class="col-10 col-sm-4">
+                                            <label for="contactname2">Contact Name</label>
+                                            <input type="text" class="form-control o_website_form_input" id="contactname2" name="contactname2" />
+
+                                            <label for="attornyname2">Attorny Name</label>
+                                            <input name="attornyname2" type="text" class="form-control o_website_form_input" id="attornyname2" />
+
+                                            <label for="attornyphone2">Attorny's Phone Number (Mobile)</label>
+
+                                            <input type="tel" class="form-control o_website_form_input" name="attornyphone2" id="attornyphone2" pattern="(?:\(\d{3}\))[- ]?[0-9]{3}-[0-9]{4}" placeholder="(123)456-1234" />
+
+                                            <h4 class="pt-4">FIRM INFORMATION</h4>
+                                            <label for="firmname2">Firm Name</label>
+                                            <input type="text" name="firmname2" class="form-control o_website_form_input" id="firmname2" />
+
+                                            <label for="country2">Country</label>
+                                            <select class="form-control o_website_form_input" name="country2" id="country2">
+                                                <option>UNITED STATE</option>
+                                                <option>CANADA</option>
+                                                <option>VIRIGIN</option>
+                                                <option>ISLAND</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-10 col-sm-4">
+                                            <label for="Email1_2">Contact Email address</label>
+                                            <input type="email" class="form-control o_website_form_input" name="Email1_2" id="Email1_2" aria-describedby="emailHelp" />
+
+                                            <label for="attorny_Email2"> Attorny Email address</label>
+                                            <input type="email" name="attorny_Email2" class="form-control o_website_form_input" id="attorny_Email2" aria-describedby="emailHelp" />
+                                        </div>
+
+                                        <div class="col-10 col-sm-8">
+                                            <label for="address12">Street Address 1</label>
+                                            <input type="text" name="address12" class="form-control o_website_form_input" id="address12" />
+
+                                            <label for="address22">Street Address 2</label>
+                                            <input type="text" name="address22" class="form-control o_website_form_input" id="address22" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10 col-sm-4">
+                                            <label for="city2">City</label>
+                                            <input type="text" name="city2" class="form-control o_website_form_input" id="city2" />
+
+                                            <label for="phone2">Phone Number</label>
+                                            <input type="tel" name="phone2" pattern="(?:\(\d{3}\))[- ]?[0-9]{3}-[0-9]{4}" placeholder="(123)456-1234" class="form-control o_website_form_input" id="phone2" />
+                                        </div>
+
+                                        <div class="col-10 col-sm-2">
+                                            <label for="state2">State</label>
+                                            <select class="form-control o_website_form_input" name="state2" id="state2">
+                                                <option>UNITED STATE</option>
+                                                <option>CANADA</option>
+                                                <option>VIRIGIN</option>
+                                                <option>ISLAND</option>
+                                            </select>
+
+                                            <label for="extension2">Extension (Optional)</label>
+                                            <input type="text" name="extension2" class="form-control o_website_form_input" id="extension2" />
+                                        </div>
+
+                                        <div class="col-10 col-sm-2">
+                                            <label for="zip2" style="font-size:16px;">Zip Code</label>
+                                            <input type="text" name="zip2" class="form-control o_website_form_input" id="zip2" />
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 mt-4">
+                                            <h4>
+                                                SERVICES
+                                                <br />
+                                                (optional)
+                                            </h4>
+                                            What service are you currently most intrested in? Once you've been granted site access you'll be directed to a form where you can provide a details we'll need to help you build your best case.
+                                        </div>
+
+                                        <div class="col-10 pt-4">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="cb2_1" id="cb2_1" />
+                                                <label class="form-check-label" for="cb2_1">Medical Record Retrieval</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="cb2_2" id="cb2_2" />
+                                                <label class="form-check-label" for="cb2_2">Unlimited "Curbside" of malpractice cases</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="cb3_2" id="cb3_2" />
+                                                <label class="form-check-label" for="cb3_2">Medical Records organization: Chronologies, Demands &amp; Narrative Summaries</label>
+                                            </div>
+                                            <div class="form-check">
+
+                                                <input type="checkbox" class="form-check-input" name="cb4_2" id="cb4_2" />
+                                                <label class="form-check-label" for="cb4_2">Medical Extert Reveiw by Testifying Expert</label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="cb5_2" id="cb5_2" />
+                                                <label class="form-check-label" for="cb5_2">Future Medical Cost Projections</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="cb6_2" id="cb6_2" />
+                                                <label class="form-check-label" for="cb6_2">Independent Medical Examinars (IMEs)</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="cb7_2" id="cb7_2" />
+                                                <label class="form-check-label" for="cb7_2">Usual, Customary and Reasonable (UCRs)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-3">
+                                            <h4>
+                                                <b>Are you intrested in delaying payment untill after settelment?</b>
+                                            </h4>
+                                            <input type="radio" id="yes_2" name="payment" value="yes" />
+                                            <label for="yes_2">
+                                                <b>Yes, tell me about SettelmentPay</b>
+                                            </label>
+                                            <input class="ml-4" type="radio" id="no_2" name="payment" value="no" />
+                                            <label for="no_2">
+                                                <b>No</b>
+                                            </label>
+                                        </div>
+                                        <div class="col-10 col-sm-4 mt-2">
+                                            <label for="info_2">How did you hear about us?</label>
+                                            <select class="form-control o_website_form_input" name="info_2" id="info_2">
+                                                <option>UNITED STATE</option>
+                                                <option>CANADA</option>
+                                                <option>VIRIGIN</option>
+                                                <option>ISLAND</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10 col-sm-4 mt-4 text-center">
+                                            <a href="/submit/form2">
+                                                <button class="submit_button" type="submit" value="Submit">SUBMIT</button>
+                                            </a>
+                                            <a href="#" class="pl-3">
+                        Cancel
+                      </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+
+    </data>
+</odoo>
