@@ -14,7 +14,7 @@
   <template id="modal_overlay_template" name="Overlay Form">
 
       
-      <div class="modal fade bd-example-modal-lg medquest_main_cl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal fade bd-example-modal-lg medquest_main_cl" tabindex="-1" id="intakeModal" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content pt-5 pb-5">
             <div class="all_div_res_cl">
