@@ -2,7 +2,7 @@
 import json
 import logging
 from odoo import http
-from odoo.http import request , Response
+from odoo.http import request 
 from odoo.addons.website_sale.controllers.main import WebsiteSale
 
 _logger = logging.getLogger(__name__)
@@ -429,7 +429,11 @@ class WebsiteSaleCustom(http.Controller):
 
     @http.route('/', type='http', auth='public', website=True, method='GET')
     def homepage(self, **kw):
-        return request.render('website.home_page', qcontext={})
+        is_success =""
+        for key, value in kw.items():
+            if key == 'is_success':
+                is_success = self.succes_modal
+        return request.render('website.home_page', qcontext={"is_success": is_success})
 
     @http.route('/intake', type='http', auth='public', website=True, method='POST')
     def intake_from(self, **kw):
@@ -441,7 +445,7 @@ class WebsiteSaleCustom(http.Controller):
                     'city', 'phone', 'state', 'extension', 'zip', 'cb1', 'cb2', 'cb3', 'cb4', 'cb5', 'cb6', 'cb7', 'payment','info']:
                 vals_dic[key] = value
 
-        return request.render('website.home_page', {'success_modal':self.succes_modal})
+        return request.redirect('/?is_success=true')
 #         public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
 # if request.uid == public_user.id:
 #      # The user is logged in
