@@ -420,7 +420,7 @@
   </template>
 
 
-  <template id="frontend_layout" name="Header extended" inherit_id="website.homepage">
+  <!-- <template id="frontend_layout" name="Header extended" inherit_id="website.homepage">
     <xpath expr="//div[@id='oe_structure_header_default_1']" position="after">
       <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target=".medquest_main_cl" style="width:100px;">Get Started</button>
 
@@ -428,6 +428,6 @@
       <button type="button" class="btn btn-danger ml-4" data-toggle="modal" data-target="#exampleModalScrollable" style="width:148px;">MEDQuEST Scroll</button>
       
     </xpath>
-  </template>
+  </template> -->
 </data>
 </odoo>
