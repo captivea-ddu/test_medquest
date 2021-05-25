@@ -407,3 +407,11 @@ class WebsiteSaleCustom(http.Controller):
                     'city', 'phone', 'state', 'extension', 'zip', 'cb1', 'cb2', 'cb3', 'cb4', 'cb5', 'cb6', 'cb7', 'payment', 'info']:
                 vals_dic[key] = value
 		
+
+#         public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
+# if request.uid == public_user.id:
+#      # The user is logged in
+#      # Put your code for logged in user here
+# else:
+#     # The user is not logged in
+#     # Put your code for public users here
