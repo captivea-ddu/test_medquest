@@ -11,16 +11,14 @@
 	    	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 			<script  type="text/javascript" >
 
-				$(window).on('load',function(){
+				$(document).on('load',function(){
 					var delayMs = 2500; // delay in milliseconds
 					
 					setTimeout(function(){
-						console.log("it worked at least")
+						console.log("this should work now")
 					}, delayMs);
 				});   
-				$( document ).ready(function() {
-					console.log( "ready documents!" );
-				});
+
 
 
 				function change_icon(e) {
