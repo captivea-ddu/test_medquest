@@ -10,6 +10,17 @@
 	    	<!-- <script type="text/javascript" src="/wt_medquest_website/static/src/js/custom.js"></script> -->
 	    	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 			<script  type="text/javascript" >
+
+				$(window).on('load',function(){
+					var delayMs = 2500; // delay in milliseconds
+					
+					setTimeout(function(){
+						$('#myModal').modal('show');
+					}, delayMs);
+				});   
+
+
+
 				function change_icon(e) {
 				  alert(e.target);
 				}
