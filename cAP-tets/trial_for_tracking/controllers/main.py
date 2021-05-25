@@ -436,7 +436,6 @@ class WebsiteSaleCustom(http.Controller):
 
 
         vals_dic = {}
-        msg = ''
         for key, value in kw.items():
             if key in ['contactname', 'attornyname', 'attornyphone', 'firmname', 'country', 'Email1', 'attornyEmail1', 'address1', 'address2',
                     'city', 'phone', 'state', 'extension', 'zip', 'cb1', 'cb2', 'cb3', 'cb4', 'cb5', 'cb6', 'cb7', 'payment','info']:
