@@ -471,7 +471,7 @@
 
 
   </template>
-  <!-- <template id="cancel_modal" name="On cancel Modal">
+  <template id="cancel_modal" name="On cancel Modal">
 
     <div class="modal fade" id="cancelSave" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display:inline-block">
       <div class="modal-dialog" role="document" style="max-width:80%;">
@@ -515,7 +515,7 @@
     </div>
 
 
-  </template> -->
+  </template>
 
 
 </odoo>
