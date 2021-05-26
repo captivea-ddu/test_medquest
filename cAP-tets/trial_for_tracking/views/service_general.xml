@@ -254,7 +254,7 @@
                             <div class="row row-adj">
                                 <div class="col-12" style="padding-left:0">
                                     <button type="submit" class="submit-button">SAVE &amp; CONTINUE</button>
-                                    <button type="button" class="cancel-button" formaction='/submit/service-request/?is_cancel=true'>Cancel</button>
+                                    <div type="submit" class="cancel-button" formaction='/submit/service-request/?is_cancel=true'>Cancel</div>
 
                                 </div>
                             </div>
