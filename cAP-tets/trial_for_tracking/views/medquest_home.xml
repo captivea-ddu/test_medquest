@@ -87,7 +87,10 @@
                                 </div>
                                 <div class="row">
                   
-                                  <button type="button" class="btn"
+                                  
+                                  
+                                  <div t-if="is_login">
+                                    <button type="button" class="btn"
                                     style="background-color: rgb(158, 1, 25);
                                       color: white;
                                       font-size: 2em;
@@ -95,14 +98,27 @@
                                       margin-top: 20px;
                                     "
                                   data-toggle="modal" 
-                                  data-target="#exampleModalScrollable" 
+                                  data-target="#intake" 
                                   data-oe-id="2760" 
                                   data-oe-xpath="/data/xpath/button[2]" 
                                   data-oe-model="ir.ui.view" 
                                   data-oe-field="arch">Get Started</button>
-                                  
-                                  
-                                  
+                                </div>        
+                                 <div t-else="true">
+                                    <button type="button" class="btn"
+                                    style="background-color: rgb(158, 1, 25);
+                                      color: white;
+                                      font-size: 2em;
+                                      width: 100%;
+                                      margin-top: 20px;
+                                    "
+                                  data-toggle="modal" 
+                                  data-target="#examplemodal" 
+                                  data-oe-id="2760" 
+                                  data-oe-xpath="/data/xpath/button[2]" 
+                                  data-oe-model="ir.ui.view" 
+                                  data-oe-field="arch">Get Started</button>
+                                 </div> 
                                   
                                   
                                   

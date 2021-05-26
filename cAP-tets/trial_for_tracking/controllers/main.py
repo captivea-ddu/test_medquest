@@ -430,10 +430,11 @@ class WebsiteSaleCustom(http.Controller):
     @http.route('/', type='http', auth='public', website=True, method='GET')
     def homepage(self, **kw):
         is_success = False
-        for key, value in kw.items():
+        is_login = False
+        for key, _ in kw.items():
             if key == 'is_success':
                 is_success =True
-        return request.render('website.home_page', qcontext={"is_success": is_success})
+        return request.render('website.home_page', qcontext={"is_success": is_success, "is_login" :is_login})
 
     @http.route('/intake', type='http', auth='public', website=True, method='POST')
     def intake_from(self, **kw):
@@ -444,7 +445,6 @@ class WebsiteSaleCustom(http.Controller):
                 vals_dic[key] = value
 
         return request.redirect('/?is_success=true')
-        return self.succes_modal
 #         public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
 # if request.uid == public_user.id:
 #      # The user is logged in
