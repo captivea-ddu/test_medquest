@@ -112,7 +112,7 @@
                                 <div class="col-12" style="padding-left:0">
                                     <button type="submit" class="submit-button">Case Issues &amp; Focus</button>
 
-                                    <button type="submit" class="back-button" formaction="/deals/">Back</button>
+                                    <button type="submit" class="back-button" formaction="/service-general/">Back</button>
                                     <button type="submit" class="cancel-button" formaction='/service-details/cancel/'>Cancel</button>
                                 </div>
                             </div>

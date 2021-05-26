@@ -519,6 +519,7 @@
 
                         </div>
                         <button type="submit">Submit</button>
+                        <button type="submit" class="back-button" formaction="/case-details/">Back</button>
                         <div type="button" class="cancel-button" formaction='/service-details/cancel'>Cancel</div>
 
                     </form> 
