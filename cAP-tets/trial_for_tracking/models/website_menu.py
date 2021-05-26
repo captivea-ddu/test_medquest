@@ -31,6 +31,8 @@ class ServiceRequest(models.Model):
 
     case_issues = fields.Text(string='Case Issues and Focus')
 
+    cron = fields.Boolean()
+
     nar = fields.Boolean()
 
     binder = fields.Boolean()
@@ -89,7 +91,7 @@ class ServiceRequest(models.Model):
 
     contactemail = fields.Char(size=70)
 
-    casename = fields.Char(size=70)
+    contactphone = fields.Char(size=70)
 
     attorname = fields.Char(size=70)
 

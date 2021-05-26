@@ -16,14 +16,9 @@
                     <div t-if="is_cancel">
                         <t t-call="trial_for_tracking.cancel_modal" />
                     </div>
- 
 
-                    <div class="fluid-container main" >
 
-                        <div>
-                            lets see if this works: <t t-esc="my_val"/>
-                            <input type="text" t-att-value='my_val' />
-                        </div>
+                    <div class="fluid-container main">
                         <nav class="fluid-container" style="position:relative;top:30px">
                             <img src="/trial_for_tracking/static/src/img/medquest.PNG" class="logo" />
                             <div>
@@ -777,7 +772,7 @@
                                 <div>
 
                                     <div class="modal-footer" style="border-style:none;justify-content:center">
-                                            <button type="button" onclick="javascript:window.location.href='/service-general';" class="btn my-btn" data-dismiss="modal" style="font-size: 1.8em;width:250px;margin-bottom: 100px;">
+                                        <button type="button" onclick="javascript:window.location.href='/service-general';" class="btn my-btn" data-dismiss="modal" style="font-size: 1.8em;width:250px;margin-bottom: 100px;">
                                                 Get Started
                                             </button>
                                     </div>

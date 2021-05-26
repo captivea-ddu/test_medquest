@@ -44,8 +44,8 @@
                         <div class="row row-adj">
                             <div class="col-6">
 
-                                <label class="ran">
-                                    <input type="checkbox" />
+                                <label class="ran" >
+                                    <input type="checkbox" name='cron' />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
@@ -244,18 +244,6 @@
 
                         <div class="row row-adj">
 
-
-                            <div class="col-6">
-
-                                <label class="ran">
-                                    <input type="checkbox" value='true' name='scr'  />
-                                    <span class="checkmark"></span>
-
-                                    <div class="check-label">
-                                        Mass Tort Screeining
-                                    </div>
-                                </label>
-                            </div>
                             <div class="col-6" stye="">
 
                                 <label class="ran">
@@ -268,22 +256,22 @@
                                 </label>
                             </div>
 
-
-                        </div>
-                        <div class="row row-adj">
-
-
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" value='true' name='suf' />
+                                    <input type="checkbox" value='true' name='scr'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
-                                        Pain and Suffering Chart
+                                        Mass Tort Screeining
                                     </div>
                                 </label>
                             </div>
+                           
+
+
+                        </div>
+                        <div class="row row-adj">
                             <div class="col-6" stye="">
 
                                 <label class="ran">
@@ -296,22 +284,23 @@
                                 </label>
                             </div>
 
+                            <div class="col-6">
+
+                                <label class="ran">
+                                    <input type="checkbox" value='true' name='suf' />
+                                    <span class="checkmark"></span>
+
+                                    <div class="check-label">
+                                        Pain and Suffering Chart
+                                    </div>
+                                </label>
+                            </div>
+                  
+
 
                         </div>
                         <div class="row row-adj">
 
-
-                            <div class="col-6">
-
-                                <label class="ran">
-                                    <input type="checkbox" value='true' name='fact'  />
-                                    <span class="checkmark"></span>
-
-                                    <div class="check-label">
-                                        Plaintiff Fact Sheet
-                                    </div>
-                                </label>
-                            </div>
                             <div class="col-6" stye="">
 
                                 <label class="ran">
@@ -325,21 +314,21 @@
                             </div>
 
 
-                        </div>
-                        <div class="row row-adj">
-
-
                             <div class="col-6">
 
                                 <label class="ran">
-                                    <input type="checkbox" value='true' name='jury'  />
+                                    <input type="checkbox" value='true' name='fact'  />
                                     <span class="checkmark"></span>
 
                                     <div class="check-label">
-                                        Jury Questionnaire
+                                        Plaintiff Fact Sheet
                                     </div>
                                 </label>
                             </div>
+
+
+                        </div>
+                        <div class="row row-adj">
                             <div class="col-6" stye="">
 
                                 <label class="ran">
@@ -352,22 +341,23 @@
                                 </label>
                             </div>
 
+                            <div class="col-6">
+
+                                <label class="ran">
+                                    <input type="checkbox" value='true' name='jury'  />
+                                    <span class="checkmark"></span>
+
+                                    <div class="check-label">
+                                        Jury Questionnaire
+                                    </div>
+                                </label>
+                            </div>
+         
+
 
                         </div>
                         <div class="row row-adj">
 
-
-                            <div class="col-6">
-
-                                <label class="ran">
-                                    <input type="checkbox" value='true' name='rev'  />
-                                    <span class="checkmark"></span>
-
-                                    <div class="check-label">
-                                        Mass Tort Case Review
-                                    </div>
-                                </label>
-                            </div>
                             <div class="col-6" stye="">
 
                                 <label class="ran">
@@ -380,22 +370,24 @@
                                 </label>
                             </div>
 
+                            <div class="col-6">
+
+                                <label class="ran">
+                                    <input type="checkbox" value='true' name='rev'  />
+                                    <span class="checkmark"></span>
+
+                                    <div class="check-label">
+                                        Mass Tort Case Review
+                                    </div>
+                                </label>
+                            </div>
+
+
 
                         </div>
                         <div class="row row-adj">
 
 
-                            <div class="col-6">
-
-                                <label class="ran">
-                                    <input type="checkbox" value='true' name='cen' />
-                                    <span class="checkmark"></span>
-
-                                    <div class="check-label">
-                                        Cencus Form
-                                    </div>
-                                </label>
-                            </div>
                             <div class="col-6" stye="">
 
                                 <label class="ran">
@@ -408,11 +400,56 @@
                                 </label>
                             </div>
 
+                            <div class="col-6">
+
+                                <label class="ran">
+                                    <input type="checkbox" value='true' name='cen' />
+                                    <span class="checkmark"></span>
+
+                                    <div class="check-label">
+                                        Cencus Form
+                                    </div>
+                                </label>
+                            </div>
+ 
+
 
                         </div>
                         <div class="row row-adj">
 
 
+                            <div class="col-6">
+
+                                <label class="ran">
+                                    <input type="checkbox" value='true' name='screening'  />
+                                    <span class="checkmark"></span>
+
+                                    <div class="check-label">
+                                        Case Screening Spread Sheets  
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-6">
+
+                            
+                            </div>
+
+
+                        </div>
+                        <div class="row row-adj">
+
+
+                            <div class="col-6">
+
+                                <label class="ran">
+                                    <input type="checkbox" value='true' name='bates'  />
+                                    <span class="checkmark"></span>
+
+                                    <div class="check-label">
+                                        Bates Stamping 
+                                    </div>
+                                </label>
+                            </div>
                             <div class="col-6">
 
                                 <label class="ran">
@@ -424,7 +461,6 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="col-6" stye=""></div>
 
 
                         </div>
@@ -518,6 +554,7 @@
                             </div>
 
                         </div>
+
                         <button type="submit">Submit</button>
                         <button type="submit" class="back-button" formaction="/case-details/">Back</button>
                         <button type="button" class="cancel-button" formaction="/submit/service-details/?is_cancel=true">Cancel</button>

@@ -54,7 +54,7 @@
 
                                 <div class="col-4">
                                     <label for="contactphone">Case Email Address</label>
-                                    <input type="text" class="form-control o_website_form_input input-base" id="contactphone" name="casename" />
+                                    <input type="text" class="form-control o_website_form_input input-base" id="contactphone" name="contactphone" />
                                 </div>
 
 
@@ -75,7 +75,7 @@
 
                                 <div class="col-4">
                                     <label for="contactphone">Attorney Phone Number (mobile) </label>
-                                    <input type="text" class="form-control o_website_form_input input-base" id="contactphone" name="attorphone" />
+                                    <input type="text" class="form-control o_website_form_input input-base" id="attorphone" name="attorphone" />
                                 </div>
 
 
@@ -173,7 +173,7 @@
                                 </div>
                                 <div class="col-2">
                                     <label for="zip">ZIP Code</label>
-                                    <input type="text" class="form-control o_website_form_input input-base" id="zip" name="zip" />
+                                    <input type="text" class="form-control o_website_form_input input-base" id="zip" name="zip_" />
                                 </div>
 
                             </div>
@@ -217,7 +217,7 @@
                             </div>
                             <div class="row row-adj">
                                 <div class="col-2">
-                                    <input type="date" class="form-control o_website_form_input input-base" id="plantifgen" name="plantifgen" />
+                                    <input type="date" class="form-control o_website_form_input input-base" id="expectdate" name="expectdate" />
 
                                 </div>
                             </div>

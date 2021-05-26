@@ -25,7 +25,7 @@ class WebsiteSaleCustom(http.Controller):
 
         contactname = None
         contactemail = None
-        casename = None
+        contactphone = None
         attorname = None
         attoremail = None
         attorphone = None
@@ -45,8 +45,9 @@ class WebsiteSaleCustom(http.Controller):
         plantifemail = None
         plantifgen = None
         plantifgen = None
+        
         should_expidite = False
-
+        
         is_cancel = False
         for key, value in kw.items():
 
@@ -54,8 +55,8 @@ class WebsiteSaleCustom(http.Controller):
                 contactname = value
             elif key == "contactemail":
                 contactemail = value
-            elif key == "casename":
-                casename = value
+            elif key == "contactphone":
+                contactphone = value
             elif key == "attorname":
                 attorname = value
             elif key == "attoremail":
@@ -104,7 +105,7 @@ class WebsiteSaleCustom(http.Controller):
 
         value_dict = {'contactname': contactname,
                       'contactemail': contactemail,
-                      'casename': casename,
+                      'contactphone': contactphone,
                       'attorname': attorname,
                       'attoremail': attoremail,
                       'attorphone': attorphone,
@@ -144,6 +145,7 @@ class WebsiteSaleCustom(http.Controller):
         user_id = request.env.context.get('uid')
         existing_details = request.env['service.request'].sudo().search(
             [('user_id', '=', user_id)], limit=1)
+        cron = None
         nar = None
         binder = None
         maxtrix = None
@@ -169,10 +171,12 @@ class WebsiteSaleCustom(http.Controller):
         cen = None
         ulc = None
         other = None
-        should_expidite = None
         cost = None
+
         is_cancel = False
         for key, value in kw.items():
+            if key == 'cron':
+                cron = value
             if key == 'nar':
                 nar = value
             elif key == 'binder':
@@ -223,16 +227,14 @@ class WebsiteSaleCustom(http.Controller):
                 ulc = value
             elif key == 'other':
                 other = value
-            elif key == 'customRadioInline1':
-                should_expidite = True
-            elif key == 'customRadioInline2':
-                should_expidite = False
+
             elif key == 'cost':
                 cost = value
             elif key == 'is_cancel':
                 is_cancel = True
 
-        value_dict = {'nar': nar,
+        value_dict = {"cron": cron,
+                      'nar': nar,
                       'binder': binder,
                       'maxtrix': maxtrix,
                       'depo': depo,
@@ -258,7 +260,6 @@ class WebsiteSaleCustom(http.Controller):
                       'ulc': ulc,
                       'other': other,
                       'cost': cost,
-                      'should_expidite': should_expidite
                       }
         if existing_details:
             existing_details.sudo().write(value_dict)
@@ -282,15 +283,16 @@ class WebsiteSaleCustom(http.Controller):
         user_id = request.env.context.get('uid')
         existing_details = request.env['service.request'].sudo().search(
             [('user_id', '=', user_id)], limit=1)
+
         case_type = None
-        case_issues = None
         case_overview = None
+        case_issues = None
+
         document_name = None
         documents = None
 
         is_cancel =False
         for key, value in kw.items():
-            # contact_name
 
             if key == "case_type":
                 case_type = value
@@ -351,8 +353,8 @@ class WebsiteSaleCustom(http.Controller):
 
         return request.render("website.service_details")
 
-    @http.route('/service-details/cancel', type='http', auth='public', website=True, method='POST')
-    def service_details(self, **kw):
+    # @http.route('/service-details/cancel', type='http', auth='public', website=True, method='POST')
+    # def service_details(self, **kw):
         user_id = request.env.context.get('uid')
         existing_details = request.env['service.request'].sudo().search(
             [('user_id', '=', user_id)], limit=1)
@@ -442,7 +444,8 @@ class WebsiteSaleCustom(http.Controller):
 
     @http.route('/intake', type='http', auth='public', website=True, method='POST')
     def intake_from(self, **kw):
-
+        # map for check boxes
+        # cb1 medical 
 
         vals_dic = {}
         for key, value in kw.items():
@@ -453,6 +456,7 @@ class WebsiteSaleCustom(http.Controller):
   
         service_request = request.env['service.request'].sudo().create(
                 value_dict)
+
         request.env.cr.commit()
 
 
