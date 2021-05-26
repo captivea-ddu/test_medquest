@@ -27,7 +27,7 @@
         'views/header.xml',
         # 'view/header_snippet.xml'
         ],
-    "images": ["static/src/img/service_form.PNG"],
+    "images": ["static/src/img/service_form.PNG", "static/src/img/medquest.PNG"],
     "application": True,
     "installable": True,
     "auto_install": False,
