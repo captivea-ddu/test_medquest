@@ -432,7 +432,7 @@ class WebsiteSaleCustom(http.Controller):
         is_success = False
         is_login = False
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
-        if request.uid != public_user.id:
+        if not request.env.user.id == request.env.ref('base.public_user').id:
             is_login = True
 
         for key, _ in kw.items():
