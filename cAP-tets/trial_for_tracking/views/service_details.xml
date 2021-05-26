@@ -520,7 +520,7 @@
                         </div>
                         <button type="submit">Submit</button>
                         <button type="submit" class="back-button" formaction="/case-details/">Back</button>
-                        <div type="button" class="cancel-button" formaction="/submit/service-details/">Cancel</div>
+                        <button type="button" class="cancel-button" formaction="/submit/service-details/?is_cancel=true">Cancel</button>
 
                     </form> 
                 </div>
