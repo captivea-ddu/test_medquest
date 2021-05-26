@@ -15,6 +15,7 @@ class ServiceRequest(models.Model):
     _name = "service.request"
 
     name = fields.Char(String="Name")
+    
     user_id = fields.Many2one(
         'res.users',
         string='User',

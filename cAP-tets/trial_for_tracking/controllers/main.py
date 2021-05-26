@@ -10,6 +10,9 @@ _logger = logging.getLogger(__name__)
 
 class WebsiteSaleCustom(http.Controller):
 
+    def __init__(self,*other ,**kv):
+        super().__init__(*other ,**kv)
+        self.field_list = [i.name for i in self.env['ir.model'].search([('model','=','service.request')], limit=1).field_id]
 
     @http.route('/service/', type='http', auth='public', website=True, method='GET')
     def formsubmit(self, **kw):
@@ -277,6 +280,16 @@ class WebsiteSaleCustom(http.Controller):
     def case_details_form_controller(self, **kw):
         # user_id = request.env.context.get('uid')
         return request.render('website.case_details')
+    @http.route('/service-general', type='http', auth='user', website=True, method='GET')
+    def service_general_controller(self, **kw):
+        user_id = request.env.context.get('uid')
+        existing_details = request.env['service.request'].sudo().search(
+            [('user_id', '=', user_id)], limit=1)
+        res_dict = {}
+        if not request.env.user.id == request.env.ref('base.public_user').id:
+            for i in self.field_list:
+                res_dict[i] = existing_details[i]
+        return request.render('website.service_general', res_dict )
 
     @http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
     def case_details_form_submit_controller(self, **kw):
