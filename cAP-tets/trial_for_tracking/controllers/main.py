@@ -12,7 +12,7 @@ class WebsiteSaleCustom(http.Controller):
 
     def __init__(self,*other ,**kv):
         super().__init__(*other ,**kv)
-        self.field_list = [i.name for i in self.env['ir.model'].search([('model','=','service.request')], limit=1).field_id]
+        self.field_list = [i.name for i in request.env['ir.model'].search([('model','=','service.request')], limit=1).field_id]
 
     @http.route('/service/', type='http', auth='public', website=True, method='GET')
     def formsubmit(self, **kw):
