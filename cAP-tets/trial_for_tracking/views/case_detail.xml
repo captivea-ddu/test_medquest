@@ -33,7 +33,7 @@
 
                             <div class="col-4">
                                 <label for="contactname">Case Type</label>
-                                <select id="inputState" name="case_type" class="form-control o_website_form_input input-base">
+                                <select id="inputState" name="case_type" t-att-value="case_type" class="form-control o_website_form_input input-base">
                                     <option selected="true" value='motor'>Motor Vehicle Accident') </option>
                                     <option value='nurse'>Nursing Home</option>
                                     <option value='defective'>Defective Product</option>
@@ -48,14 +48,14 @@
                             <div class="row row-adj">
                                 <div class="col-10">
                                     <label for="case_overview">Case Overview</label>
-                                    <input type="text" name="case_overview" class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
+                                    <input type="text" name="case_overview" t-att-value="case_overview" class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
                                 </div>
                             </div>
 
                             <div class="row row-adj">
                                 <div class="col-10">
                                     <label for="case_issues">Case Issues and Focus</label>
-                                    <input type="text" name="case_issues" class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
+                                    <input type="text" name="case_issues"  t-att-value="case_issues"  class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
                                 </div>
                             </div>
 
@@ -78,7 +78,7 @@
                                     <div class="file-input-header">
                         File Name
                     </div>
-                                    <input name="file_selector" style="border-style: none;" />
+                                    <input name="file_selector" multiple="true" type="file" style="border-style: none;" />
                                 </div>
 
                                 <div class="col-5">
