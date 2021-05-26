@@ -65,7 +65,7 @@
                                       font-size: 2em;
                                       width: 100%;
                                       margin-top: 20px;
-                                    " data-toggle="modal" data-target="#intake" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
+                                    " data-toggle="modal" data-target="#start_request" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
                                         </div>
                                         <div t-else="true">
                                             <button type="button" class="btn" style="background-color: rgb(158, 1, 25);
@@ -73,7 +73,7 @@
                                       font-size: 2em;
                                       width: 100%;
                                       margin-top: 20px;
-                                    " data-toggle="modal" data-target="#examplemodal" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
+                                    " data-toggle="modal" data-target="#intakeModal" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
                                         </div>
 
 
@@ -551,19 +551,19 @@
                                             <div class="started-wrapper">
                                                 <div t-if="is_login">
                                                     <button type="button" class="btn" style="background-color: rgb(158, 1, 25);
-                                                      color: white;
-                                                      font-size: 2em;
-                                                      width: 100%;
-                                                      margin-top: 20px;
-                                                    " data-toggle="modal" data-target="#intakeModal" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
+                                              color: white;
+                                              font-size: 2em;
+                                              width: 100%;
+                                              margin-top: 20px;
+                                            " data-toggle="modal" data-target="#start_request" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
                                                 </div>
                                                 <div t-else="true">
                                                     <button type="button" class="btn" style="background-color: rgb(158, 1, 25);
-                                                      color: white;
-                                                      font-size: 2em;
-                                                      width: 100%;
-                                                      margin-top: 20px;
-                                                    " data-toggle="modal" data-target="#examplemodal" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
+                                              color: white;
+                                              font-size: 2em;
+                                              width: 100%;
+                                              margin-top: 20px;
+                                            " data-toggle="modal" data-target="#intakeModal" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -654,19 +654,19 @@
                                               ">
                                                         <div t-if="is_login">
                                                             <button type="button" class="btn" style="background-color: rgb(158, 1, 25);
-                                                  color: white;
-                                                  font-size: 2em;
-                                                  width: 100%;
-                                                  margin-top: 20px;
-                                                " data-toggle="modal" data-target="#intakeModal" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
+                                          color: white;
+                                          font-size: 2em;
+                                          width: 100%;
+                                          margin-top: 20px;
+                                        " data-toggle="modal" data-target="#start_request" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
                                                         </div>
                                                         <div t-else="true">
                                                             <button type="button" class="btn" style="background-color: rgb(158, 1, 25);
-                                                  color: white;
-                                                  font-size: 2em;
-                                                  width: 100%;
-                                                  margin-top: 20px;
-                                                " data-toggle="modal" data-target="#examplemodal" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
+                                          color: white;
+                                          font-size: 2em;
+                                          width: 100%;
+                                          margin-top: 20px;
+                                        " data-toggle="modal" data-target="#intakeModal" data-oe-id="2760" data-oe-xpath="/data/xpath/button[2]" data-oe-model="ir.ui.view" data-oe-field="arch">Get Started</button>
                                                         </div>
                                                     </div>
                                                     <div class="row" style="
@@ -691,7 +691,90 @@
                             </div>
                         </div>
                     </div>
+                    <div class="modal fade" id="start_request" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document" style="max-width:80%;">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border:none">
 
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <!-- <span aria-hidden="true">&times;</span> -->
+                                    </button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <div class="my-title">TELL US ABOUT YOUR CASE</div>
+                                    <div class="underscript-cont" style="display: inline-block;">
+                                        <div class='underscipt'>
+                              (345) - 685 2939
+                            </div>
+                                        <div class='underscipt email-adj'>
+                              YourEmailHere@yourmail.com
+                            </div>
+
+
+                                    </div>
+                                    <div class="fluid-container">
+                                        <div class="row">
+                                            <div class="col" style="min-width: 55%;">
+
+                                                <div class="main-text">
+                                  In this form you'll provide us information about your Case and which MedQuest services can help you
+                                  build your best case
+                                </div>
+                                                <ul class="under-list">
+                                                    <li>
+                                    Expect that the from will take you [X minutes] to complete, but you can save as you go
+                                  </li>
+                                                    <li>
+                                    If you have a form in progress, when you return to the website you can resume where you left of
+                                    by....
+                                  </li>
+                                                    <li>
+                                    Most of the time you'll receive a responce from Medquest within 48 hours
+                                  </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col" style="margin-left:100px">
+
+                                                <div>
+                                                    <!-- <img src=".\src\stuff.PNG"  class="temp-image" /> -->
+
+                                                    <div class="sub_div_2_cl">
+                                                        <div class="partner_div_cl">
+                                                            <div class="widget-title">
+                                        Important
+                                      </div>
+                                                            <div>
+                                                                <ul class="widget-list">
+                                                                    <li>
+                                            Payment is due net 30 days
+                                          </li>
+                                                                    <li>
+                                            1.5% added to invoices past 30 days
+                                          </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div>
+
+                                    <div class="modal-footer" style="border-style:none;justify-content:center">
+                                        <button type="button" class="btn my-btn" data-dismiss="modal" style="font-size: 1.8em;width:250px;margin-bottom: 100px;">Get Started</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </t>
             </field>
