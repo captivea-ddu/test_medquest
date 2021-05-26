@@ -76,8 +76,7 @@ class WebsiteSaleCustom(http.Controller):
         plantifemail = None
         plantifgen = None
         plantifgen = None
-        customRadioInline1 = None
-        customRadioInline2 = None
+        should_expidite = False
 
         for key, value in kw.items():
 
