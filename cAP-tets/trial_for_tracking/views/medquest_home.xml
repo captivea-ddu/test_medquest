@@ -16,9 +16,9 @@
                     <div t-if="is_cancel">
                         <t t-call="trial_for_tracking.cancel_modal" />
                     </div>
+ 
 
-
-                    <div class="fluid-container main">
+                    <div class="fluid-container main" >
                         <nav class="fluid-container" style="position:relative;top:30px">
                             <img src="trial_for_tracking/static/src/img/medquest.PNG" class="logo" />
                             <div>
