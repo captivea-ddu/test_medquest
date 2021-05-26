@@ -91,7 +91,7 @@ class ServiceRequest(models.Model):
 
     contactemail = fields.Char(size=70)
 
-    contactphone = fields.Char(size=70)
+    contactphone = fields.Char(size=80)
 
     attorname = fields.Char(size=70)
 
