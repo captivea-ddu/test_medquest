@@ -10,37 +10,6 @@ _logger = logging.getLogger(__name__)
 
 class WebsiteSaleCustom(http.Controller):
 
-    succes_modal = '''
-          <div class="modal fade show"  id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true" style="display:inline-block">
-      <div class="modal-dialog" role="document" style="max-width:80%;">
-        <div class="modal-content">
-          <div class="modal-header event-modal">
-              <div class="thank-you">
-
-                Thank You
-
-              </div>  
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="thumb-style">
-            <i class="fa fa-thumbs-up fa-5x" aria-hidden="true"></i>
-          </div>
-          <div class="modal-body">
-              <div class="modal-center-text">
-                  We're looking forward<br/> to helping you build your best case.
-              </div>
-
-          </div>
-          <div class="modal-footer" style="border-style:none;justify-content:center;">
-            <button type="button" class="btn my-btn" data-dismiss="modal"
-              style="font-size: 1.8em;width:250px;margin-bottom: 20px;">OK</button>
-          </div>
-        </div>
-      </div></div>
-    '''
 
     @http.route('/service/', type='http', auth='public', website=True, method='GET')
     def formsubmit(self, **kw):
@@ -78,6 +47,7 @@ class WebsiteSaleCustom(http.Controller):
         plantifgen = None
         should_expidite = False
 
+        is_cancel = False
         for key, value in kw.items():
 
             if key == "contactname":
@@ -129,6 +99,8 @@ class WebsiteSaleCustom(http.Controller):
                 should_expidite = True
             elif key == "customRadioInline2":
                 should_expidite = False
+            elif key == "is_cancel":
+                is_cancel = True
 
         value_dict = {'contactname': contactname,
                       'contactemail': contactemail,
@@ -160,6 +132,11 @@ class WebsiteSaleCustom(http.Controller):
             service_request = request.env['service.request'].sudo().create(
                 value_dict)
             request.env.cr.commit()
+
+        if is_cancel:
+            return request.render('website.home_page', {'is_cancel': is_cancel})
+
+
         return request.redirect('/case-details')
 
     @http.route('/submit/service-details/', type='http', auth='public', website=True, method='POST')
@@ -194,6 +171,7 @@ class WebsiteSaleCustom(http.Controller):
         other = None
         should_expidite = None
         cost = None
+        is_cancel = False
         for key, value in kw.items():
             if key == 'nar':
                 nar = value
@@ -251,6 +229,8 @@ class WebsiteSaleCustom(http.Controller):
                 should_expidite = False
             elif key == 'cost':
                 cost = value
+            elif key == 'is_cancel':
+                is_cancel = True
 
         value_dict = {'nar': nar,
                       'binder': binder,
@@ -286,6 +266,10 @@ class WebsiteSaleCustom(http.Controller):
             service_request = request.env['service.request'].sudo().create(
                 value_dict)
             request.env.cr.commit()
+
+        if is_cancel:
+            return request.render('website.home_page', {'is_cancel': is_cancel})
+        
         return request.redirect('/?is_success=true')
 
     @http.route('/case-details/', type='http', auth='user', website=True, method='GET')
@@ -304,6 +288,7 @@ class WebsiteSaleCustom(http.Controller):
         document_name = None
         documents = None
 
+        is_cancel =False
         for key, value in kw.items():
             # contact_name
 
@@ -317,6 +302,9 @@ class WebsiteSaleCustom(http.Controller):
                 document_name = value
             elif key == "documents":
                 documents = value
+                
+            elif key == "is_cancel":
+                is_cancel = True
 
         if existing_details:
             #  Update
@@ -357,6 +345,9 @@ class WebsiteSaleCustom(http.Controller):
                         'res_id': service_request.id,
                     })
                     i += 1
+
+        if is_cancel:
+            return request.render('website.home_page', {'is_cancel': is_cancel})
 
         return request.render("website.service_details")
 
@@ -371,6 +362,9 @@ class WebsiteSaleCustom(http.Controller):
         document_name = None
         documents = None
 
+
+        is_cancel = False
+
         for key, value in kw.items():
 
             if key == "case_type":
@@ -383,6 +377,8 @@ class WebsiteSaleCustom(http.Controller):
                 document_name = value
             elif key == "documents":
                 documents = value
+            elif key == "is_cancel":
+                is_cancel = True
 
         if existing_details:
             #  Update
@@ -424,7 +420,7 @@ class WebsiteSaleCustom(http.Controller):
                     })
                     i += 1
 
-        return request.render('website.home_page', {'var': True})
+        return request.render('website.home_page', {'is_cancel': is_cancel})
 
     @http.route('/', type='http', auth='public', website=True, method='GET')
     def homepage(self, **kw):

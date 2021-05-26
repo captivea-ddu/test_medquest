@@ -472,6 +472,54 @@
 
 
   </template> 
+  <template id="cancel_modal" name="On cancel Modal">
+
+    <div class="modal fade" id="cancelSave" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" style="display:inline-block">
+    <div class="modal-dialog" role="document" style="max-width:80%;">
+        <div class="modal-content">
+            <div class="modal-header event-modal">
+                <div class="thank-you">
+
+                    Thank You
+
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="thumb-style">
+                <i class="fa fa-thumbs-up fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="modal-body">
+                <div class="modal-center-text">
+                    Don't worry, the information you've entered so far has been saved. 
+                    You'll be prompted to finish when you come back or you can just launch the form again from the same link you used the first time 
+                </div>
+
+                <div class="modal-center-text">
+                    Our Record Retrival partner will contact you seperatly within one business day to get started
+                </div>
+
+            </div>
+            <div class="modal-footer" style="border-style:none;justify-content:center;height:150px">
+
+                <button type="button" class="btn my-btn" data-dismiss="modal"
+                    style="font-size: 1.5em;width:250px;margin-bottom: 20px;width:200px">OK</button>
+
+                <span class="blue-link">
+                    Print for your records
+                </span>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  </template> 
 
 
 </odoo>

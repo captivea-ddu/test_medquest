@@ -12,11 +12,20 @@
 			<script  type="text/javascript" >
 
 				$( document ).ready(function() {
-					var delayMs = 2500; // delay in milliseconds
+					var delayMs = 1500; // delay in milliseconds
 					
 					setTimeout(function(){
 						console.log("model should show")
 						$('#intakeSuccessModal').modal('show');
+					}, delayMs);
+				});
+
+				$( document ).ready(function() {
+					var delayMs = 1500; // delay in milliseconds
+					
+					setTimeout(function(){
+						console.log("model should show")
+						$('#cancelSave').modal('show');
 					}, delayMs);
 				});
 

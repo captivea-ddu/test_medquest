@@ -13,6 +13,9 @@
                     <div t-if="is_success">
                         <t t-call="trial_for_tracking.intake_success_modal" />
                     </div>
+                    <div t-if="is_cancel">
+                        <t t-call="trial_for_tracking.cancel_modal" />
+                    </div>
 
 
                     <div class="fluid-container main">
