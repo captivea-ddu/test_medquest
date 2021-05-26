@@ -434,6 +434,8 @@ class WebsiteSaleCustom(http.Controller):
         for key, _ in kw.items():
             if key == 'is_success':
                 is_success =True
+            if key == 'is_login':
+                is_login =True
         return request.render('website.home_page', qcontext={"is_success": is_success, "is_login" :is_login})
 
     @http.route('/intake', type='http', auth='public', website=True, method='POST')
