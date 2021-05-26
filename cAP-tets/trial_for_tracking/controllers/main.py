@@ -286,7 +286,7 @@ class WebsiteSaleCustom(http.Controller):
             service_request = request.env['service.request'].sudo().create(
                 value_dict)
             request.env.cr.commit()
-        return request.render('website.layout')
+        return request.redirect('/?is_success=true')
 
     @http.route('/case-details/', type='http', auth='user', website=True, method='GET')
     def case_details_form_controller(self, **kw):
