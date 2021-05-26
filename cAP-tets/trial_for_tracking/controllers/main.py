@@ -438,7 +438,7 @@ class WebsiteSaleCustom(http.Controller):
                 is_cancel =True
 
 
-        return request.render('website.home_page', qcontext={"is_success": is_success, "is_login" :is_login, 'is_cancel': is_cancel})
+        return request.render('website.home_page', qcontext={"is_success": is_success, "is_login" :is_login, 'is_cancel': is_cancel, "my_val" : "this is showing"})
 
     @http.route('/intake', type='http', auth='public', website=True, method='POST')
     def intake_from(self, **kw):

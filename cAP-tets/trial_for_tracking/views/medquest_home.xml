@@ -21,8 +21,8 @@
                     <div class="fluid-container main" >
 
                         <div>
-                            lets see if this works: <t t-esc="my_var"/>
-                            <input type="text" value=<t t-esc="my_var"/> />
+                            lets see if this works: <t t-esc="my_val"/>
+                            <input type="text" t-att-value='my_val' />
                         </div>
                         <nav class="fluid-container" style="position:relative;top:30px">
                             <img src="/trial_for_tracking/static/src/img/medquest.PNG" class="logo" />
