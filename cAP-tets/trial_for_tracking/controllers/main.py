@@ -134,7 +134,7 @@ class WebsiteSaleCustom(http.Controller):
             request.env.cr.commit()
 
         if is_cancel:
-            return request.render('website.home_page', {'is_cancel': is_cancel})
+            return request.redirect('/?is_cancel=true')
 
 
         return request.redirect('/case-details')
@@ -268,7 +268,7 @@ class WebsiteSaleCustom(http.Controller):
             request.env.cr.commit()
 
         if is_cancel:
-            return request.render('website.home_page', {'is_cancel': is_cancel})
+            return request.redirect('/?is_cancel=true')
         
         return request.redirect('/?is_success=true')
 
@@ -347,7 +347,7 @@ class WebsiteSaleCustom(http.Controller):
                     i += 1
 
         if is_cancel:
-            return request.render('website.home_page', {'is_cancel': is_cancel})
+            return request.redirect('/?is_cancel=true')
 
         return request.render("website.service_details")
 
@@ -426,23 +426,35 @@ class WebsiteSaleCustom(http.Controller):
     def homepage(self, **kw):
         is_success = False
         is_login = False
-        public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
+        is_cancel = False
+        
         if not request.env.user.id == request.env.ref('base.public_user').id:
             is_login = True
 
         for key, _ in kw.items():
             if key == 'is_success':
                 is_success =True
+            if key == 'is_cancel':
+                is_cancel =True
 
-        return request.render('website.home_page', qcontext={"is_success": is_success, "is_login" :is_login})
+
+        return request.render('website.home_page', qcontext={"is_success": is_success, "is_login" :is_login, 'is_cancel': is_cancel})
 
     @http.route('/intake', type='http', auth='public', website=True, method='POST')
     def intake_from(self, **kw):
+
+
         vals_dic = {}
         for key, value in kw.items():
             if key in ['contactname', 'attornyname', 'attornyphone', 'firmname', 'country', 'Email1', 'attornyEmail1', 'address1', 'address2',
                     'city', 'phone', 'state', 'extension', 'zip', 'cb1', 'cb2', 'cb3', 'cb4', 'cb5', 'cb6', 'cb7', 'payment','info']:
                 vals_dic[key] = value
+
+  
+        service_request = request.env['service.request'].sudo().create(
+                value_dict)
+        request.env.cr.commit()
+
 
         return request.redirect('/?is_success=true')
 
