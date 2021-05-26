@@ -769,14 +769,12 @@
                                 <div>
 
                                     <div class="modal-footer" style="border-style:none;justify-content:center">
-                                        <a href="/service-general">
                                             <form action="/service-general" method="get">
-
+                                                        <input hidden="true" />>
                                                 <button type="submit" class="btn my-btn" data-dismiss="modal" style="font-size: 1.8em;width:250px;margin-bottom: 100px;">
                                                     Get Started
                                                 </button>
                                             </form>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
