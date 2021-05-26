@@ -769,12 +769,9 @@
                                 <div>
 
                                     <div class="modal-footer" style="border-style:none;justify-content:center">
-                                            <form action="/service-general" method="get">
-                                                        <input hidden="true" />>
-                                                <button type="submit" class="btn my-btn" data-dismiss="modal" style="font-size: 1.8em;width:250px;margin-bottom: 100px;">
-                                                    Get Started
-                                                </button>
-                                            </form>
+                                            <button type="button" onclick="javascript:window.location.href='/service-general';" class="btn my-btn" data-dismiss="modal" style="font-size: 1.8em;width:250px;margin-bottom: 100px;">
+                                                Get Started
+                                            </button>
                                     </div>
                                 </div>
                             </div>
