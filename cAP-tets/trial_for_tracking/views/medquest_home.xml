@@ -775,6 +775,9 @@
                                         <a href="/service-general"  role="button"  class="btn my-btn" data-dismiss="modal"  style="font-size: 1.8em;width:250px;margin-bottom: 100px;">
                                                 Get Started
                                         </a>
+                                        <a href="/service-general"    style="font-size: 1.8em;width:250px;margin-bottom: 100px;">
+                                                Get Started
+                                        </a>
                                     </div>
                                 </div>
                             </div>
