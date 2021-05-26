@@ -280,6 +280,7 @@ class WebsiteSaleCustom(http.Controller):
     def case_details_form_controller(self, **kw):
         # user_id = request.env.context.get('uid')
         return request.render('website.case_details')
+
     @http.route('/service-general', type='http', auth='user', website=True, method='GET')
     def service_general_controller(self, **kw):
         user_id = request.env.context.get('uid')
@@ -289,7 +290,8 @@ class WebsiteSaleCustom(http.Controller):
         if not request.env.user.id == request.env.ref('base.public_user').id:
             for i in self.field_list:
                 res_dict[i] = existing_details[i]
-        return request.render('website.service_general', res_dict )
+        # return request.render('website.service_general',res_dict  )
+        return res_dict  
 
     @http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
     def case_details_form_submit_controller(self, **kw):
