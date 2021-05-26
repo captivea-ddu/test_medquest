@@ -431,11 +431,14 @@ class WebsiteSaleCustom(http.Controller):
     def homepage(self, **kw):
         is_success = False
         is_login = False
+        public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
+        if request.uid != public_user.id:
+            is_login = True
+
         for key, _ in kw.items():
             if key == 'is_success':
                 is_success =True
-            if key == 'is_login':
-                is_login =True
+
         return request.render('website.home_page', qcontext={"is_success": is_success, "is_login" :is_login})
 
     @http.route('/intake', type='http', auth='public', website=True, method='POST')
@@ -447,10 +450,4 @@ class WebsiteSaleCustom(http.Controller):
                 vals_dic[key] = value
 
         return request.redirect('/?is_success=true')
-#         public_user = http.request.env['res.users'].sudo().search([('id', '=', 3),('active', '=', False)]) # Public user default ID
-# if request.uid == public_user.id:
-#      # The user is logged in
-#      # Put your code for logged in user here
-# else:
-#     # The user is not logged in
-#     # Put your code for public users here
+
