@@ -769,7 +769,7 @@
                                 <div>
 
                                     <div class="modal-footer" style="border-style:none;justify-content:center">
-                                        <button type="button" class="btn my-btn" data-dismiss="modal" style="font-size: 1.8em;width:250px;margin-bottom: 100px;">Get Started</button>
+                                        <a href="/"><button type="button" class="btn my-btn" data-dismiss="modal" style="font-size: 1.8em;width:250px;margin-bottom: 100px;">Get Started</button></a>
                                     </div>
                                 </div>
                             </div>
