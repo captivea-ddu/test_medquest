@@ -290,8 +290,8 @@ class WebsiteSaleCustom(http.Controller):
         if not request.env.user.id == request.env.ref('base.public_user').id:
             for i in self.field_list:
                 res_dict[i] = existing_details[i]
-        # return request.render('website.service_general',res_dict  )
-        return str(res_dict)  
+        return request.render('website.service_general',res_dict  )
+        # return str(res_dict)  
 
     @http.route('/submit/case-details/', type='http', auth='public', website=True, method='POST')
     def case_details_form_submit_controller(self, **kw):
