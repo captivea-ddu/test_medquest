@@ -16,7 +16,16 @@
                     <div t-if="is_cancel">
                         <t t-call="trial_for_tracking.cancel_modal" />
                     </div>
+                        <script type="text/javascript">
+                        
+                            $( document ).ready(function() {
+                                
+                                history.replaceState(null, "Home URL","/")
+                            });
+                            
 
+                        
+                        </script>
 
                     <div class="fluid-container main">
                         <nav class="fluid-container" style="position:relative;top:30px">
