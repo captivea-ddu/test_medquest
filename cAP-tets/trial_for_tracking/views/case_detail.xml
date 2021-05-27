@@ -490,7 +490,7 @@
                                                         <div class="arrow"></div>
                                                         <div class="popover-body">
                                                             <a href="http://www.google.com" target="_blank">www.google.com</a>
-                                                            &nbsp;&nbsp;
+                                                           
                                                             <div class="note-insert btn-group">
                                                                 <button type="button" class="btn btn-secondary btn-sm" title="" data-event="showLinkDialog" data-hide="true" tabindex="-1" data-original-title="Edit">
                                                                     <i class="fa fa-link"></i>
