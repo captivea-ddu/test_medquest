@@ -16,7 +16,7 @@
 			
 			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 			<script  type="text/javascript" >
-
+			
 				$( document ).ready(function() {
 					var delayMs = 1500; // delay in milliseconds
 					
@@ -88,6 +88,7 @@
 				  var counter = -1;
 				  var node_items = document.querySelectorAll(".nav-item a");
 				  var indicators = document.querySelectorAll(".indicator");
+				  try{
 				  for (item of node_items) {
 					counter += 1;
 					if (item.className.includes("active")) {
@@ -97,7 +98,11 @@
 				  }
 		  
 				  indicators[index_of_el].className += " active";
+				}catch (e)
+				{
+					
 				}
+			}
 		  
 				$(function () {
 				  $(".nav-tabs a").on("click", function (e) {
