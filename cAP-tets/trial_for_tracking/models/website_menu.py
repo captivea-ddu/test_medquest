@@ -22,7 +22,7 @@ class ServiceRequest(models.Model):
         help='User',
     )
 
-    case_type = fields.Selection([( 'motor','Motor Vehicle Accident'), 
+    case_type = fields.Selection([('motor','Motor Vehicle Accident'), 
                                   ('nurse' , 'Nursing Home'),
                                   ('defective','Defective Product'),
                                   ('wrong','Wrongful Death'),
@@ -159,7 +159,7 @@ class ServiceRequest(models.Model):
 
     attorphone = fields.Char(size=70)
 
-    firmname
+    firmname = fields.Char(size=70)
 
     plaintname = fields.Char(size=70)
 
