@@ -48,7 +48,7 @@
                             <div class="row row-adj">
                                 <div class="col-10">
                                     <label for="case_overview">Case Overview</label>
-                                    <textarea type="text" name="case_overview" t-att-data-karma="forum.karma_editor" t-att-value="case_overview" class="form-control o_website_form_input input-base load_editor"  id="contactname" style="border-style:solid;width:100%;height:300px;" />
+                                    <textarea type="text" name="case_overview"  t-att-value="case_overview" class="form-control o_website_form_input input-base load_editor"  id="contactname" style="border-style:solid;width:100%;height:300px;" />
                                 </div>
                             </div>
 
