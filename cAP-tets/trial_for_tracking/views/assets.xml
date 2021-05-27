@@ -87,8 +87,8 @@
 				  var index_of_el = -1;
 				  var counter = -1;
 				  var node_items = document.querySelectorAll(".nav-item a");
-				  var indicators = document.querySelectorAll(".indicator");
-				  try{
+				  var indicators = document.querySelectorAll('.indicator');
+				  <!-- try{ -->
 				  for (item of node_items) {
 					counter += 1;
 					if (item.className.includes("active")) {
@@ -98,10 +98,10 @@
 				  }
 		  
 				  indicators[index_of_el].className += " active";
-				}catch (e)
+				<!-- }catch (e)
 				{
 					
-				}
+				} -->
 			}
 		  
 				$(function () {
