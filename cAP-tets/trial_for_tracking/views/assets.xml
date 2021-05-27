@@ -88,11 +88,12 @@
 				  var counter = -1;
 				  var node_items = document.querySelectorAll(".nav-item a");
 				  var indicators = document.querySelectorAll(".indicator");
-				console.log(indicators);
+					console.log(indicators);
 				  for (item of node_items) {
 					counter += 1;
 					if (item.className.includes("active")) {
 					  index_of_el = counter;
+					  break; 
 					}
 					indicators[counter].className = "indicator";
 				  }
