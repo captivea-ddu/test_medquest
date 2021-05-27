@@ -9,10 +9,8 @@
 	    <xpath expr="//script[last()]" position="after">
 	    	<!-- <script type="text/javascript" src="/wt_medquest_website/static/src/js/custom.js"></script> -->
 	    	<link rel="stylesheet" type="text/css" href="/css/bootstrap-wysihtml5.css"></link>
-			<script src="js/wysihtml5-0.3.0.js"></script>
-			<script src="js/jquery-1.7.2.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/bootstrap-wysihtml5.js"></script>
+			<!-- <script src="/trial_for_tracking/static/src/scss/wysihtml5-0.3.0.js"></script>
+			<script src="/trial_for_tracking/static/src/scss/bootstrap-wysihtml5.js"></script> -->
 			
 			
 			
