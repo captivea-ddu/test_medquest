@@ -88,15 +88,15 @@
                                                             <main class="modal-body">
                                                                 <div class="form-group row">
                                                                     <label>Text to display</label>
-                                                                    <input class="note-link-text form-control col-md-12" type="text">
+                                                                    <input class="note-link-text form-control col-md-12" type="text" />
                                                                 </div>
                                                                 <div class="form-group row">
                                                                     <label>To what URL should this link go?</label>
-                                                                    <input class="note-link-url form-control col-md-12" type="text" value="http://">
+                                                                    <input class="note-link-url form-control col-md-12" type="text" value="http://" />
                                                                 </div>
                                                                 <div class="checkbox">
                                                                     <label>
-                                                                        <input type="checkbox" checked=""> Open in new window
+                                                                        <input type="checkbox" checked="" /> Open in new window
                                                                     </label>
                                                                 </div>
                                                             </main>
