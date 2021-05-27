@@ -88,7 +88,6 @@
 				  var counter = -1;
 				  var node_items = document.querySelectorAll(".nav-link");
 				  var indicators = document.querySelectorAll(".indicator");
-					console.log(indicators);
 				  for (item of node_items) {
 					counter += 1;
 					if (item.className.includes("active")) {
@@ -96,11 +95,10 @@
 					}
 					indicators[counter].className = "indicator";
 				  }
-				  
+				  console.log(indicators,index_of_el);
+
 				  indicators[index_of_el].className += " active";
-			
-				  
-			}
+				  }
 		  
 				$(function () {
 				  $(".nav-tabs a").on("click", function (e) {
