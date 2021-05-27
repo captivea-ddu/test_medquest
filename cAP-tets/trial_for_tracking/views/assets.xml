@@ -76,7 +76,7 @@
 				function correct_indic() {
 				  var index_of_el = -1;
 				  var counter = -1;
-				  var node_items = document.querySelectorAll(".flag-class");
+				  var node_items = document.querySelectorAll(".nav-tabs .nav-link");
 				  var indicators = document.querySelectorAll(".indicator");
 				  console.log(node_items); 
 				  for (item of node_items) {
