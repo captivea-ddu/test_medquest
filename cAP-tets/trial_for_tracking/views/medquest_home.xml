@@ -19,8 +19,9 @@
                         <script type="text/javascript">
                         function reset_url()
                         {
-                            history.replaceState(null, "","/")
                             console.log("this ran");
+                            window.history.replaceState(null, "","/")
+                            console.log("this ran after");
                         }
                             
 
