@@ -142,35 +142,35 @@
                             <div class="col-lg" style="padding: 0">
                                 <ul class="nav nav-tabs" style="color: black">
                                     <li class="nav-item lg" onclick="correct_indic()">
-                                        <a class="nav-link" href="#home">
+                                        <a class="nav-link flag-class" href="#home">
                                             Build Your
                                             <br />
                                             Best Case
                                         </a>
                                     </li>
                                     <li class="nav-item lg" onclick="correct_indic()">
-                                        <a class="nav-link" href="#medrec">
+                                        <a class="nav-link flag-class" href="#medrec">
                                             Retrieve
                                             <br />
                                             Medical Records
                                         </a>
                                     </li>
                                     <li class="nav-item lg" onclick="correct_indic()">
-                                        <a class="nav-link active" href="#org">
+                                        <a class="nav-link flag-class active" href="#org">
                                             Let us organize
                                             <br />
                                             your case files
                                         </a>
                                     </li>
                                     <li class="nav-item lg" onclick="correct_indic()">
-                                        <a class="nav-link" href="#expert">
+                                        <a class="nav-link flag-class" href="#expert">
                                             MedQuest
                                             <br />
                                             Experts
                                         </a>
                                     </li>
                                     <li class="nav-item lg" onclick="correct_indic()">
-                                        <a class="nav-link" href="#cost">
+                                        <a class="nav-link flag-class" href="#cost">
                                             Future Medical
                                             <br />
                                             Cost Reports
