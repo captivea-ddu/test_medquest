@@ -613,7 +613,7 @@
                                                 <textarea class="note-codable"></textarea>
                                                 <div class="note-editable panel-body" contenteditable="true" style="height: 180px;">
                                                     <p>
-                                                        <br>
+                                                        <br />
                                                     </p>
                                                 </div>
                                             </div>
