@@ -86,14 +86,13 @@
 				function correct_indic() {
 				  var index_of_el = -1;
 				  var counter = -1;
-				  var node_items = document.querySelectorAll(".nav-item a");
+				  var node_items = document.querySelectorAll(".nav-link");
 				  var indicators = document.querySelectorAll(".indicator");
 					console.log(indicators);
 				  for (item of node_items) {
 					counter += 1;
 					if (item.className.includes("active")) {
 					  index_of_el = counter;
-					  break; 
 					}
 					indicators[counter].className = "indicator";
 				  }

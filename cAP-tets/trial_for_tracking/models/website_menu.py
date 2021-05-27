@@ -15,7 +15,7 @@ class ServiceRequest(models.Model):
     _name = "service.request"
 
     name = fields.Char(String="Name")
-    
+
     user_id = fields.Many2one(
         'res.users',
         string='User',
@@ -141,3 +141,50 @@ class ServiceRequest(models.Model):
     # document_name = fields.Text()
 
 
+class ServiceRequest(models.Model):
+    _name = "other.model"
+
+
+    contactname = fields.Char(size=70)
+
+    contactname = fields.Char(size=70)
+
+    contactemail = fields.Char(size=70)
+
+    contactphone = fields.Char(size=80)
+
+    attorname = fields.Char(size=70)
+
+    attoremail = fields.Char(size=70)
+
+    attorphone = fields.Char(size=70)
+
+    firmname
+
+    plaintname = fields.Char(size=70)
+
+    plainrel = fields.Char(size=70)
+
+    plaintbday = fields.Char(size=70)
+
+    plaintcor = fields.Char(size=70)
+
+    addt1 = fields.Char(size=70)
+
+    adder2 = fields.Char(size=70)
+
+    city = fields.Char(size=70)
+
+    state = fields.Char(size=70)
+
+    zip_ = fields.Char(size=70)
+
+    contnumber = fields.Char(size=70)
+
+    extension = fields.Char(size=70)
+
+    plantifemail = fields.Char(size=70)
+
+    plantifgen = fields.Char(size=70)
+
+    plantifgen = fields.Char(size=70)
