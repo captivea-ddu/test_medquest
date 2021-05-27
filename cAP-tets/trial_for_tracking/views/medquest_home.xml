@@ -20,6 +20,7 @@
                         function reset_url()
                         {
                             history.replaceState(null, "","/")
+                            console.log("this ran");
                         }
                             
 
