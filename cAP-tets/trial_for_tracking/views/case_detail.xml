@@ -11,7 +11,7 @@
                     <div class="container">
                         <script>
                             ClassicEditor
-                                .create( document.querySelector( 'textarea' ) )
+                                .create( document.querySelector( '#editor' ) )
                                 .catch( error => {
                                     console.error( error );
                                 });
