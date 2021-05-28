@@ -110,7 +110,7 @@
 
 
 
-				
+				$('textarea').wysihtml5();
 			
 			
 

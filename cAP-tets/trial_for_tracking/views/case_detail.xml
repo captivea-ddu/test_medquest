@@ -9,9 +9,7 @@
             <field name="arch" type="xml">
                 <t t-call="website.layout">
                     <div class="container">
-                        <script type="text/javascript">
-                            $('textarea').wysihtml5();
-                        </script>
+                        
                         <form method="post" action='/submit/case-details/'>
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                             <div class="row row-adj">
