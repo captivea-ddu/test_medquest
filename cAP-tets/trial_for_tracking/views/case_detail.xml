@@ -47,8 +47,7 @@
 
 
                             <div class="row row-adj">
-                                <div id="editor">
-                                    <textarea type="text" name="case_overview"   class="form-control o_website_form_input input-base load_editor" style="border-style:solid;width:100%;height:300px;">
+                                    <textarea type="text" name="case_overview"  id="editor"  class="form-control o_website_form_input input-base load_editor" style="border-style:solid;width:100%;height:300px;">
 
                                         <t t-esc="case_overview" />
 
@@ -56,7 +55,6 @@
 
                                     </textarea>
 
-                                </div>
                                 <script>
                                     ClassicEditor
                                         .create( document.querySelector( '#editor' ) )
