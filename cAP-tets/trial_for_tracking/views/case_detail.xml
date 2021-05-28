@@ -70,7 +70,7 @@
                                 <div class="col-10">
                                     <!-- ckeditor 5 -->
                                     <label for="case_issues">Case Issues and Focus</label>
-                                    <textarea type="text" id="editor" name="case_issues" class="form-control o_website_form_input input-base" 
+                                    <textarea type="text" id="editor2" name="case_issues" class="form-control o_website_form_input input-base" 
                                     
                                     style="border-style:solid;width:100%;min-height:300px;">
 
@@ -79,7 +79,7 @@
                                     </textarea>
                                     <script>
                                         ClassicEditor
-                                            .create( document.querySelector( '#editor' ) )
+                                            .create( document.querySelector( '#editor2' ) )
                                             .catch( error => {
                                                 console.error( error );
                                             } );
