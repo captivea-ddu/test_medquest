@@ -9,13 +9,9 @@
             <field name="arch" type="xml">
                 <t t-call="website.layout">
                     <div class="container">
-                        <script>
-                            ClassicEditor
-                                .create( document.querySelector( '#editor' ) )
-                                .catch( error => {
-                                    console.error( error );
-                                } );
-                        </script>
+                        <script src="/trial_for_tracking/static/src/js/custom_editor.js" ></script>
+
+                      
                         <form method="post" action='/submit/case-details/'>
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                             <div class="row row-adj">
@@ -60,7 +56,13 @@
                                     <textarea name="case_overview" id="editor" class="form-control o_website_form_input input-base load_editor" style="border-style:solid;width:100%;height:300px;">
                                         <t t-esc="case_overview" />
                                     </textarea>
-
+                                    <script>
+                                        ClassicEditor
+                                            .create( document.querySelector( '#editor' ) )
+                                            .catch( error => {
+                                                console.error( error );
+                                            } );
+                                    </script>
                                    
 
 
