@@ -48,7 +48,7 @@
 
                             <div class="row row-adj">
                                 <div id="editor">
-                                    <textarea type="text" name="case_overview" id="content" t-att-value="case_overview" class="form-control o_website_form_input input-base load_editor" style="border-style:solid;width:100%;height:300px;"></textarea>
+                                    <textarea type="text" name="case_overview" id="content"  class="form-control o_website_form_input input-base load_editor" style="border-style:solid;width:100%;height:300px;"></textarea>
 
                                 </div>
                                 <script>
@@ -61,6 +61,8 @@
                                 <div class="col-10">
                                    
                                     <label for="case_overview">Case Overview</label>
+
+
                                    
                                     <!-- <textarea type="text" name="case_overview" id="content" t-att-value="case_overview" class="form-control o_website_form_input input-base load_editor" style="border-style:solid;width:100%;height:300px;"></textarea> -->
 
@@ -70,7 +72,12 @@
                             <div class="row row-adj">
                                 <div class="col-10">
                                     <label for="case_issues">Case Issues and Focus</label>
-                                    <textarea type="text" name="case_issues" t-att-value="case_issues" class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
+                                    <textarea type="text" name="case_issues" class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" >
+
+                                        <t t-esc="case_issues" />
+                                
+                                    </textarea>
+
                                 </div>
                             </div>
 
