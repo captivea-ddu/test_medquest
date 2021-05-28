@@ -308,7 +308,6 @@ class WebsiteSaleCustom(http.Controller):
         user_id = request.env.context.get('uid')
         existing_details = request.env['service.request'].sudo().search(
             [('user_id', '=', user_id)], limit=1)
-
         case_type = None
         case_overview = None
         case_issues = None
@@ -332,6 +331,7 @@ class WebsiteSaleCustom(http.Controller):
                 
             elif key == "is_cancel":
                 is_cancel = True
+        _logger.log(case_issues,"\n\n\n\n\n\n\n\n\n\n\n\n")
 
         if existing_details:
             #  Update
@@ -351,6 +351,8 @@ class WebsiteSaleCustom(http.Controller):
                         'res_id': existing_details.id,
                     })
                     i += 1
+
+
 
         else:
             # Create
