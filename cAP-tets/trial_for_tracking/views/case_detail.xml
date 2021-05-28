@@ -58,7 +58,13 @@
                                         <t t-esc="case_overview" />
                                     </textarea>
                                 
-                                   
+                                    <!-- <script>
+                                        ClassicEditor
+                                            .create( document.querySelector( '#editor' ) )
+                                            .catch( error => {
+                                                console.error( error );
+                                            } );
+                                    </script> -->
 
 
                                     <!-- <textarea type="text" name="case_overview" id="content" t-att-value="case_overview" class="form-control o_website_form_input input-base load_editor" style="border-style:solid;width:100%;height:300px;"></textarea> -->
@@ -70,7 +76,7 @@
                                 <div class="col-10">
                                     <!-- ckeditor 5 -->
                                     <label for="case_issues">Case Issues and Focus</label>
-                                    <textarea type="text" id="editor2" name="case_issues" class="form-control o_website_form_input input-base" 
+                                    <textarea type="text" id="editor" name="case_issues" class="form-control o_website_form_input input-base" 
                                     
                                     style="border-style:solid;width:100%;min-height:300px;">
 
@@ -79,7 +85,7 @@
                                     </textarea>
                                     <script>
                                         ClassicEditor
-                                            .create( document.querySelector( '#editor2' ) )
+                                            .create( document.querySelector( '.form-control.o_website_form_input.input-base' ) )
                                             .catch( error => {
                                                 console.error( error );
                                             } );
