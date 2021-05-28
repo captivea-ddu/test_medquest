@@ -12,8 +12,8 @@
 	    	<!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap-wysihtml5.css"></link> -->
 			<!-- <script src="/trial_for_tracking/static/src/scss/wysihtml5-0.3.0.js"></script>
 			<script src="/trial_for_tracking/static/src/scss/bootstrap-wysihtml5.js"></script> -->
-			<script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
 
+			<script src="/trial_for_tracking/static/src/js/custom_editor.js" ></script>
 			<script src="/trial_for_tracking/static/src/js/custom.js" ></script>
 			<script src="/trial_for_tracking/static/src/js/wysiwyg.js" ></script>
 			
