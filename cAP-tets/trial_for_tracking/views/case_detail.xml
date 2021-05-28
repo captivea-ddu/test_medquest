@@ -51,7 +51,7 @@
                             <div class="row row-adj">
 
                                 <div class="col-10">
-
+                                <!-- ckeditor 5 -->
                                     <label for="case_overview">Case Overview</label>
                                     <textarea name="case_overview" id="editor" class="form-control o_website_form_input input-base load_editor" 
                                     style="border-style:solid;width:100%;min-height:300px;">
@@ -68,6 +68,7 @@
 
                             <div class="row row-adj">
                                 <div class="col-10">
+                                    <!-- ckeditor 5 -->
                                     <label for="case_issues">Case Issues and Focus</label>
                                     <textarea type="text" id="editor" name="case_issues" class="form-control o_website_form_input input-base" 
                                     

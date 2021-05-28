@@ -42,3 +42,8 @@ ul.wysihtml5-toolbar a.btn.wysihtml5-command-active {
 ul.wysihtml5-commands-disabled .dropdown-menu {
 	display: none !important;
 }
+
+
+.ck-editor__editable {
+    min-height: 500px;
+}
