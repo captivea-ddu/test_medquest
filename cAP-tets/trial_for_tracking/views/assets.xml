@@ -12,7 +12,7 @@
 			<!-- <script src="/trial_for_tracking/static/src/scss/wysihtml5-0.3.0.js"></script>
 			<script src="/trial_for_tracking/static/src/scss/bootstrap-wysihtml5.js"></script> -->
 			
-			
+			<script src="/trial_for_tracking/static/src/js/custom.js" ></script>
 			
 			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 			<script  type="text/javascript" >
