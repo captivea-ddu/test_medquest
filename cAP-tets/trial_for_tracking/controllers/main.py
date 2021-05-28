@@ -132,6 +132,7 @@ class WebsiteSaleCustom(http.Controller):
                       }
         if existing_details:
             existing_details.sudo().write(value_dict)
+            request.env.cr.commit()
         else:
             service_request = request.env['service.request'].sudo().create(
                 value_dict)
@@ -285,7 +286,10 @@ class WebsiteSaleCustom(http.Controller):
         if not request.env.user.id == request.env.ref('base.public_user').id:
             for i in self.field_list:
                 res_dict[i] = existing_details[i]
-        return request.render('website.case_details',res_dict )
+
+
+
+        return request.render('website.case_details', res_dict )
 
     @http.route('/service-general', type='http', auth='user', website=True, method='GET')
     def service_general_controller(self, **kw):
