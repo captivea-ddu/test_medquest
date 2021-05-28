@@ -331,7 +331,7 @@ class WebsiteSaleCustom(http.Controller):
                 
             elif key == "is_cancel":
                 is_cancel = True
-        _logger.log(case_issues,"\n\n\n\n\n\n\n\n\n\n\n\n")
+        _logger.warning(str(case_issues) + "\n\n\n\n\n\n\n\n\n\n\n\n" )
 
         if existing_details:
             #  Update
