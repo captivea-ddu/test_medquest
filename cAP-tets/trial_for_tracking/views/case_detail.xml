@@ -10,12 +10,12 @@
                 <t t-call="website.layout">
                     <div class="container">
                         <script>
-                                        
-                            .create( document.querySelector( '#editor' ) )
-                            .catch( error => {ClassicEditor
-                                console.error( error );
-                            } );
-                    </script>
+                            ClassicEditor
+                                .create( document.querySelector( '#editor' ) )
+                                .catch( error => {
+                                    console.error( error );
+                                } );
+                        </script>
                         <form method="post" action='/submit/case-details/'>
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                             <div class="row row-adj">
