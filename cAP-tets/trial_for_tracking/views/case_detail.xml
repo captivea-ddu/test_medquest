@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
+<script type="text/javascript">
+    $('textarea').wysihtml5();
+</script>
         <record id="case_details" model="ir.ui.view">
             <field name="name">Case Details</field>
             <field name="type">qweb</field>
