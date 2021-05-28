@@ -47,14 +47,22 @@
 
 
                             <div class="row row-adj">
-
+                                <div id="editor">
+                                    <p>
+                                        trial
+                                    </p>
+                                </div>
+                                <script>
+                                    ClassicEditor
+                                        .create( document.querySelector( '#editor' ) )
+                                        .catch( error => {
+                                            console.error( error );
+                                        } );
+                                </script>
                                 <div class="col-10">
+                                   
                                     <label for="case_overview">Case Overview</label>
-                                    <div id="editor">
-                                        <p>
-                                            trial
-                                        </p>
-                                    </div>
+                                   
                                     <textarea type="text" name="case_overview" id="content" t-att-value="case_overview" class="form-control o_website_form_input input-base load_editor" style="border-style:solid;width:100%;height:300px;"></textarea>
 
                                 </div>
