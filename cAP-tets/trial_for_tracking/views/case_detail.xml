@@ -9,7 +9,7 @@
             <field name="arch" type="xml">
                 <t t-call="website.layout">
                     <div class="container">
-                        
+
                         <form method="post" action='/submit/case-details/'>
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                             <div class="row row-adj">
@@ -47,21 +47,19 @@
 
 
                             <div class="row row-adj">
-                               
+
                                 <div class="col-10">
                                     <label for="case_overview">Case Overview</label>
-                                    <textarea type="text" name="case_overview" id="content" t-att-value="case_overview" 
-                                    class="form-control o_website_form_input input-base load_editor"   style="border-style:solid;width:100%;height:300px;" > 
-                                   
-                                
-                                </textarea>
+                                    <div id="editor">
+                                        <textarea type="text" name="case_overview" id="content" t-att-value="case_overview" class="form-control o_website_form_input input-base load_editor" style="border-style:solid;width:100%;height:300px;"></textarea>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="row row-adj">
                                 <div class="col-10">
                                     <label for="case_issues">Case Issues and Focus</label>
-                                    <textarea type="text" name="case_issues"  t-att-value="case_issues"  class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
+                                    <textarea type="text" name="case_issues" t-att-value="case_issues" class="form-control o_website_form_input input-base" id="contactname" style="border-style:solid;width:100%;height:300px;" />
                                 </div>
                             </div>
 

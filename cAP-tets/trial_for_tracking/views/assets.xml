@@ -5,6 +5,7 @@
 	      <link rel="stylesheet" type="text/scss" href="/trial_for_tracking/static/src/scss/custom.scss" />
 	      <link rel="stylesheet" type="text/scss" href="/trial_for_tracking/static/src/scss/modal.scss" />
 	      <link rel="stylesheet" type="text/scss" href="/trial_for_tracking/static/src/scss/wysiwyg.scss" />
+		  <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
 
 	    </xpath>
 	    <xpath expr="//script[last()]" position="after">
