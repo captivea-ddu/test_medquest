@@ -140,6 +140,53 @@
                                 </div>
 
                             </div>
+                            <!-- TEST -->
+                            <div ref="component" class="form-group has-feedback formio-component formio-component-file formio-component-upload formio-component-multiple" id="ebk2zuc">
+  
+  
+                                <label class="col-form-label">
+                                Upload
+                                
+                              </label>
+                              
+                              
+                              
+                              
+                              
+                              
+                                <ul class="list-group list-group-striped">
+                                  <li class="list-group-item list-group-header hidden-xs hidden-sm">
+                                    <div class="row">
+                                      
+                                        <div class="col-md-1"></div>
+                                      
+                                      <div class="col-md-9"><strong>File Name</strong></div>
+                                      <div class="col-md-2"><strong>Size</strong></div>
+                                      
+                                    </div>
+                                  </li>
+                                  
+                                </ul>
+                              
+                              
+                                
+                                  <div ref="fileDrop" class="fileSelector">
+                                    <i class="fa fa-cloud-upload"></i> Drop files to attach,
+                                      
+                                      or <a class="browse" ref="fileBrowse" href="#">browse</a>
+                                  </div>
+                                
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                                <div class="formio-errors invalid-feedback" ref="messageContainer"></div>
+                                
+                              </div>
 
 
                             <div class="row row-adj">
