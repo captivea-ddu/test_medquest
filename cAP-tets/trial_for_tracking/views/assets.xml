@@ -17,6 +17,28 @@
 			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 			<script  type="text/javascript" >
 			
+
+				function allowDrop(ev) {
+					ev.preventDefault();
+				  }
+				  
+				  function drag(ev) {
+					
+					ev.dataTransfer.setData("binary", ev.target.id);
+				  }
+				  
+				  function drop(ev) {
+					ev.preventDefault();
+					var data = ev.dataTransfer.getData("binary");
+					ev.target.value;
+					document.getElementById("file_selector").value = ev.target;
+					console.log(e
+					ev.target.appendChild();
+				  }
+
+
+
+
 				
 				$( document ).ready(function() {
 					var delayMs = 1500; // delay in milliseconds

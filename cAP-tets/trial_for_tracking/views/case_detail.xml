@@ -112,7 +112,7 @@
                                     <div class="file-input-header">
                         File Name
                     </div>
-                                    <input name="file_selector" multiple="true" type="file" style="border-style: none;" />
+                                    <input name="file_selector" id="file_selector" multiple="true" type="file" style="border-style: none;" />
                                 </div>
 
                                 <div class="col-5">
