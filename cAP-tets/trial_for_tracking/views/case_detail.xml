@@ -132,7 +132,7 @@
                             <div class="row row-adj">
                                 <div class="col-10">
 
-                                    <div class="file-drop-target"></div>
+                                    <div class="file-drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
                                     <div class="sub-text">
                         This site can acept PDF, DICOM,GIF,PNG,JPG,DOC/DOCX, XLSX. If your document is in another format please call us a xxx-xxx-xxxx
                     </div>
