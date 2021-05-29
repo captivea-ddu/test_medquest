@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<template id="assets_frontend" inherit_id="website.assets_frontend" name="Website assets">
-	    <xpath expr="//link[last()]" position="after">
-	      <link rel="stylesheet" type="text/scss" href="/trial_for_tracking/static/src/scss/custom.scss" />
-	      <link rel="stylesheet" type="text/scss" href="/trial_for_tracking/static/src/scss/modal.scss" />
+		<xpath expr="//link[last()]" position="after">
+			<link rel="stylesheet" type="text/scss" href="/trial_for_tracking/static/src/scss/custom.scss" />
+			<link rel="stylesheet" type="text/scss" href="/trial_for_tracking/static/src/scss/modal.scss" />
 
-	    </xpath>
-	    <xpath expr="//script[last()]" position="after">
-	    	<!-- <script type="text/javascript" src="/wt_medquest_website/static/src/js/custom.js"></script> -->
-	    	<!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap-wysihtml5.css"></link> -->
+		</xpath>
+		<xpath expr="//script[last()]" position="after">
+			<!-- <script type="text/javascript" src="/wt_medquest_website/static/src/js/custom.js"></script> -->
+			<!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap-wysihtml5.css"></link> -->
 			<!-- <script src="/trial_for_tracking/static/src/scss/wysihtml5-0.3.0.js"></script>
 			<script src="/trial_for_tracking/static/src/scss/bootstrap-wysihtml5.js"></script> -->
 
-			<script src="/trial_for_tracking/static/src/js/custom.js" ></script>
-			
+			<script src="/trial_for_tracking/static/src/js/custom.js"></script>
+
 			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
-			<script  type="text/javascript" >
+			<script type="text/javascript">
 			
 
 				function allowDrop(ev) {
@@ -31,9 +31,14 @@
 					ev.preventDefault();
 					var data = ev.dataTransfer.getData("binary");
 					ev.target.value;
-					document.getElementById("file_selector").value = ev.target;
-					console.log(ev.target.value)
-					ev.target.appendChild();
+					
+				for ( file in ev.dataTransfer.files)
+				{
+				var my_node = document.getElementById("file_selector")
+				my_node.attr('value' , ev.target.value);
+				console.log(ev.target.value)
+					ev.files.append(file)
+			}
 				  }
 
 
@@ -136,6 +141,6 @@
 
 
 			  </script>
-	    </xpath>
+		</xpath>
 	</template>
 </odoo>
